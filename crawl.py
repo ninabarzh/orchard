@@ -116,6 +116,7 @@ class Crawler(object):
         q.put((self.root, 0))
 
         while not q.empty():
+            this_url: object
             this_url, depth = q.get()
 
             # Apply URL-based filters.
