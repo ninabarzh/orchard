@@ -1,4 +1,4 @@
-""" Scraping JS by using Selenium.
+""" Scraping content loaded by JS using Selenium.
 
 You need to install a browser and third-party browser
 (or Web driver) for this script to work.

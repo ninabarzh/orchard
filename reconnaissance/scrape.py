@@ -1,3 +1,9 @@
+"""Scraping tags by using the urlopen library to connect to a web page, turning
+the returned HTML into a Beautiful Soup object to extract HTML elements
+by its surrounding tags.
+
+Authors: Nina and Reinica """
+
 from urllib.request import urlopen
 from urllib.error import HTTPError
 from urllib.error import URLError
