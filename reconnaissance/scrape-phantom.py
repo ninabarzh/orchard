@@ -21,6 +21,7 @@ $ export OPENSSL_CONF=/etc/ssl/
 
 The script will still work (for now) but with a UserWarning: Selenium support for PhantomJS
 has been deprecated, please use headless versions of Chrome or Firefox instead.
+Note that phantomJS will create a ghostdriver.login the directory where the script resides.
 We will not be developing with this script further.
 
 Authors: Reinica and Nina """
