@@ -1,4 +1,4 @@
-""" Scraping content using PhantomJS and Selenium.
+""" Scraping content using PhantomJS webdriver and Selenium.
 
 PhantomJS loads a page and runs our selector code without opening any browsers.
 
