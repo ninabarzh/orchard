@@ -8,4 +8,10 @@ With a [systematic analysis](https://github.com/tymyrddin/orchard/wiki/Profiling
 * [De-Anonymisation Threat Modelling](DA-threat-model), an example of using threat modelling with a quite non-trivial adversary, namely an entire eco-system of players and an often forgotten target, the individual citizen.
 * [Search Engine Threat Modelling](SE-threat-model), an example of organising thoughts and connections for two targets, search engines and their users.
 
+## Problems or Suggestions
 
+[Open an issue here](https://github.com/tymyrddin/orchard/issues)
+
+## Contributing
+
+This project welcomes contributions and suggestions. 

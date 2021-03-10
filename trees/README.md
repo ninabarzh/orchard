@@ -82,7 +82,7 @@ The below categorisation is somewhat arbitrary, some trees have more detail, som
 
 ## Problems or Suggestions
 
-[Open an issue here](https://github.com/tymyrddin/trees/issues)
+[Open an issue here](https://github.com/tymyrddin/orchard/issues)
 
 ## Contributing
 
