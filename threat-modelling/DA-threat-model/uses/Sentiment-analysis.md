@@ -26,9 +26,9 @@ This sentiment analysis can then be used as a base for targeted voter profiles. 
 
 ### Applications of sentiment analysis
 
-    Sociological: Diffusion of innovations is a theory that seeks to explain how, why, and at what rate new ideas and technology spread. Opinions and reactions to ideas are relevant to adoption of new ideas. Analysing sentiment reactions on blogs can give insights into this process.
-    Psychological: Sentiment analysis has the potential to augment psychological investigations/experiments with data extracted from natural language text.
-    Political: In politics, sentiment analysis has found numerous applications and possibilities: for analysing trends, identifying ideological bias, targeting messages, gauging reactions, evaluation of public/voters' opinions and views/discussions of policy. And is used by some data brokers, to serve politicians. The Cambridge Analytica case being an example.
+* Sociological: Diffusion of innovations is a theory that seeks to explain how, why, and at what rate new ideas and technology spread. Opinions and reactions to ideas are relevant to adoption of new ideas. Analysing sentiment reactions on blogs can give insights into this process.
+* Psychological: Sentiment analysis has the potential to augment psychological investigations/experiments with data extracted from natural language text.
+* Political: In politics, sentiment analysis has found numerous applications and possibilities: for analysing trends, identifying ideological bias, targeting messages, gauging reactions, evaluation of public/voters' opinions and views/discussions of policy. And is used by some data brokers, to serve politicians. The Cambridge Analytica case being an example.
 
 ### Identifying political preferences and tendencies
 
