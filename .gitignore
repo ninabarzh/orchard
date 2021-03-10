@@ -162,7 +162,6 @@ bld/
 [Ll]ogs/
 
 # VSCode
-.vscode
 .idea
 
 # Visual Studio 2015/2017 cache/options directory
