@@ -1,2 +1,3 @@
 # orchard
-Not a real project, just some possibly reuseful python cli scripts. For fun and starting off simple.
+
+Every seed contains an entire orchard, and the micro world is essential to make it happen. 
