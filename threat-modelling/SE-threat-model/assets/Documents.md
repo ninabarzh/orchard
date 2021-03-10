@@ -1,0 +1,3 @@
+# Documents
+
+As users continue to create massive volumes of content, it is easy for sensitive data, including customer social security numbers, credit card numbers and other proprietary data to become stored on the network. Additionally, users can easily create mini-archives of personal storage, and store them on the network without anyone knowing they exist. Sensitive content in documents poses a hidden liability that could cause future pain and expense when litigation or [GDPR compliance issues](../threats/GDPR-non-compliance.md) arise, not to mention the harm that can be done to document providers. 
