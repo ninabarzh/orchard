@@ -1,8 +1,8 @@
 [Work in progress]
 
-Pentesting is not a linear process, more like a spontaneous choreography, a sequence of chosen movements as the dance unfolds. It is also highly [context and purpose dependent](https://github.com/tymyrddin/trees/wiki/Purpose-of-pentesting).
+Pentesting is not a linear process, more like a spontaneous choreography, a sequence of chosen movements as the dance unfolds. It is also highly [context and purpose dependent](https://github.com/tymyrddin/orchard/wiki/Purpose-of-pentesting).
 
-Attack Trees (based on security research) represent often used movements and can help organise our thoughts around [which tools and scripts may be reuseful for which type of pentesting](https://github.com/tymyrddin/trees/wiki/Types-of-pentesting) and/or various audits (and which mitigations we may need for our own development efforts).
+Attack Trees (based on security research) represent often used movements and can help organise our thoughts around [which tools and scripts may be reuseful for which type of pentesting](https://github.com/tymyrddin/orchard/wiki/Types-of-pentesting) and/or various audits (and which mitigations we may need for our own development efforts).
 
 ## Attack trees
 
