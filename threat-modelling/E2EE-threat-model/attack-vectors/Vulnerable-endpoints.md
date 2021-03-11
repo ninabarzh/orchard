@@ -1,6 +1,6 @@
 # Vulnerable endpoints
 
-An [endpoint](../../vulnerable-endpoints) is a computing device that communicates back and forth with a network to which is it connected, like desktops, laptops, smartphones, tablets, servers, workstations, printers, and is not limited to physical devices, and includes, for example, browsers and web applications. They all represent key vulnerable points of entry for adversaries.
+An [endpoint](../../vulnerable-endpoints/assets) is a computing device that communicates back and forth with a network to which is it connected, like desktops, laptops, smartphones, tablets, servers, workstations, printers, and is not limited to physical devices, and includes, for example, browsers and web applications. They all represent key vulnerable points of entry for adversaries.
 
 Meanwhile the internet keeps growing and we have an E2EE hype. Now many people suffer from the assumption that when using encryption, their data is secure. But most applications that provide an end-to-end encryption service store the encryption keys digitally inside the application. In some cases keys are stored on a server, or even in the cloud, and some applications give the client control and keys are stored on the devices. Vulnerable endpoints are a potential risk of data compromise because they can be accessed from the outside without permission or knowledge by those responsible.
 
