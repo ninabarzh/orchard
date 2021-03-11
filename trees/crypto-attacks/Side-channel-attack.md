@@ -16,5 +16,4 @@ A side-channel attack (SCA) is a security exploit that involves collecting infor
     5 Collect information about hard disk activity by using a audio/visual recorder (optical side-channel attack) (OR)
     6 Monitor the electromagnetic fields produced by data as it moves through the computer (Van Eck phreaking)
 
-These types of attacks are probably not happening on a daily basis, but is in the context of activists using a more secure infrastructure with [E2EE](https://github.com/tymyrddin/trees/wiki/E2EE-threat-model.md) and state adversaries or corporate adversaries with state support (considered to have the resources and knowledge), increasingly a possibility.
 
