@@ -16,9 +16,9 @@ SSL version flaws, use of weak ciphers (less than 128 bit), certificate keys (le
 * The Browser Exploit Against SSL/TLS (BEAST) attack involves determining the Initialisation Vector utilised as part of the encryption process but is limited in that it is only possible to retrieve small pieces of data, such as session tokens. The attacker must have a man-in-the-middle a connection and there must be a way of generating additional traffic (SOP bypass or cross-site scripting, requires an older browser). If session tokens are protected against XSS through HttpOnly cookies then an adversary can use BEAST to gain access to the tokens.
 * The Compression Ratio Info-leak Made Easy (CRIME) requires a man-in-the-middle connection and the ability to repeatedly inject predictable data whilst monitoring the resulting encrypted traffic, for example by cross-site scripting attacks. For CRIME to be possible the client and server must support compression of the request before encryption. Both DEFLATE and SPDY (compression algorithms) are vulnerable.
 * The Browser Reconnaissance and Exfiltration via Adaptive Compression of Hypertext (BREACH) vulnerability targets HTTP compression, not TLS compression. An adversary can force the victim’s browser to connect to a TLS-enabled third-party website after which she can monitor the traffic between the victim and the server using a man-in-the-middle attack. A vulnerable web application must satisfy the following conditions for the attack to work:
-* * Be served from a server that uses HTTP-level compression
-* * Reflect user input in HTTP response bodies
-* * Reflect a secret (such as a CSRF token) in HTTP response bodies (therefore values in HTTP headers, such as cookies, are safe from this attack).
+    * Be served from a server that uses HTTP-level compression
+    * Reflect user input in HTTP response bodies
+    * Reflect a secret (such as a CSRF token) in HTTP response bodies (therefore values in HTTP headers, such as cookies, are safe from this attack).
 * Heartbleed was a critical vulnerability that was found in the heartbeat extension of the popular OpenSSL library.
 
 ## Resources
