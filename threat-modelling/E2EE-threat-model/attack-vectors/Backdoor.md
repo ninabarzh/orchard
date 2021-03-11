@@ -1,0 +1,7 @@
+# Backdoor
+
+Very risky stuff. Backdoors can be installed by software or hardware makers as a deliberate means of gaining access to their technology after the fact. Backdoors of the non-criminal variety are useful for helping customers who are hopelessly locked out of their devices or for troubleshooting and resolving software issues. And [governments all over the world](../adversaries/E2EE-adversary.md) discuss backdoors in software and/or hardware to circumvent encryption for the purpose of “protecting people against terrorism”.
+
+Meanwhile privacy activists, cryptographers and security people keep warning against backdoors. Backdoors in products or algorithms, also create doors with keyholes that criminals (and terrorists) may find a way to pick. Backdoors, both existing and newly created after having gained access in some other way, enable hackers to gain and/or maintain command and control (C&C) of a target. Hackers can use such backdoors to monitor the system, read messages, install malicious software (malware) files or programs, modify code or detect files and come back and gain further system and/or data access.
+
+And Open source doesn’t automatically mean that somebody actually checked the code for backdoors. Security analyses and audits have to have been done. And even if done, a backdoor can be really hard to find for different reasons, depending on how it was created. 
