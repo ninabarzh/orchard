@@ -4,7 +4,7 @@ Many sites now use HTTPS by default, and millions of TLS certificates are curren
 
 * Some websites implement HTTPS but do not implement an HSTS policy (and HSTS Preloading) and can be attacked simply by hijacking an HTTP connection that is destined for it. This is an extremely feasible attack vector, as there are many ways in which a user can end up connecting via HTTP instead of HTTPS.
     * When not explicitly typing in the protocol string, some older browsers still default to HTTP.
-    * Most secure websites also run an HTTP service to redirect users to the corresponding HTTPS site. A [SSLStrip attack](/../../../trees/application-hacking/SSL-stripping.md) transparently hijacks HTTP traffic on a network and converts HTTPS links and redirects to HTTP.
+    * Most secure websites also run an HTTP service to redirect users to the corresponding HTTPS site. A [SSLStrip attack](../../../trees/application-hacking/SSL-stripping.md) transparently hijacks HTTP traffic on a network and converts HTTPS links and redirects to HTTP.
 
 ## Mitigations
 
