@@ -4,9 +4,12 @@ With a [systematic analysis](https://github.com/tymyrddin/orchard/wiki/Profiling
 
 ### Examples
 
-* [E2EE Threat Modelling](E2EE-threat-model)
+(Hopefully) human-readable:
 * [De-Anonymisation Threat Modelling](DA-threat-model), an example of using threat modelling with a quite non-trivial adversary, namely an entire eco-system of players and an often forgotten target, the individual citizen.
 * [Search Engine Threat Modelling](SE-threat-model), an example of organising thoughts and connections for two targets, search engines and their users.
+
+Contains unreadable techno-babble:
+* [E2EE Threat Modelling](E2EE-threat-model)
 
 ## Problems or Suggestions
 
