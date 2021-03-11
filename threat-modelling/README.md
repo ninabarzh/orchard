@@ -5,7 +5,7 @@ With a [systematic analysis](https://github.com/tymyrddin/orchard/wiki/Profiling
 ### Examples
 
 (Hopefully) human-readable:
-* [Vulnerable endpoints](vulnerable-endpoints), an asset-based threat model on the foundation the building rests on. Very much a never ending work in progress ... only seemingly, until we'll come to the end of material resources on this finite planet.
+* [Vulnerable endpoints](vulnerable-endpoints), an asset-based threat model on the foundation the building rests on. Very much a never ending work in progress, until we'll come to the end of material resources on this finite planet.
 * [De-Anonymisation Threat Modelling](DA-threat-model), an example of using attacker-based threat modelling with a quite non-trivial adversary, namely an entire eco-system of players and an often forgotten target, the individual citizen.
 * [Search Engine Threat Modelling](SE-threat-model), an example of organising thoughts and connections for two targets, search engines and their users.
 
