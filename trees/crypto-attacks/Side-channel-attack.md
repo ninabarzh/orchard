@@ -16,4 +16,13 @@ A side-channel attack (SCA) is a security exploit that involves collecting infor
     5 Collect information about hard disk activity by using a audio/visual recorder (optical side-channel attack) (OR)
     6 Monitor the electromagnetic fields produced by data as it moves through the computer (Van Eck phreaking)
 
+## Mitigations
+
+# Development
+* Randomise the order of operations on data within the system to make it more difficult for an adversary.
+* Increase the amount of noise in a channel.
+
+# Individuals
+* Faraday cages can also be used to reduce electromagnetic leaks. This is akin to wearing aluminium hats.
+
 
