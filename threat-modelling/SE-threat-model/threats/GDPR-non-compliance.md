@@ -46,8 +46,8 @@ An important one. The ability to rectify incomplete or incorrect data is importa
 Users have the right to request that their information is deleted, if there is no longer a reason for it to be stored. This isn’t a complete “right to be forgotten”, but it does provide protection from outdated information staying on the internet. The right to erasure leads to allowing individuals to have information, videos, or photographs about themselves deleted from certain internet records so that they cannot be found by search engines. The right is not absolute and only applies in certain circumstances, but it is not the only way in which the GDPR places an obligation on controllers to consider whether to delete personal data.
 
 * In the case of search engines, individuals have the right to have their personal data erased if
-* * a search engine is relying on legitimate interests as its basis for processing, the individual objects to the processing of their data, and there is no overriding legitimate interest to continue this processing.
-* * processing the personal data is done for direct marketing purposes and the individual objects to that processing.
+    * a search engine is relying on legitimate interests as its basis for processing, the individual objects to the processing of their data, and there is no overriding legitimate interest to continue this processing.
+    * processing the personal data is done for direct marketing purposes and the individual objects to that processing.
 * The GDPR requires that controllers can accurately and completely identify a person’s information across the entire organisation so that the information of a natural person can be fully removed when they want the information erased. In which case a NLP based private search engine can be quite handy to have.
 
 ### Right to restrict processing

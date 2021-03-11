@@ -5,7 +5,7 @@ Search terms used to query web search engines contain significant amounts of sen
 * The most impactful attack is based on the common flaw of simply not encrypting sensitive data, or when encrypting is employed, using weak key generation and management, weak algorithms, protocol and ciphers, especially for password hashing storage techniques. For data in transit, server side weaknesses are easy to detect, but hard for data at rest. Failure to encrypt (properly) can compromise all data which require protection as defined by laws or regulations such as the EU GDPR or local privacy laws.
 * A usual suspect can monitor network traffic, for example at an insecure wireless network, downgrade connection from HTTPS to HTTP, intercept requests, and steal the user's session cookie. The attacker can then replay this cookie and can hijack a user's (authenticated) session, accessing or modifying the user's private data or alter all transported data. This means he or she can learn all of the queries without any threat of retribution.
 
-See attack trees in [Network attacks](https://github.com/tymyrddin/trees/tree/main/network-attacks) and [Application hacking](https://github.com/tymyrddin/trees/tree/main/application-hacking)
+See attack trees in [Network attacks](../../../trees/network-attacks) and [Application hacking](../../../trees/application-hacking)
 
 ## Known mitigations
 
