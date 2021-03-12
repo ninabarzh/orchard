@@ -12,22 +12,6 @@ Gather as much information as possible on the target by using public sources.
 * Learn more about the organisation and people on finder sites and check public records
 * Domain Naming Systems (DNS) is another publicly available system that can provide a wealth of information regarding the IP addressing and naming strategies of virtually any organisation or company connected to the Internet. 
 
-## Tools
+# Resources
 
-* Google
-* Duckduckgo
-* Ixquick (Startpage)
-* Binsearch
-* Shodan
-* [Check user names](https://checkusernames.com/)
-* [PeekYou](https://www.peekyou.com/)
-* [Lullar](https://lullar-com-3.appspot.com/)
-* [Peoplesearch.net: Europe Free Public Records](https://publicrecords.searchsystems.net/Other_Nations/Europe_Free_Public_Records/)
-* [OpenCorporate](https://opencorporates.com/)
-
-## Notes
-
-* Use multiple search engines as they may generate different results depending on when they crawled content and their algorithms. Besides Google and google hacking, try Bing and Baidu for example. 
-* Both Duck Duck Go and ixquick (startpage) provide reduced information leakage about the tester. 
-
-
+* [Gathering public information][../../resources/cheatsheets/Gathering-public-information.md]

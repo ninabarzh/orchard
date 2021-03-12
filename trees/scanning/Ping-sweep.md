@@ -18,49 +18,5 @@
 |`SYN`|`RST`|-|Port is closed, host is up|
 |`SYN`|Nothing|-|Port is blocked by firewall, host is down, or there is no host at that IP address|
 
-## Tools
 
-* [Netenum](https://github.com/redcode-labs/Netenum)  
-* [NMap](https://nmap.org/) can also be used for a simple ping sweep, but is a little bit more talkative.
-
-## Examples
-
-<img align="left" src="../assets/images/warning.png">_These are examples for demystification. Do not scan any devices that you do not have explicit permission to scan. If you do not own the devices I strongly recommend you get that permission in writing._   
-<br/>
-<br/>
-`netenum` performs a basic ICMP ping and then replies with only the reachable targets. It requires a timeout to be specified. If that is not set, it delivers a CR-delimited dump of input-addresses. Below a time-out value of 5 is used for a CIDR of 192.168.1.1/24 
-
-```
-# netenum 192.168.1.1/24 5
-192.168.1.1
-192.168.1.10
-192.168.1.13
-192.168.1.250
-```
-
-`nmap` can also be used for a simple ping sweep, but is a little bit more talkative. The `-sP` means Perform a Ping Only Scan
-
-```
-# nmap -sP 192.168.1.1/24
-
-Starting Nmap 7.60 ( https://nmap.org ) at 2018-03-24 11:32 EDT
-Nmap scan report for 192.168.1.0
-Host is up (0.00018s latency).
-Nmap scan report for 192.168.1.1
-Host is up (0.0039s latency).
-Nmap scan report for 192.168.1.2
-Host is up (0.00027s latency).
-
-[snip]
-
-Nmap scan report for pc2.home (192.168.1.10)
-Host is up (0.027s latency).
-Nmap scan report for 192.168.1.11
-Host is up (0.00044s latency).
-Nmap scan report for pc1.home (192.168.1.12)
-Host is up (0.00021s latency).
-Nmap scan report for pc19.home (192.168.1.13)
-
-[snip]
-```
 
