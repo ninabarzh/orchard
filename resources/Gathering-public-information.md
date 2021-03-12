@@ -21,6 +21,10 @@
 ### Business information
 * [OpenCorporate](https://opencorporates.com/)
 
+### Data about websites
+
+* [netcraft](https://www.netcraft.com/)
+
 
 
 
