@@ -14,4 +14,4 @@ Gather as much information as possible on the target by using public sources.
 
 ## Resources
 
-* [Gathering public information][../../resources/cheatsheets/Gathering-public-information.md]
+* [Gathering public information](../../resources/cheatsheets/Gathering-public-information.md)
