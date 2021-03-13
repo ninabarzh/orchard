@@ -178,7 +178,7 @@ Perform a Fast Scan
 
 Scan Specific Ports
 
-nmap -p [port(s)] [target]
+    nmap -p [port(s)] [target]
 
 Scan Ports by Name
 
@@ -273,6 +273,7 @@ Minimum Scan Delay
     nmap --scan-delay [time] [target]
 
 Maximum Scan Delay
+
     nmap --max-scan-delay [time] [target]
 
 Minimum Packet Rate
