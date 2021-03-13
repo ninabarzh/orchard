@@ -15,43 +15,43 @@
 ### Basic scanning techniques
 Scan a Single Target
 
-    nmap [target]
+    # nmap [target]
 
 Scan Multiple Targets
 
-    nmap [target1, target2, etc]
+    # nmap [target1, target2, etc]
 
 Scan a List of Targets
 
-    nmap -iL [list.txt]
+    # nmap -iL [list.txt]
 
 Scan a Range of Hosts
 
-    nmap [range of ip addresses]
+    # nmap [range of ip addresses]
 
 Scan an Entire Subnet
 
-    nmap [ip address/cdir]
+    # nmap [ip address/cdir]
 
 Scan Random Hosts
 
-    nmap -iR [number]
+    # nmap -iR [number]
 
 Excluding Targets from a Scan
 
-    nmap [targets] --exclude [targets]
+    # nmap [targets] --exclude [targets]
 
 Excluding Targets Using a List
 
-    nmap [targets] --excludefile [list.txt]
+    # nmap [targets] --excludefile [list.txt]
 
 Perform an Aggressive Scan
 
-    nmap -A [target]
+    # nmap -A [target]
 
 Scan an IPv6 Target
 
-    nmap -6 [target]
+    # nmap -6 [target]
 
 ...
 
@@ -59,377 +59,386 @@ Scan an IPv6 Target
 
 Perform a Ping Only Scan
 
-    nmap -sP [target]
+    # nmap -sP [target]
 
 Don’t Ping
 
-    nmap -PN [target]
+    # nmap -PN [target]
 
 TCP SYN Ping
 
-    nmap -PS [target]
+    # nmap -PS [target]
 
 TCP ACK Ping
 
-    nmap -PA [target]
+    # nmap -PA [target]
 
 UDP Ping
 
-    nmap -PU [target]
+    # nmap -PU [target]
 
 SCTP INIT Ping
 
-    nmap -PY [target]
+    # nmap -PY [target]
 
 ICMP Echo Ping
 
-    nmap -PE [target]
+    # nmap -PE [target]
 
 ICMP Timestamp Ping
 
-    nmap -PP [target]
+    # nmap -PP [target]
 
 ICMP Address Mask Ping
 
-    nmap -PM [target]
+    # nmap -PM [target]
 
 IP Protocol Ping
-    nmap -PO [target]
+    # nmap -PO [target]
 
 ARP Ping
 
-    nmap -PR [target]
+    # nmap -PR [target]
 
 Traceroute
 
-    nmap --traceroute [target]
+    # nmap --traceroute [target]
 
 Force Reverse DNS Resolution
 
-    nmap -R [target]
+    # nmap -R [target]
 
 Disable Reverse DNS Resolution
 
-    nmap -n [target]
+    # nmap -n [target]
 
 Alternative DNS Lookup
 
-    nmap --system-dns [target]
+    # nmap --system-dns [target]
 
 Manually Specify DNS Server(s)
 
-    nmap --dns-servers [servers] [target]
+    # nmap --dns-servers [servers] [target]
 
 Create a Host List
 
-    nmap -sL [targets]
+    # nmap -sL [targets]
 
 # Advanced scanning functions
 
 TCP SYN Scan
 
-    nmap -sS [target]
+    # nmap -sS [target]
 
 TCP Connect Scan
 
-    nmap -sT [target]
+    # nmap -sT [target]
 
 UDP Scan
 
-    nmap -sU [target]
+    # nmap -sU [target]
 
 TCP NULL Scan
 
-    nmap -sN [target]
+    # nmap -sN [target]
 
 TCP FIN Scan
 
-    nmap -sF [target]
+    # nmap -sF [target]
 
 Xmas Scan
 
-    nmap -sX [target]
+    # nmap -sX [target]
 
 TCP ACK Scan
 
-    nmap -sA [target]
+    # nmap -sA [target]
 
 Custom TCP Scan
 
-    nmap --scanflags [flags] [target]
+    # nmap --scanflags [flags] [target]
 
 IP Protocol Scan
 
-    nmap -sO [target]
+    # nmap -sO [target]
 
 Send Raw Ethernet Packets
 
-    nmap --send-eth [target]
+    # nmap --send-eth [target]
 
 Send IP Packets
 
-    nmap --send-ip [target]
+    # nmap --send-ip [target]
 
 ### Port scanning options
 
 Perform a Fast Scan
 
-    nmap -F [target]
+    # nmap -F [target]
 
 Scan Specific Ports
 
-    nmap -p [port(s)] [target]
+    # nmap -p [port(s)] [target]
 
 Scan Ports by Name
 
-    nmap -p [port name(s)] [target]
+    # nmap -p [port name(s)] [target]
 
 Scan Ports by Protocol
 
-    nmap -sU -sT -p U:[ports],T:[ports] [target]
+    # nmap -sU -sT -p U:[ports],T:[ports] [target]
 
 Scan All Ports
 
-    nmap -p "*" [target]
+    # nmap -p "*" [target]
 
 Scan Top Ports
 
-    nmap --top-ports [number] [target]
+    # nmap --top-ports [number] [target]
 
 Perform a Sequential Port Scan
 
-    nmap -r [target]
+    # nmap -r [target]
 
 ### Version detection
 
 Operating System Detection
 
-    nmap -O [target]
+    # nmap -O [target]
 
 Submit  TCP/IP Fingerprints
 
-    www.nmap.org/submit/
+    # www.nmap.org/submit/
 
 Attempt to Guess an Unknown OS
 
-    nmap -O --osscan-guess [target]
+    # nmap -O --osscan-guess [target]
 
 Service Version Detection
 
-    nmap -sV  [target]
+    # nmap -sV  [target]
 
 Troubleshooting Version Scans
 
-    nmap -sV --version-trace [target]
+    # nmap -sV --version-trace [target]
 
 Perform a RPC Scan
 
-    nmap -sR [target]
+    # nmap -sR [target]
 
 ### Timing options
 
 Timing Templates
 
-    nmap -T[0-5] [target]
+    # nmap -T[0-5] [target]
+
+|Template number 	|Template name 	|Description |
+| --- | --- | --- | 
+|0 	|Paranoid 	|Used for IDS evasion. One port scanned at a time, with 5 minutes between probes|
+|1 	|Sneaky 	|Used for IDS evasion. One port scanned at a time, with 15 seconds between probes|
+|2 	|Polite 	|Uses less bandwith and resources. One port scanned at a time, with 0.4 seconds between probes|
+|3 	|Normal 	|Standard scan. Works locally and on the internet|
+|4 	|Aggressive 	|Fast scan. Parallel processing, with 10 milliseconds between probes|
+|5 	|Insane 	|Sacrificing accuracy for speed. Parallel processing, with 5ms minutes between probes|
 
 Set the Packet TTL
 
-    nmap --ttl [time] [target]
+    # nmap --ttl [time] [target]
 
 Minimum # of Parallel Operations
 
-    nmap --min-parallelism [number] [target]
+    # nmap --min-parallelism [number] [target]
 
 Maximum #  of Parallel Operations
 
-    nmap --max-parallelism [number] [target]
+    # nmap --max-parallelism [number] [target]
 
 Minimum Host Group Size
 
-    nmap --min-hostgroup [number] [targets]
+    # nmap --min-hostgroup [number] [targets]
 
 Maximum Host Group Size
 
-    nmap --max-hostgroup [number] [targets]
+    # nmap --max-hostgroup [number] [targets]
 
 Maximum RTT Timeout
 
-    nmap --initial-rtt-timeout [time] [target]
+    # nmap --initial-rtt-timeout [time] [target]
 
 Initial RTT Timeout
 
-    nmap --max-rtt-timeout [TTL] [target]
+    # nmap --max-rtt-timeout [TTL] [target]
 
 Maximum Retries
 
-    nmap --max-retries [number] [target]
+    # nmap --max-retries [number] [target]
 
 Host Timeout
 
-    nmap --host-timeout [time] [target]
+    # nmap --host-timeout [time] [target]
 
 Minimum Scan Delay
 
-    nmap --scan-delay [time] [target]
+    # nmap --scan-delay [time] [target]
 
 Maximum Scan Delay
 
-    nmap --max-scan-delay [time] [target]
+    # nmap --max-scan-delay [time] [target]
 
 Minimum Packet Rate
 
-    nmap --min-rate [number] [target]
+    # nmap --min-rate [number] [target]
 
 Maximum Packet Rate
 
-    nmap --max-rate [number] [target]
+    # nmap --max-rate [number] [target]
 
 Defeat Reset Rate Limits
 
-    nmap --defeat-rst-ratelimit [target]
+    # nmap --defeat-rst-ratelimit [target]
 
 ### Firewall evasion techniques
 
 Fragment Packets
 
-    nmap -f [target]
+    # nmap -f [target]
 
 Specify a Specific MTU
 
-    nmap --mtu [MTU] [target]
+    # nmap --mtu [MTU] [target]
 
 Use a Decoy
 
-    nmap -D RND:[number] [target]
+    # nmap -D RND:[number] [target]
 
 Idle Zombie Scan
 
-    nmap -sI [zombie] [target]
+    # nmap -sI [zombie] [target]
 
 Manually Specify a Source Port
 
-    nmap --source-port [port] [target]
+    # nmap --source-port [port] [target]
 
 Append Random Data
 
-    nmap --data-length [size] [target]
+    # nmap --data-length [size] [target]
 
 Randomize Target Scan Order
 
-    nmap --randomize-hosts [target]
+    # nmap --randomize-hosts [target]
 
 Spoof MAC Address
 
-    nmap --spoof-mac [MAC|0|vendor] [target]
+    # nmap --spoof-mac [MAC|0|vendor] [target]
 
 Send Bad Checksums
 
-    nmap --badsum [target]
+    # nmap --badsum [target]
 
 ### Output options
 
 Save Output to a Text File
 
-    nmap -oN [scan.txt] [target]
+    # nmap -oN [scan.txt] [target]
 
 Save Output to a XML File
 
-    nmap -oX [scan.xml] [target]
+    # nmap -oX [scan.xml] [target]
 
 Grepable Output
 
-    nmap -oG [scan.txt] [targets]
+    # nmap -oG [scan.txt] [targets]
 
 Output All Supported File Types
 
-    nmap -oA [path/filename] [target]
+    # nmap -oA [path/filename] [target]
 
 Periodically Display Statistics
 
-    nmap --stats-every [time] [target]
+    # nmap --stats-every [time] [target]
 
 133t Output
 
-    nmap -oS [scan.txt] [target]
+    # nmap -oS [scan.txt] [target]
 
 ### Troubleshooting and debugging
 
 Getting Help
 
-    nmap -h
+    # nmap -h
 
 Display Nmap Version
 
-    nmap -V
+    # nmap -V
 
 Verbose Output
 
-    nmap -v [target]
+    # nmap -v [target]
 
 Debugging
 
-    nmap -d [target]
+    # nmap -d [target]
 
 Display Port State Reason
 
-    nmap --reason [target]
+    # nmap --reason [target]
 
 Only Display Open Ports
 
-    nmap --open [target]
+    # nmap --open [target]
 
 Trace Packets
 
-    nmap --packet-trace [target]
+    # nmap --packet-trace [target]
 
 Display Host Networking
 
-    nmap --iflist
+    # nmap --iflist
 
 Specify a Network  Interface
 
-    nmap -e [interface] [target]
+    # nmap -e [interface] [target]
 
 ### Nmap scripting engine
 
 Execute Individual Scripts
 
-    nmap --script [script.nse] [target]
+    # nmap --script [script.nse] [target]
 
 Execute Multiple Scripts
 
-    nmap --script [expression] [target]
+    # nmap --script [expression] [target]
 
 Script Categories
 
-    all, auth, default, discovery, external, intrusive, malware, safe, vuln
+    # all, auth, default, discovery, external, intrusive, malware, safe, vuln
 
 Execute Scripts by Category
 
-    nmap --script [category] [target]
+    # nmap --script [category] [target]
 
 Execute Multiple Script Categories
 
-    nmap --script [category1,category2,etc]
+    # nmap --script [category1,category2,etc]
 
 Troubleshoot Scripts
 
-    nmap --script [script] --script-trace [target]
+    # nmap --script [script] --script-trace [target]
 
 Update the Script Database
 
-    nmap --script-updatedb
+    # nmap --script-updatedb
 
 ### Ndiff
 
 Comparison Using Ndiff
 
-    ndiff [scan1.xml] [scan2.xml]
+    # ndiff [scan1.xml] [scan2.xml]
 
 Ndiff Verbose Mode
 
-    ndiff -v [scan1.xml] [scan2.xml]
+    # ndiff -v [scan1.xml] [scan2.xml]
 
 XML Output Mode
 
-    ndiff --xml [scan1.xml] [scan2.xml]
+    # ndiff --xml [scan1.xml] [scan2.xml]

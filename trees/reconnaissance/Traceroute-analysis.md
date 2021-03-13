@@ -4,4 +4,4 @@ Use traceroute to perform a detailed analysis of the network paths. The tool wil
 
 ## Resources
 
-* [Traceroute CheatSheet](../../resources/cheatsheets/Traceroute-CheatSheet.md)
+* [Traceroute cheatsheet](../../resources/cheatsheets/Traceroute-cheatsheet.md)

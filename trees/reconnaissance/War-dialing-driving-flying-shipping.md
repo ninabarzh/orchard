@@ -11,7 +11,7 @@ New variations of war-dialing are
 
 ## Resources
 
-* [WarDriving links](../../resources/cheatsheets/WarDriving-Links.md)
+* [Wardriving links](../../resources/cheatsheets/Wardriving-links.md)
 
 ## Notes
 

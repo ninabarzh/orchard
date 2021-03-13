@@ -16,15 +16,8 @@ Never use a connect scan (-sT), which establishes a full connection to a port, i
 
 Using nmap's timing templates:
 ```
-# nmap -T[0-5] [target]
+
 ```
 
-|Template number 	|Template name 	|Description |
-| --- | --- | --- | 
-|0 	|Paranoid 	|Used for IDS evasion. One port scanned at a time, with 5 minutes between probes|
-|1 	|Sneaky 	|Used for IDS evasion. One port scanned at a time, with 15 seconds between probes|
-|2 	|Polite 	|Uses less bandwith and resources. One port scanned at a time, with 0.4 seconds between probes|
-|3 	|Normal 	|Standard scan. Works locally and on the internet|
-|4 	|Aggressive 	|Fast scan. Parallel processing, with 10 milliseconds between probes|
-|5 	|Insane 	|Sacrificing accuracy for speed. Parallel processing, with 5ms minutes between probes|
+
 
