@@ -196,7 +196,7 @@ OS detection:
     OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 3 IP addresses (3 hosts up) scanned in 41.76 seconds
 
-OS services TCP:
+OS services TCP ports 21-25,80,139,8080:
 
     # nmap -O -sV -T4 -Pn -p T:21-25,80,139,8080 -oG OS_Service_Detect -iL LiveHosts.txt
 
@@ -260,7 +260,7 @@ OS services TCP:
     OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 3 IP addresses (3 hosts up) scanned in 10.16 seconds
     
-OS services UDP:                                                                         
+OS services UDP: 53,111,137                                                                        
 
     # nmap -O -sU -T4 -Pn -p U:53,111,137 -oG OS_Service_Detect -iL LiveHosts.txt
 
