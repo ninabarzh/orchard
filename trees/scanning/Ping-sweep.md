@@ -5,6 +5,14 @@
     1 Send out ICMP echo requests to every system on a particular 
     network or subset of a network to determine which hosts are up.
 
+## Resources
+
+* * [Nmap cheatsheet][../../resources/cheatsheets/Nmap-cheatsheet.md]
+
+## Examples
+
+    # nmap -sn -T4 -oG Discovery.gnmap 192.168.1.1/24
+    # grep “Status: Up” Discovery.gnmap | cut -f 2 -d ' ' > LiveHosts.txt
 
 ## Notes
 
