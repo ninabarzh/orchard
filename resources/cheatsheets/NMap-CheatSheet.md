@@ -14,15 +14,19 @@
 
 ### Basic scanning techniques
 Scan a Single Target
+
     nmap [target]
 
 Scan Multiple Targets
+
     nmap [target1, target2, etc]
 
 Scan a List of Targets
+
     nmap -iL [list.txt]
 
 Scan a Range of Hosts
+
     nmap [range of ip addresses]
 
 Scan an Entire Subnet
