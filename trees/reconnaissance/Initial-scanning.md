@@ -8,3 +8,6 @@ Research network architecture, defence mechanisms, operating systems and applica
 * Know, learn or research the vulnerabilities of OSs and the applications they run.
 * Make a map of the hosts, servers, and weaknesses to exploit in the future. Keep adding to the map as more is discovered later in the process.
 
+# Resources
+
+* []()
