@@ -7,7 +7,7 @@
 
 ## Resources
 
-* * [Nmap cheatsheet](../../resources/cheatsheets/Nmap-cheatsheet.md)
+* [Nmap cheatsheet](../../resources/cheatsheets/Nmap-cheatsheet.md)
 
 ## Examples
 
