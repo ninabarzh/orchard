@@ -16,5 +16,10 @@ Service and OS detection use different methods to determine the operating system
 * [Unicornscan cheatsheet](../../resources/cheatsheets/Unicornscan-cheatsheet.md)
 * [IKE-scan cheatsheet](../../IKE-scan-cheatsheet.md)
 
+## Examples
+
+    # nmap -sn -T4 -oG Discovery.gnmap 192.168.1.1/24
+    # grep “Status: Up” Discovery.gnmap | cut -f 2 -d ‘ ‘ > LiveHosts.txt
+
 
 
