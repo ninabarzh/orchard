@@ -5,19 +5,8 @@ Never use a connect scan (-sT), which establishes a full connection to a port, i
 * Use a stealthy port-scanning method with nmap, such as a TCP SYN scan (sometimes called a half-open scan). It is not only stealthy, it is also lighter on both systems, source and target. 
 * Mask your IP from the target (Don't expect to find possibilities for either of these two all the time, but do keep looking, especially among older systems not offering useful services.):
     * Use an an FTP bounce scan if possible. Some ftp servers feature allowing anonymous users to proxy connections to other systems. If you find an anonymous ftp server during enumeration, or you know of one to which you have login credentials, try using the -b option with user:pass@server:ftpport. If the server does not require authentication, you can skip the user:pass and if it is running on the standard port you can also leave out the ftpport part. This only works on some ftp servers. Many ftp servers today have this option disabled (by default). 
-    * Idle scan gives a similar result but uses a different type of scanning. If you can identify an intermediate machine (a zombie) with low traffic and predictable fragment identification values (IP ID) you can send spoofed packets to your target, with the source set to the zombie with -sI zombiehost:port. An IDS will see the idle scan target as the system doing the scanning. If the idle target is a by your target trusted machine that can bypass host-based access control lists, jackpot!
+    * Idle scan gives a similar result but uses a different type of scanning. If you can identify an intermediate machine (a zombie) with low traffic and predictable fragment identification values (IP ID) you can send spoofed packets to your target, with the source set to the zombie with <code>-sI zombiehost:port</code>. An IDS will see the idle scan target as the system doing the scanning. If the idle target is a by your target trusted machine that can bypass host-based access control lists, jackpot!
 
- 
-## Examples
-
-<img align="left" src="../assets/images/warning.png">_These are examples for demystification. Do not scan any devices that you do not have explicit permission to scan. If you do not own the devices I strongly recommend you get that permission in writing._   
-<br/>
-<br/>
-
-Using nmap's timing templates:
-```
-
-```
 
 
 
