@@ -10,7 +10,7 @@ Service and OS detection use different methods to determine the operating system
 
 ## Resources
 
-* [Nmap cheatsheet][../../resources/cheatsheets/Nmap-cheatsheet.md]
+* [Nmap cheatsheet](../../resources/cheatsheets/Nmap-cheatsheet.md)
 * [Nessus](../../resources/cheatsheets/Nessus-cheatsheet.md)
 * [Metasploit cheatsheet](../../resources/cheatsheets/Metasploit-cheatsheet.pdf)
 * [Unicornscan cheatsheet](../../resources/cheatsheets/Unicornscan-cheatsheet.md)
