@@ -1,8 +1,16 @@
 # NMap CheatSheet
 
-* Basic scanning techniques
-* Discovery options
+* [Basic scanning techniques](#Basic scanning techniques)
+* [Discovery options](#Discovery options)
 * [Advanced scanning functions](#Advanced-scanning-functions)
+* [Port scanning options](#Port-scanning-options)
+* [Version detection](#Version-detection)
+* [Timing options](#Timing-options)
+* [Firewall evasion techniques](#Firewall-evasion-techniques)
+* [Output options](#Output options)
+* [Troubleshooting and debugging](#Troubleshooting-and-debugging)
+* [Nmap scripting engine](#Nmap-scripting-engine)
+* [Ndiff](#Ndiff)
 
 ### Basic scanning techniques
 Scan a Single Target
@@ -125,7 +133,7 @@ Send Raw Ethernet Packets
 Send IP Packets
     nmap --send-ip [target]
 
-### Port Scanning Options
+### Port scanning options
 
 Perform a Fast Scan
     nmap -F [target]
@@ -148,7 +156,7 @@ Scan Top Ports
 Perform a Sequential Port Scan
     nmap -r [target]
 
-### Version Detection
+### Version detection
 
 Operating System Detection
     nmap -O [target]
@@ -168,7 +176,7 @@ Troubleshooting Version Scans
 Perform a RPC Scan
     nmap -sR [target]
 
-### Timing Options
+### Timing options
 
 Timing Templates
     nmap -T[0-5] [target]
@@ -215,7 +223,7 @@ Maximum Packet Rate
 Defeat Reset Rate Limits
     nmap --defeat-rst-ratelimit [target]
 
-### Firewall Evasion Techniques
+### Firewall evasion techniques
 
 Fragment Packets
     nmap -f [target]
@@ -244,7 +252,7 @@ Spoof MAC Address
 Send Bad Checksums
     nmap --badsum [target]
 
-### Output Options
+### Output options
 
 Save Output to a Text File
     nmap -oN [scan.txt] [target]
@@ -264,7 +272,7 @@ Periodically Display Statistics
 133t Output
     nmap -oS [scan.txt] [target]
 
-### Troubleshooting and Debugging
+### Troubleshooting and debugging
 
 Getting Help
     nmap -h
@@ -293,7 +301,7 @@ Display Host Networking
 Specify a Network  Interface
     nmap -e [interface] [target]
 
-### Nmap Scripting Engine
+### Nmap scripting engine
 
 Execute Individual Scripts
     nmap --script [script.nse] [target]
