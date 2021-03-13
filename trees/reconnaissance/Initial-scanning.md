@@ -10,4 +10,4 @@ Research network architecture, defence mechanisms, operating systems and applica
 
 # Resources
 
-* []()
+* [NMap CheatSheet][../../resources/cheatsheets/NMap-CheatSheet.md]

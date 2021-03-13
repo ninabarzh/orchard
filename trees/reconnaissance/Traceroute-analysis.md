@@ -4,5 +4,4 @@ Use traceroute to perform a detailed analysis of the network paths. The tool wil
 
 ## Resources
 
-* []()
-* [Traceroute for Linux](http://traceroute.sourceforge.net/) is a package.
+* [Traceroute CheatSheet](../../resources/cheatsheets/Traceroute-CheatSheet.md)
