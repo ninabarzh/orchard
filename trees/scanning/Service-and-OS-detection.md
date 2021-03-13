@@ -4,7 +4,7 @@ Service and OS detection use different methods to determine the operating system
 
 ## Attack tree
 
-    1 Detect OS and services (AND)
+    1 Detect Operating Systems (AND)
     2 Detect services (AND)
     3 Grab banner
 
