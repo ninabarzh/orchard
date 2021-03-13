@@ -15,7 +15,7 @@ The most common type of scan in the discovery phase is a `SYN` scan (or SYN stea
 
 There are many different ports scanners that all operate in pretty much the same way. 
 
-* [Nmap cheatsheet][../../resources/cheatsheets/Nmap-cheatsheet.md]
+* [Nmap cheatsheet](../../resources/cheatsheets/Nmap-cheatsheet.md)
 * [Nessus](../../resources/cheatsheets/Nessus-cheatsheet.md)
 * [Metasploit cheatsheet](../../resources/cheatsheets/Metasploit-cheatsheet.pdf)
 * [Unicornscan cheatsheet](../../resources/cheatsheets/Unicornscan-cheatsheet.md)
