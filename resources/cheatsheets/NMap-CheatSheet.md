@@ -2,7 +2,7 @@
 
 * Basic scanning techniques
 * Discovery options
-* [Advanced scanning functions](#Advanced scanning functions)
+* [Advanced scanning functions](#Advanced-scanning-functions)
 
 ### Basic scanning techniques
 Scan a Single Target
