@@ -32,7 +32,7 @@ Gather as much information as possible on the target by using public sources. Cr
 * Define running services
 * Map the network
 
-As security and intrusion detection have gotten more sophisticated, so have the reconnaissance tools created and used by adversaries and network engineers. Most commonly used are [scanning and probing](../trees/scanning/README.md). The purpose of scanning during reconnaissance is to find what hosts are currently active on the network. With probing and adversary can gather additional information, such as the OS or applications running on those active hosts.
+As security and intrusion detection have gotten more sophisticated, so have the reconnaissance tools created and used by adversaries and network engineers. Most commonly used are [scanning and probing](../scanning/README.md). The purpose of scanning during reconnaissance is to find what hosts are currently active on the network. With probing and adversary can gather additional information, such as the OS or applications running on those active hosts.
 
 
 
