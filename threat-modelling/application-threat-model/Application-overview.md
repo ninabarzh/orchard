@@ -2,6 +2,8 @@
 
 Create an application overview. This step supports understanding the main functionalities and subjects of the application to be developed/under development. To understand the application more fully, describe the main components, usage scenarios, the roles of subjects and their interactions. For example:
 
+![](../assets/images/overview2.png?raw=true)
+
 * A user logs in
     * A user logs in through the web application with a username and password
     * The web application creates a web request and sends it to Access Decision Engine
@@ -17,7 +19,7 @@ Create an application overview. This step supports understanding the main functi
 * System administrators create, read, and modify roles and access policies for the created content
 * System administrators delete a user
 
-![](../assets/images/overview2.png?raw=true)
+
 
 
 

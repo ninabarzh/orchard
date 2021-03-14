@@ -4,7 +4,7 @@
 
 A repository for getting started with pentesting/red teaming/colourful teaming:
 
-* [Threat modelling](threat-modelling): With a systematic analysis of a probable attacker's profile, the most likely attack vectors, and the assets most desired by an attacker, pentesters and defenders can focus on what is most important to protect. 
+* [Threat modelling](threat-modelling): bottom-up and top-down trailblazing with intent to create human-readable threat modelling examples.
 * [Attack trees](trees): Puzzle pieces to jump start exploitation. The pieces may not belong in a specific context or for a particular puzzle. If so, we make new pieces and add those.
 * [Resources](resources): Reuseful scripts and cheatsheets. 
 
