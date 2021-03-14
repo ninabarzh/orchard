@@ -11,7 +11,7 @@ With a [systematic analysis](https://github.com/tymyrddin/orchard/wiki/Profiling
 ### Asset-centric
 * [Vulnerable endpoints](vulnerable-endpoints), an asset-based threat model on the foundation all of the buildings rest on. Very much a never ending work in progress, until we'll come to the end of material resources on this finite planet.
 
-### software-centric
+### Software-centric
 * The generalised-usual
 
 ## Problems or Suggestions
