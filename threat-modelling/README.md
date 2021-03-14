@@ -5,7 +5,7 @@ Mostly human-readable threat modelling examples (with links to more technical at
 ### Attacker-centric
 With a [systematic analysis](https://github.com/tymyrddin/orchard/wiki/Profiling-adversaries) of a probable attacker's profile, the most likely attack vectors, and the assets most desired by an attacker, defenders can focus on what is most important to protect. 
 * [De-Anonymisation Threat Modelling](DA-threat-model), an example of using attacker-based threat modelling with a quite non-trivial adversary, namely an entire eco-system of players and an often forgotten target, the individual citizen.
-* [Search Engine Threat Modelling](SE-threat-model), an example of organising thoughts and connections for two targets, search engines and their users.
+* [Search Engine Threat Modelling](SE-threat-model), an example of organising thoughts and connections of two targets, search engines and their users.
 * [E2EE Threat Modelling](E2EE-threat-model) on that most E2EE systems are secure against only the weakest passive adversaries, yet breakable not by cryptanalysis of underlying cryptographic algorithms but by flawed system designs and security assumptions.
 
 ### Asset-centric
