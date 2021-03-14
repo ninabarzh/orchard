@@ -17,7 +17,7 @@ Create an application overview. This step supports understanding the main functi
 * System administrators create, read, and modify roles and access policies for the created content
 * System administrators delete a user
 
-![[../assets/images/overview2.png]]
+![](../assets/images/overview2.png?raw=true)
 
 
 
