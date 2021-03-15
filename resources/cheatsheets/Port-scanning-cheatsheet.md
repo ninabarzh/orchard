@@ -179,4 +179,4 @@
 |31337	|Back Orifice|
 |33434+	|traceroute|
 
-* The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, searchable database of official and unofficial tcp/udp port[1] assignments, known vulnerabilities, trojans, applications use and more.
+* The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, searchable database of official and unofficial tcp/udp port assignments, known vulnerabilities, trojans, applications use and more.
