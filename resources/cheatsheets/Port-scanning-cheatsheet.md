@@ -1,12 +1,12 @@
 # Port scanning cheatsheet
 
-|TCP/UDP Ports	|Service Description|
-| :------------- | :----------: |
-|[7](https://www.speedguide.net/port.php?port=7)	|Echo|
-|19	|Chargen||
-||20-21	|FTP|
-|22	|SSH/SCP|
-|23	|Telnet|
+|TCP/UDP Ports  |Service Description  |Notes  |
+| :------------- | :----------: | :----------: |
+|[7](https://www.speedguide.net/port.php?port=7)	|Echo||
+|[19](https://www.speedguide.net/port.php?port=19)	|Chargen||
+|[20](https://www.speedguide.net/port.php?port=20)-[21](https://www.speedguide.net/port.php?port=21)	|FTP||
+|[22](https://www.speedguide.net/port.php?port=22)	|SSH/SCP||
+|[23](https://www.speedguide.net/port.php?port=23)	|Telnet||
 |25	|SMTP|
 |42	|WINS Replication|
 |43	|WHOIS|
