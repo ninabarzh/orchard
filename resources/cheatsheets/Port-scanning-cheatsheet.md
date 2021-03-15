@@ -1,6 +1,7 @@
 # Port scanning cheatsheet
 
 |TCP/UDP Ports	|Service Description|
+| :------------- | :----------: |
 |7	|Echo|
 |19	|Chargen||
 ||20-21	|FTP|
