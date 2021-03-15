@@ -2,7 +2,7 @@
 
 |TCP/UDP Ports	|Service Description|
 | :------------- | :----------: |
-|7	|Echo|
+|[7](https://www.speedguide.net/port.php?port=7)	|Echo|
 |19	|Chargen||
 ||20-21	|FTP|
 |22	|SSH/SCP|
