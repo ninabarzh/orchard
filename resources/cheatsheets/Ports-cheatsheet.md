@@ -2,12 +2,17 @@
 
 The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, searchable database of official and unofficial tcp/udp port assignments, known vulnerabilities, trojans, applications use and more.
 
+– System Ports (0-1023)
+– User Ports (1024-49151)
+– Dynamic / Private Ports (49152-65535)
+
 |TCP/UDP Ports  |Service Description  |Notes  |
 | :------------- | :----------: | :----------: |
+|0 | | Reserved port |
 |[7](https://www.speedguide.net/port.php?port=7)	|Echo||
 |[19](https://www.speedguide.net/port.php?port=19)	|Chargen||
-|[20](https://www.speedguide.net/port.php?port=20) - [21](https://www.speedguide.net/port.php?port=21)	|FTP||
-|[22](https://www.speedguide.net/port.php?port=22)	|SSH/SCP||
+|[20](https://www.speedguide.net/port.php?port=20) - [21](https://www.speedguide.net/port.php?port=21)	|FTP|Most common|
+|[22](https://www.speedguide.net/port.php?port=22)	|SSH/SCP|Most common|
 |[23](https://www.speedguide.net/port.php?port=23)	|Telnet||
 |[25](https://www.speedguide.net/port.php?port=25)	|SMTP||
 |[42](https://www.speedguide.net/port.php?port=42)	|WINS Replication||
@@ -18,16 +23,16 @@ The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, s
 |[69](https://www.speedguide.net/port.php?port=69)	|TFTP||
 |[70](https://www.speedguide.net/port.php?port=70)	|Gopher||
 |[79](https://www.speedguide.net/port.php?port=79)	|Finger||
-|[80](https://www.speedguide.net/port.php?port=80)	|HTTP||
+|[80](https://www.speedguide.net/port.php?port=80)	|HTTP| Most common|
 |[88](https://www.speedguide.net/port.php?port=88)	|Kerberos||
 |[102](https://www.speedguide.net/port.php?port=102)	|MS||
-|[110](https://www.speedguide.net/port.php?port=110)	|POP3||
+|[110](https://www.speedguide.net/port.php?port=110)	|POP3|Most common|
 |[113](https://www.speedguide.net/port.php?port=113)	|Ident||
 |[119](https://www.speedguide.net/port.php?port=119)	|NNTP (Usenet)||
 |[123](https://www.speedguide.net/port.php?port=123)	|NTP||
 |[135](https://www.speedguide.net/port.php?port=135)	|Microsoft RPC||
 |[137](https://www.speedguide.net/port.php?port=137) - [139](https://www.speedguide.net/port.php?port=139)	|NetBIOS||
-|[143](https://www.speedguide.net/port.php?port=143)	|IMAP4||
+|[143](https://www.speedguide.net/port.php?port=143)	|IMAP4|Most common|
 |[161](https://www.speedguide.net/port.php?port=161) - [162](https://www.speedguide.net/port.php?port=162)	|SNMP||
 |[177](https://www.speedguide.net/port.php?port=177)	|XDMCP||
 |[179](https://www.speedguide.net/port.php?port=179)	|BGP||
@@ -37,8 +42,8 @@ The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, s
 |[381](https://www.speedguide.net/port.php?port=381) - [383](https://www.speedguide.net/port.php?port=383)	|HP Openview||
 |[389](https://www.speedguide.net/port.php?port=389)	|LDAP||
 |[411](https://www.speedguide.net/port.php?port=411) - [412](https://www.speedguide.net/port.php?port=412)	|Direct Connect||
-|[443](https://www.speedguide.net/port.php?port=443)	|HTTP over SSL||
-|[445](https://www.speedguide.net/port.php?port=445)	|Microsoft DS||
+|[443](https://www.speedguide.net/port.php?port=443)	|HTTP over SSL|The standard port for all secured HTTP traffic.|
+|[445](https://www.speedguide.net/port.php?port=445)	|Microsoft DS|Used for direct TCP/IP MS Networking access without the need for a NetBIOS layer (windows machines). Blocking on internal firewalls to segment the network to prevent internal spreading of ransomware. If file and printer sharing are required for business, leave open on some internal firewalls.|
 |[464](https://www.speedguide.net/port.php?port=464)	|Kerberos||
 |[465](https://www.speedguide.net/port.php?port=465)	|SMTP over SSL||
 |[497](https://www.speedguide.net/port.php?port=497)	|Retrospect||
@@ -66,8 +71,8 @@ The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, s
 |[873](https://www.speedguide.net/port.php?port=873)	|rsync||
 |[902](https://www.speedguide.net/port.php?port=902)	|VMware Server||
 |[989](https://www.speedguide.net/port.php?port=989) - [990](https://www.speedguide.net/port.php?port=513)	|FTP OVER SSL||
-|[993](https://www.speedguide.net/port.php?port=993)	|IMAP4 OVER SSL||
-|[995](https://www.speedguide.net/port.php?port=995)	|POP3 OVER SSL||
+|[993](https://www.speedguide.net/port.php?port=993)	|IMAP4 OVER SSL|Most common|
+|[995](https://www.speedguide.net/port.php?port=995)	|POP3 OVER SSL|Most common|
 |[1025](https://www.speedguide.net/port.php?port=1025)	|Microsoft RPC||
 |[1026](https://www.speedguide.net/port.php?port=1026) - [1029](https://www.speedguide.net/port.php?port=1029)	|Windows Messenger||
 |[1080](https://www.speedguide.net/port.php?port=1080)	|SOCKS PROXY and MyDoom||
