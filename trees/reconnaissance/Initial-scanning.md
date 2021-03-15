@@ -11,7 +11,7 @@ Research network architecture, defence mechanisms, operating systems and applica
 ## Resources
 
 * [Nmap cheatsheet](../../resources/cheatsheets/Nmap-cheatsheet.md)
-* [Port scanning cheatsheet](../../resources/cheatsheets/Port-scanning-cheatsheet.md)
+* [Ports cheatsheet](../../resources/cheatsheets/Ports-cheatsheet.md)
 
 ## Examples
 

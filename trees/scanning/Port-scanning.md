@@ -19,7 +19,7 @@ There are many different ports scanners that all operate in pretty much the same
 * [Nessus](../../resources/cheatsheets/Nessus-cheatsheet.md)
 * [Metasploit cheatsheet](../../resources/cheatsheets/Metasploit-cheatsheet.pdf)
 * [Unicornscan cheatsheet](../../resources/cheatsheets/Unicornscan-cheatsheet.md)
-* [Port scanning cheatsheet](../../resources/cheatsheets/Port-scanning-cheatsheet.md)
+* [Ports cheatsheet](../../resources/cheatsheets/Ports-cheatsheet.md)
 * [IKE-scan cheatsheet](../../IKE-scan-cheatsheet.md)
 
 ## Examples
