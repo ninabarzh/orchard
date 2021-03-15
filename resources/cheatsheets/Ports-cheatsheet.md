@@ -43,7 +43,7 @@ The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, s
 |[389](https://www.speedguide.net/port.php?port=389)	|LDAP||
 |[411](https://www.speedguide.net/port.php?port=411) - [412](https://www.speedguide.net/port.php?port=412)	|Direct Connect||
 |[443](https://www.speedguide.net/port.php?port=443)	|HTTP over SSL|The standard port for all secured HTTP traffic.|
-|[445](https://www.speedguide.net/port.php?port=445)	|Microsoft DS|Used for direct TCP/IP MS Networking access without the need for a NetBIOS layer (windows machines). Blocking on internal firewalls to segment the network to prevent internal spreading of ransomware. If file and printer sharing are required for business, leave open on some internal firewalls.|
+|[445](https://www.speedguide.net/port.php?port=445)	|Microsoft DS|Used for direct TCP/IP MS Networking access without the need for a NetBIOS layer (windows machines). Block on internal firewalls to segment the network to prevent internal spreading of ransomware. If file and printer sharing are required for business, leave open on some internal firewalls.|
 |[464](https://www.speedguide.net/port.php?port=464)	|Kerberos||
 |[465](https://www.speedguide.net/port.php?port=465)	|SMTP over SSL||
 |[497](https://www.speedguide.net/port.php?port=497)	|Retrospect||
