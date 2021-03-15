@@ -1,32 +1,34 @@
 # Port scanning cheatsheet
 
+The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, searchable database of official and unofficial tcp/udp port assignments, known vulnerabilities, trojans, applications use and more.
+
 |TCP/UDP Ports  |Service Description  |Notes  |
 | :------------- | :----------: | :----------: |
 |[7](https://www.speedguide.net/port.php?port=7)	|Echo||
 |[19](https://www.speedguide.net/port.php?port=19)	|Chargen||
-|[20](https://www.speedguide.net/port.php?port=20)-[21](https://www.speedguide.net/port.php?port=21)	|FTP||
+|[20](https://www.speedguide.net/port.php?port=20) - [21](https://www.speedguide.net/port.php?port=21)	|FTP||
 |[22](https://www.speedguide.net/port.php?port=22)	|SSH/SCP||
 |[23](https://www.speedguide.net/port.php?port=23)	|Telnet||
-|25	|SMTP|
-|42	|WINS Replication|
-|43	|WHOIS|
-|49	|TACACS|
-|53	|DNS|
-|67-68	|DHCP/BOOTP|
-|69	|TFTP|
-|70	|Gopher|
-|79	|Finger|
-|80	|HTTP|
-|88	|Kerberos|
-|102	|MS|
-|110	|POP3|
-|113	|Ident|
-|119	|NNTP (Usenet)|
-|123	|NTP|
-|135	|Microsoft RPC|
-|137-139	|NetBIOS|
-|143	|IMAP4|
-|161-162	|SNMP|
+|[25](https://www.speedguide.net/port.php?port=25)	|SMTP|
+|[42](https://www.speedguide.net/port.php?port=42)	|WINS Replication|
+|[43](https://www.speedguide.net/port.php?port=43)	|WHOIS|
+|[49](https://www.speedguide.net/port.php?port=49)	|TACACS|
+|[53](https://www.speedguide.net/port.php?port=53)	|DNS|
+|[67](https://www.speedguide.net/port.php?port=67) - [68](https://www.speedguide.net/port.php?port=68)	|DHCP/BOOTP|
+|[69](https://www.speedguide.net/port.php?port=69)	|TFTP|
+|[70](https://www.speedguide.net/port.php?port=70)	|Gopher|
+|[79](https://www.speedguide.net/port.php?port=79)	|Finger|
+|[80](https://www.speedguide.net/port.php?port=80)	|HTTP|
+|[88](https://www.speedguide.net/port.php?port=88)	|Kerberos|
+|[102](https://www.speedguide.net/port.php?port=102)	|MS|
+|[110](https://www.speedguide.net/port.php?port=110)	|POP3|
+|[113](https://www.speedguide.net/port.php?port=113)	|Ident|
+|[119](https://www.speedguide.net/port.php?port=119)	|NNTP (Usenet)|
+|[123](https://www.speedguide.net/port.php?port=123)	|NTP|
+|[135](https://www.speedguide.net/port.php?port=135)	|Microsoft RPC|
+|[137](https://www.speedguide.net/port.php?port=137) - [139](https://www.speedguide.net/port.php?port=139)	|NetBIOS|
+|[143](https://www.speedguide.net/port.php?port=143)	|IMAP4|
+|[161](https://www.speedguide.net/port.php?port=161) - [162](https://www.speedguide.net/port.php?port=162)	|SNMP|
 |177	|XDMCP|
 |179	|BGP|
 |201	|AppleTalk|
@@ -179,4 +181,3 @@
 |31337	|Back Orifice|
 |33434+	|traceroute|
 
-* The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, searchable database of official and unofficial tcp/udp port assignments, known vulnerabilities, trojans, applications use and more.
