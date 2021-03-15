@@ -6,7 +6,7 @@ The [Ports Database](https://www.speedguide.net/ports.php) is a comprehensive, s
 * User Ports (1024-49151)
 * Dynamic / Private Ports (49152-65535)
 
-|TCP/UDP Ports &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |Service Description  |Notes  |
+|TCP/UDP Ports &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  |Service Description  |Notes  |
 | :------------- | :---------- | :---------- |
 |0 | | Reserved port |
 |[7](https://www.speedguide.net/port.php?port=7)	|Echo||
