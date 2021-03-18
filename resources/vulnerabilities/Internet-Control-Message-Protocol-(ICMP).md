@@ -1,6 +1,6 @@
 # Internet Control Message Protocol (ICMP)
 
-Compared to other IP protocols the Internet Control Message Protocol (ICMP) is fairly small and is defined by [rfc792]() and [rfc1122](). It belongs to the IP layer of TCP/IP but relies on IP for support at the network layer. ICMP messages are encapsulated inside IP datagrams. ICMP only reports errors involving fragment 0 of any fragmented datagrams. The IP, UDP or TCP layer will usually take action based on ICMP messages.
+Compared to other IP protocols the Internet Control Message Protocol (ICMP) is fairly small and is defined by [rfc792](https://tools.ietf.org/html/rfc792) and [rfc1122](https://tools.ietf.org/html/rfc1122). It belongs to the IP layer of TCP/IP but relies on IP for support at the network layer. ICMP messages are encapsulated inside IP datagrams. ICMP only reports errors involving fragment 0 of any fragmented datagrams. The IP, UDP or TCP layer will usually take action based on ICMP messages.
 
 ICMP serves a large number of disparate functions. At its core ICMP was designed as the debugging, troubleshooting, and error reporting mechanism for IP. The errors reported by ICMP are generally related to datagram processing. ICMP will report the following network information:
 
