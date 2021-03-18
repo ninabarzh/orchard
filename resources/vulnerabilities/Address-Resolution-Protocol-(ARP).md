@@ -4,15 +4,15 @@ The Address Resolution Protocol is a network layer protocol used to convert an I
 
 It is used when IPv4 is used over Ethernet. In IPv6, ARP and RARP are replaced by a neighbour discovery protocol called Neighbour Discovery (ND), which is a subset of the control protocol Internet Control Message Protocol (ICMP).
 
-## Vulnerabilities
+## Known vulnerabilities
+
+ARP Spoofing and ARP Poisoning are the most ignored, long-standing vulnerabilities.
 
 ### ARP poisoning
 
 ARP poisoning is a method used for manipulating the flow of traffic between arbitrary hosts on a local area network: ARP messages contain the IP address of a network resource, such as the default gateway, or a DNS server, and replaces the MAC address for the corresponding network resource with its own MAC address. Network devices, by design, overwrite any existing ARP information in conjunction with the IP address, with the new, fake ARP information. The attacker then takes the role of man in the middle; any traffic destined for the legitimate resource is sent through the attacking system. This attack occurs on the lower levels of the stack and the end-user is oblivious to the attack happening.
 
 ARP poisoning is also capable of executing Denial of Service (DoS) attacks. The attacking system, instead of posing as a gateway and performing a man in the middle attack, can simply drop the packets, causing the clients to be denied service to the attacked network resource.
-
-ARP Spoofing and ARP Poisoning are the most ignored, long-standing vulnerabilities.
 
 ### Man in the Middle (MitM)
 

@@ -9,7 +9,7 @@ ICMP serves a large number of disparate functions. At its core ICMP was designed
 * Network errors such as an unreachable host or network.
 * The ping command is also supported by ICMP.
 
-## Vulnerabilities
+## Known vulnerabilities
 
 Most routers come with the option to set the router to ignore or drop ICMP Redirects because they can be used to attack networks by confusing hosts as to where the correct default gateway is.
 
