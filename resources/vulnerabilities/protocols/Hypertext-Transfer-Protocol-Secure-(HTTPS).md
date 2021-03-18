@@ -1,4 +1,4 @@
-# Web applications
+# Hypertext Transfer Protocol Secure (HTTPS)
 
 Many sites now use HTTPS by default, and millions of TLS certificates are currently in use. With companies like Let's Encrypt offering free certificates and automated management tools, it is also easier than ever to deploy HTTPS. The purpose of a certificate is to allow a browser to verify that it is communicating with the correct site. Supposedly a man-in-the-middle attacker would not be able to hijack a browser's connection to the site unless he or she is able to obtain a valid certificate for that domain. And only a few HTTPS servers correctly implements HTTP Strict Transport Security, a widely-supported security feature that prevents visitors making unencrypted HTTP connections to a server.
 
