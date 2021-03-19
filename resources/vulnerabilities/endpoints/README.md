@@ -15,7 +15,6 @@ With people becoming more mobile and users connecting to internal resources (hom
 * Advanced endpoint security solutions need to be integrated and prevent known and unknown malware and exploits; 
 * Automate as much as possible so as to not have people only working on known security issues and adhering to security policies; 
 * Protect and enable users without impacting their performance (much). 
-Mitigation requirements
 * To prevent security breaches, a shift must occur – from detecting and responding to incidents in hindsight, to preventing security breaches from occurring in the first place.
 * Where possible, endpoint security needs to be baked into hardware services from the start to avoid breaches.
 * Endpoints must be protected from known, unknown and zero-day threats delivered through malware and exploits independent of whether a machine is online or offline, on-premise or off-premise, connected to an organisation's network or not.
