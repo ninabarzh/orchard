@@ -68,7 +68,7 @@ The protocol specification for Internet Protocol version 6 (IPv6) was originally
 
 ## Quad A query
 
-Quad A queries can indicate which nodes on a network are IPv6-enabled (IPv6-enabled machines but not IPv6 enabled)
+Quad A queries can indicate which nodes on a network are IPv6-enabled (IPv6-enabled machines but not IPv6 enabled). With that knowledge an adversary knows that the network management for IPv6 is lacking.
 
 
 
