@@ -1,6 +1,6 @@
 # Transport Layer Security-Secure Sockets Layer (TLS-SSL)
 
-Regardless of server based protections and [TLS/SSL PKI based encryption](../../E2EE-threat-model/threats/TLSSSL-PKI-vulnerabilities.md), the majority of HTTPS servers are vulnerable to connection hijacking attacks and the most common attack is simply luring a person to run a shell on his own machine/host by using social engineering techniques, leading to further [phishing](../../../trees/social-engineering/Phishing.md), [pharming](../../../trees/social-engineering/Pharming.md) and [man-in-the-middle](../../../trees/social-engineering/Phishing.md) attacks.
+Regardless of server based protections and [TLS/SSL PKI based encryption](../../../E2EE-threat-model/threats/TLSSSL-PKI-vulnerabilities.md), the majority of HTTPS servers are vulnerable to connection hijacking attacks and the most common attack is simply luring a person to run a shell on his own machine/host by using social engineering techniques, leading to further [phishing](../../../trees/social-engineering/Phishing.md), [pharming](../../../trees/social-engineering/Pharming.md) and [man-in-the-middle](../../../trees/social-engineering/Phishing.md) attacks.
 
 ## The usual suspects
 
