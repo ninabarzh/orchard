@@ -2,9 +2,9 @@
 
 ## Assumptions
 
-* Components in the toolchain and the stack, if vulnerable, can open the door:
+* Components in the toolchain and the stack, if vulnerable, can open the door to:
   * Host OS and kernel
-  * Docker and/or any other tool involved in building the container
+  * The docker and/or any other tool involved in building the container
   * Control points of the cluster
   * Anything else inside a container image that is vulnerable
 
