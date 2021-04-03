@@ -4,7 +4,7 @@ Public key infrastructure (PKI) is the umbrella term for everything needed in or
 
 ## Failing
 
-[PKI is vulnerable](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=PKI+&search_type=all) and failing by trying to be all things to all people and things. PKIs have experienced a hype and many companies and organizations announced to provide certification services to the general public. Only a few of these have succeeded and actually provide certification services that can be taken seriously.
+[PKI is vulnerable](https://nvd.nist.gov/vuln/search/results?form_type=Basic&results_type=overview&query=PKI+&search_type=all) by trying to be all things to all people and things. PKIs have experienced a hype and many companies and organizations announced to provide certification services to the general public. Only a few of these have succeeded and actually provide certification services that can be taken seriously.
 
 ### X.509 standard
 
@@ -48,7 +48,7 @@ X.509 is a complex standard and X.509 certificates are complex data structures w
 
 * X.509 uses features from other standards, like DNs from X.500 which are in itself complex and have little value and provides unanticipated attack vectors.
 * SSL in the context of web browsers used to be target of several successful attacks, either directly on SSL (e.g. SSL renegotiation bug), the combination of https and http ([SSL Strip](SSL), URL-forgery, and X.509-based attacks on ASN.1 and DN-parsing.
-* Integration of PKI with the surrounding environment (end points, web applications) may allow compromise.
+* Integration of PKI with the surrounding environment ([end points](../endpoints), [web applications](../endpoints/Applications.md)) may allow compromise.
 * Should a private key be compromised, an attacker would have access to data intended for the recipient. Attackers that gain access to private keys can also eavesdrop on content intended for a recipient and decrypt data as it’s collected. This is the biggest threat to the PKI system, because compromised keys require new keys to be issued, and old ones revoked.
 * There is no easy, fast and effective method to revoke a root certificate. Anything less that a full compromise of the root key will tempt a CA to downplay the incident and revoke only certain certificates. This occurred with the DigiNotar-Hack, because the revocation of the root-CA would have interrupted the operation of many services.
 * Revocation services are suspect to DoS-attacks.
