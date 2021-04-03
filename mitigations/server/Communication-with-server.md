@@ -5,9 +5,9 @@ Making connections
 
 * With a VPN a private network can be mapped that only selected servers can see. Other applications can be configured to pass their traffic over the virtual interface that the VPN software exposes.
 * With some server hosting services, Docker allows for setting up encrypted channels between containers, even when on other servers (within the local network).
-* [SSH tunnels](SSH.md) are useful for allowing outside access to internal network resources and a great way to protect against connections being sniffed by adversaries.
+* [SSH tunnels](../network/SSH.md) are useful for allowing outside access to internal network resources and a great way to protect against connections being sniffed by adversaries.
 * Sysadmins will need a way to get in if and when an ssh server fails. A minimal VNC with X.509 that combines standard VNC authentication with GNUTLS encryption and server identification can be set up.
-* In some countries, proving that you connected to a particular server is enough to be prosecuted (or just arrested and questioned), but SSH doesn't provide a native way to obfuscate to whom it connects. For that, a [Tor proxy server](Tor.md) can be set up and clients can SSH over the Tor Onion Service.
+* In some countries, proving that you connected to a particular server is enough to be prosecuted (or just arrested and questioned), but SSH doesn't provide a native way to obfuscate to whom it connects. For that, a [Tor proxy server](../network/Tor.md) can be set up and clients can SSH over the Tor Onion Service.
 
 ## Further considerations
 
