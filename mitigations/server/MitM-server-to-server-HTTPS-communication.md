@@ -23,7 +23,7 @@
 * Using data aggregation from global route collection (DNS analytics) to filter prefix announcements coming from peers before passing them on to others (prefix de-aggregation, invalid originations, invalid AS (Autonomous System) adjacencies, and perhaps even improbable AS paths) may work, but none of that makes sense if ISP's do not even secure their networks properly.
 * In general, large ISPs often implement some measures to prevent hijacking and leaking, but probably for the same reasons small ISPs often leave their network equipment and even the border routers unpatched and vulnerable, small ISPs seem not to care about prefix filtering.
 
-Certificate validation
+## Certificate validation
 
 * There are proposals for being able to “pin” domains to a specific certificate authority (for a fee of course), in which a certificate authority is to do extra diligence before considering issuing a certificate for a “pinned” domains.
 * A new “pinning” header is being implemented by servers and browsers to protect against fraudulent certificates, but are not widely used yet.
