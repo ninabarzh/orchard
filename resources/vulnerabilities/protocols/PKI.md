@@ -47,7 +47,7 @@ X.509 is a complex standard and X.509 certificates are complex data structures w
 ### Privacy and security
 
 * X.509 uses features from other standards, like DNs from X.500 which are in itself complex and have little value and provides unanticipated attack vectors.
-* SSL in the context of web browsers used to be target of several successful attacks, either directly on SSL (e.g. SSL renegotiation bug), the combination of https and http (SSL Strip), URL-forgery, and X.509-based attacks on ASN.1 and DN-parsing.
+* SSL in the context of web browsers used to be target of several successful attacks, either directly on SSL (e.g. SSL renegotiation bug), the combination of https and http ([SSL Strip](SSL), URL-forgery, and X.509-based attacks on ASN.1 and DN-parsing.
 * Integration of PKI with the surrounding environment (end points, web applications) may allow compromise.
 * Should a private key be compromised, an attacker would have access to data intended for the recipient. Attackers that gain access to private keys can also eavesdrop on content intended for a recipient and decrypt data as it’s collected. This is the biggest threat to the PKI system, because compromised keys require new keys to be issued, and old ones revoked.
 * There is no easy, fast and effective method to revoke a root certificate. Anything less that a full compromise of the root key will tempt a CA to downplay the incident and revoke only certain certificates. This occurred with the DigiNotar-Hack, because the revocation of the root-CA would have interrupted the operation of many services.
@@ -57,6 +57,7 @@ X.509 is a complex standard and X.509 certificates are complex data structures w
 * Some certificate stores contain funny root certificates that should be excluded on any serious security review.
 * SSL and PKI infrastructures are components in client device security and are used to bootstrap into higher-level security services such as software updates and digital signature services. Their vulnerabilities put other security services at risk.
 * Pluggable Authentication Modules (PAM) is a suite of shared libraries, providing an abstraction layer between the various methods available that provide authentication and the applications that require authentication and would otherwise have to support those methods directly. With PAM, all that is necessary for these components to cooperate is that a specific PAM module be available for each of them. The pam_listfile.so module authenticates users based on the contents of a specified file. For example, if username exists in a file /etc/ssh/ssh.allow, ssh will grant login access. 
+* An Internal PKI consists of a master-your-own master Certificate Authority (CA) certificate and key which is used to sign each of the server and client certificates and a separate certificate (public key) and private key for the server and each client. The most secure way of doing this is have the Certificate Authority keys generated on a stand-alone (not Internet-connected) machine in a secure location.
 
 ### IoT
 
