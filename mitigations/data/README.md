@@ -1,5 +1,7 @@
 # Data
 
+ Information security, sometimes shortened to InfoSec, is the practice of preventing unauthorized access, use, disclosure, disruption, modification, inspection, recording or destruction of information. Information security threats come in many different forms. Some of the most common threats are software attacks, identity theft, theft of information, sabotage, information extortion, surveillance, censorship and data abuse for ever more profits.
+
 The Internet is rife with [adversaries that are after our identity and information](../../threat-modelling/DA-threat-model/adversaries), and readily provides vulnerabilities that can be exploited for that. Many journalists, activists and researchers work have been exploited due to its vulnerable structure, sometimes with severe (life threatening) consequences. 
 
 * [Web applications](Web-applications.md)
