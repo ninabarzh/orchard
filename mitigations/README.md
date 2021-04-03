@@ -1,6 +1,6 @@
 # Mitigations
 
-Where you stand depends on where you sit, but all threats are cross-vector threats, and without a mandate for measuring and reporting actual improvements in security (decision making), attempts at improving security makes absolutely no sense, not even for the low-hanging fruit. 
+Where you stand depends on where you sit, and all threats are cross-vector threats, while without a clear mandate for measuring and reporting actual improvements in security (decision making), attempts at improving security makes absolutely no sense, not even for the low-hanging fruit. 
 
 ## Problems or Suggestions
 

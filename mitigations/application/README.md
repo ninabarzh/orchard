@@ -1,6 +1,6 @@
-# Application mitigations
+# Application
 
-Application mitigations aka software development mitigations
+Applications in general, and in a wider perspective, software development:
 
 * Software-based threat modelling (“a structured approach that enables you to identify, quantify, and address the security risks associated with an application”)
     * Many attacks on organisational applications come from inside the network.

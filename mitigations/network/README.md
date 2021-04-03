@@ -1,4 +1,4 @@
-# Network mitigations
+# Network
 
 The policies and practices adopted to prevent, monitor, and recover from network attacks. 
 
