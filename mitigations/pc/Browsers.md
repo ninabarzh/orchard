@@ -20,7 +20,7 @@ Many of the [browser vulnerabilities](../../resources/vulnerabilities/endpoints/
 
 ### Developers
 
-* Frame busting is a severely limited protection from clickjacking. For example, frame-busting JavaScript can be defeated by disabling JavaScript. Some clickjacking looks for CSRF vulnerabilities by looking for evidence of exclusively cookie based session ids, using a variety of heuristics to identify and verify whether various parameters are serving as session tokens. Combinations of lack of frame busting and/or CSRF issues can lead to opening up for clickjacking for pages requiring an authenticated session.
+* Frame busting is a severely limited protection from [clickjacking](../../trees/web-hacking/Clickjacking.md). For example, frame-busting JavaScript can be defeated by disabling JavaScript. Some clickjacking looks for [CSRF vulnerabilities](../../resources/vulnerabilities/endpoints/Applications.md) by looking for evidence of exclusively cookie based session ids, using a variety of heuristics to identify and verify whether various parameters are serving as session tokens. Combinations of lack of frame busting and/or CSRF issues can lead to opening up for clickjacking for pages requiring an authenticated session.
 * Use persistent and transient authentication methods (or a hidden field provided on every form) to aid protection against CSRF
 * Sandbox applications so that adversaries will need to use two exploits: one for the vulnerable browser or add-on/extension and another to break out of the sandbox.
 
