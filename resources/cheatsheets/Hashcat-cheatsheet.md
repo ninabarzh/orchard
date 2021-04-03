@@ -18,9 +18,9 @@ There are two main flavours of Hashcat:
 ## Installation hashcat on Linux
 
 * Check version number or download from the [hashcat site](https://hashcat.net/hashcat/).
-
-    $ wget http://hashcat.net/files/hashcat-x.x.x.xz
-
+```
+$ wget http://hashcat.net/files/hashcat-x.x.x.xz
+```
 * Unpack it.
 * Go into the unpacked hashcat directory and start de ''.bin'' file with the ''help'' option.
 
@@ -510,7 +510,7 @@ And there are [more existing rules](https://github.com/hashcat/hashcat/tree/mast
 
 ## Rainbow Tables
 
-Remove all hashes or passwords that were cracked with the above methods. Run what remains using [rainbow tables](http://project-rainbowcrack.com/). This can take a long time, and depending on system, [faster tables](http://project-rainbowcrack.com/table.htm) can be [bought](http://project-rainbowcrack.com/buy.php).
+Remove all hashes or passwords that were cracked with the above methods. Run what remains using [rainbow tables](http://project-rainbowcrack.com/). This can take a long time, and depending on system, [faster tables](http://project-rainbowcrack.com/table.htm) can be used.
 
 ## Targeted Brute Forcing
 
