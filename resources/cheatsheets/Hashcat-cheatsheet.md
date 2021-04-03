@@ -11,13 +11,13 @@ There are two main flavours of Hashcat:
 
 ## Installation hashcat on Windows
 
-* Install [https://hashkiller.co.uk/hashcat-gui.aspx](hashcatGUI)
-* Download the [https://hashcat.net/hashcat/](hashcat binaries).
+* Install [hashcatGUI](https://hashkiller.co.uk/hashcat-gui.aspx)
+* Download the [hashcat binaries](https://hashcat.net/hashcat/).
 * Open hashcatGUI and load the binary.
 
 ## Installation hashcat on Linux
 
-* Check version number or download from the [https://hashcat.net/hashcat/](hashcat site).
+* Check version number or download from the [hashcat site](https://hashcat.net/hashcat/).
 
     $ wget http://hashcat.net/files/hashcat-x.x.x.xz
 
@@ -470,7 +470,7 @@ If you still have no idea what just happened, try the following pages:
 
 ## Dictionary and hybrid attacks
 
-Get the [https://crackstation.net/buy-crackstation-wordlist-password-cracking-dictionary.htm|CrackStation's Password Cracking Dictionary).
+Get the [CrackStation's Password Cracking Dictionary](https://crackstation.net/buy-crackstation-wordlist-password-cracking-dictionary.htm).
 
 Straight Dictionary Attacks (running a standard wordlist against a set of hashes) will work with most of the common passwords:
 
@@ -484,7 +484,7 @@ Two characters:
 
     $ ./hashcat64.bin -m 1000 -a 6 hashlist.txt crackstation.txt ?a?a
 
-The RockYou list is smaller. here was for the sake of time. As you start appending characters to wordlists  With more characters appended, he time it takes to completely cover all possible variations can grow exponentially. The RockYou and Cain wordlists are smaller. Those can be found on the [https://wiki.skullsecurity.org/Passwords|Skull Security wiki). 
+The RockYou list is smaller. here was for the sake of time. As you start appending characters to wordlists  With more characters appended, he time it takes to completely cover all possible variations can grow exponentially. The RockYou and Cain wordlists are smaller. Those can be found on the [Skull Security wiki](https://wiki.skullsecurity.org/Passwords). 
 
     $ ./hashcat64.bin -m 1000 -a 6 hashlist.txt rockyou.txt ?a?a?a
 
@@ -502,15 +502,15 @@ The combinator attack combines two separate lists. Create a ''combinatorlist.txt
 
 ## Rule-based attacks
 
-A lot of people use [http://www.robertecker.com/hp/research/leet-converter.php](leetspeak), where an ''O'' is replaced by a ''0'', an ''E'' by ''3'', etc. and a [https://www.4armed.com/blog/hashcat-rule-based-attack/](rule-based attack) may deliver. Existing rules that can be used are the [https://github.com/hashcat/hashcat/blob/master/rules/d3ad0ne.rule](d3ad0ne.rule), [https://github.com/hashcat/hashcat/blob/master/rules/leetspeak.rule](leetspeak rule), [https://github.com/hashcat/hashcat/blob/master/rules/unix-ninja-leetspeak.rule](unix-ninja-leetspeak.rule) and [https://github.com/hashcat/hashcat/blob/master/rules/generated2.rule](generated2.rule). 
+A lot of people use [leetspeak](http://www.robertecker.com/hp/research/leet-converter.php), where an ''O'' is replaced by a ''0'', an ''E'' by ''3'', etc. and a [rule-based attack](https://www.4armed.com/blog/hashcat-rule-based-attack/) may deliver. Existing rules that can be used are the [d3ad0ne.rule](https://github.com/hashcat/hashcat/blob/master/rules/d3ad0ne.rule), [leetspeak rule](https://github.com/hashcat/hashcat/blob/master/rules/leetspeak.rule), [unix-ninja-leetspeak.rule](https://github.com/hashcat/hashcat/blob/master/rules/unix-ninja-leetspeak.rule) and [generated2.rule](https://github.com/hashcat/hashcat/blob/master/rules/generated2.rule). 
 
     $ ./hashcat64.bin -m 1000 -a 0 hashlist.txt crackstation.txt --rules=rules/generated2.rule
 
-Check out more existing rules [https://github.com/hashcat/hashcat/tree/master/rules](here).
+And there are [more existing rules](https://github.com/hashcat/hashcat/tree/master/rules).
 
 ## Rainbow Tables
 
-Remove all hashes or passwords that were cracked with the above methods. Run what remains using [http://project-rainbowcrack.com/](rainbow tables). This can take a long time, and depending on system, [http://project-rainbowcrack.com/table.htm](faster tables) can be bought [http://project-rainbowcrack.com/buy.php](here).
+Remove all hashes or passwords that were cracked with the above methods. Run what remains using [rainbow tables](http://project-rainbowcrack.com/). This can take a long time, and depending on system, [faster tables](http://project-rainbowcrack.com/table.htm) can be [bought](http://project-rainbowcrack.com/buy.php).
 
 ## Targeted Brute Forcing
 
