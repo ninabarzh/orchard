@@ -2,58 +2,17 @@
 
 Server security is as important as network security because servers often hold a great deal of vital information. It is considered the foundation the building rests on. If a server is compromised, all of its contents may become available for the adversary to steal or manipulate at will.
 
-## SQL Injection Attacks
-An adversary exploits code in a web application in order to gain access to the database, usually by merely tweaking the URL to include malicious commands. Can lead to site defaction and/or stolen and altered information, and even to server compromise.
-* Delimiter characters such as the single quote (‘) or the double quote (“) can be used
+# MitM server-to-server HTTPS communication
 
-### Mitigations
-* Use a safe API with a parameterized interface
-* Use an application firewall (WAF)
-* Convert to HTML
-* Search the domain for sensitive information, or strings that might not be secure. Dork.
-* Use some security by obscurity (robots.txt, .htaccess, nginx .conf, etc.)
+Some server-side HTTP client libraries accept untrusted TLS communication by default. The most common attack vectors for MitM-ing a server-to-server HTTPS communication that accepts untrusted SSL certificates are:
 
-## Broken authentication, poor session management
-An adversary impersonates an identity on the server, can possibly deface it, or compromise the server. Unprotected session tokens can lead to hijacking of an active session.
-* Credentials in plain text.
-* Weak credentials that can be guessed.
-* Session IDs exposed in the URL
-* Session IDs vulnerable to session fixation attacks
-* Session IDs which do not timeout, expire, and are not rotated
-* Sending credentials and session IDs over unencrypted connections
+* DNS cache poisoning can be used to replace the real endpoint with an attacker's replacement using a self-signed certificate.
+* An adversary can rent a server in the same data center/from the same host, or compromise a vulnerable server on an intranet and attempt an ARP spoofing.
+* Border Gateway Protocol (BGP) hijacking: Once an adversary obtains access to a BGP peer, she can announce any prefix she wants to the other peers of the vulnerable ISP, causing denial of service or conducting a MitM attack for either the hijacked prefix or the upstream ISP itself in case the incoming traffic requires more bandwidth than that ISP can handle. Suppose a target server and visitors are in France, and the prefix is hijacked local to the US (adversary has chosen to get a certificate from a CA in the US). In that case it is possible to impersonate the target (because no reliable identification method is used by the CA for X.509 certificates) or impersonate a WHOIS server of her registrar and obtain a perfectly valid TLS/SSL certificate for the target domain. The procedure takes 15 minutes at most, and immediately after, she may stop announcing the target's prefix. The target will have only those 15 minutes to detect the issue. The certificate will be valid globally, so it may be used in man-in-the-middle attacks anywhere in the world.
+    * For a basic TLS certificate, the Certificate Authority (CA) asks that applicants prove that they own the associated domain. While many approaches can be used to provide this proof, one of the most common is having the applicants post specific content at a URL on that domain. When a domain has been temporarily hijacked, the adversary can post the content and then be issued a domain-validated (DV) certificate within minutes.
+    * Let’s Encrypt makes the creation of SSL certificates free and easy.
 
-### Mitigations
-* Use [SSL](../protocols/Transport-Layer-Security-Secure-Sockets-Layer-(TLS-SSL).md)
-* Encrypt credentials when stored on the server, using hashing, MD5, etc.
-* Enforce strict cookie control, to thwart impersonating tokens
-* Proactively monitor for updates and patches to servers, scripts, software and applications.
+The MitM server-to-server HTTPS communication vulnerabilitiy isn't about a vulnerability in a software, it is about a flawed concept. The abstraction of trusted Internet routing is wrong. The [listed mitigations](../../../mitigations/server/MitM-server-to-server-HTTPS-communication.md) can help some, but are like mopping up the leaked water with the tap open, and only a few information security specialists and network engineers use them.
 
-## XSS Cross Site Scripting (XSS)
-[XSS Cross Site Scripting (XSS)](../../../trees/web-hacking/Cross-Site-Scripting-(XSS).md) is client-side attack in which an adversary injects malicious code to gain control of sensitive page content, user sessions, or the web browser itself. JS, ActiveX, VBScript, Flash, cookies, and even HTML and CSS can deliver XSS payloads. See the [portswigger cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet) for vectors (regularly updated). XSS uses brute force to hijack sessions and redirects them to malicious sites. It can bypass access control policies (ACL) to elevate priviliges to administrative access and can be used to gain information about a web server and user accounts.
-* Stored XSS (Persistent or Type I) - user input is stored on the target server (database, message forum, visitor log, comment field, etc.) and can be retrieved from the web application without the data being made safe to render. 
-* Reflected XSS (Non-Persistent or Type II) - user input is immediately returned by a web application in an error message, search result, or any other response that includes some or all of the input provided by the user as part of the request, without that data being made safe to render, and without permanently storing the user provided data. 
-* DOM Based XSS (Type-0) - the entire tainted data flow from source to sink takes place in the browser (the source of the data is in the DOM, the sink is also in the DOM) and the data flow never leaves the browser. The source could be the URL of the page or an element of the HTML, and the sink a sensitive method call that causes the execution of the malicious data.
 
-Server-side XSS occurs when untrusted user supplied data is included in a response generated by the server. The source of this data could be from the request, or from a stored location. Both Reflected Server XSS and Stored Server XSS are possible. The browser just renders the response and executes the code.
 
-### Mitigations
-
-* Context-sensitive server side output encoding
-
-## Insecure direct object references
-
-An adversary gains access to resources on the server by modifying a parameter that points to an object on the server.
-* Insufficient authorisation checks
-
-### Mitigation
-* Implement access control schemes
-
-## Cross-site request forgery (CSRF)
-In a [Cross-site request forgery (CSRF)](../../../trees/web-hacking/Cross-Site-Request-Forgery-(CSRF).md), an adversary forges a HTTP request on behalf of an already authenticated and logged in user by inserting code to force an action. CSRF exploits how the target website manages authentication. Using a legitimate user’s authenticated session, the adversary can launch any requests (on behalf of the logged in user) to the vulnerable website, which will execute the adversaries' command.
-* [Unauthorised actions can be transmitted from a browser to the website](https://resources.infosecinstitute.com/topic/cross-site-request-forgery-csrf-vulnerabilities/) 
-
-### Mitigations
-
-* Implement session tokens and postfix the token in all requests raised by the user
-* Terminate idle sessions
-* CSRF vulnerabilities
