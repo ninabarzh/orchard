@@ -1,8 +1,6 @@
-# Resources
+# Mitigations
 
-We are not big fans of checklist approaches (though such can be handy when purpose of pentesting is to (dis)prove compliance to a set of rules). We prefer to understand how technologies work, instead of following some linearised process (which is like trying to fit a square peg in a round hole anyhow). 
-
-The resources also contain (links to) other resources for understanding how technologies work, aiding actual reasoning about security.
+Where you stand depends on where you sit, but all threats are cross-vector threats, and without a mandate for measuring and reporting actual improvements in security (decision making), attempts at improving security makes absolutely no sense, not even for the low-hanging fruit. 
 
 ## Problems or Suggestions
 
