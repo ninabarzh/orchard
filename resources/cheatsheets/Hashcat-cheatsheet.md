@@ -24,6 +24,8 @@ $ wget http://hashcat.net/files/hashcat-x.x.x.xz
 * Unpack it.
 * Go into the unpacked hashcat directory and start de ''.bin'' file with the ''help'' option.
 
+## Available commands
+
 ```
 $ ./hashcat64.bin --help
 ```
