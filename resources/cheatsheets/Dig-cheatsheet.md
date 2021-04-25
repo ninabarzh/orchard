@@ -14,6 +14,7 @@ OR
     # dig [domain] +noall +answer
 
 OR
+
     # dig [domain] +short
 
 For a specific query type
