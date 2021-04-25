@@ -1,8 +1,12 @@
 # Removing metadata from files
 
-Metadata is data about data. An image may include metadata that describes how large the picture is, colour depth, resolution, when it was created, and other data. Text metadata may contain information about who the author is, when the document was written and how many times it was changed. Web pages often include metadata in the form of meta tags. Description and keywords meta tags are commonly used to describe the Web page's content. Most search engines use this data when adding pages to their search index.
+Metadata is data about data. Metadata answers who, what, when, where, why, and how about every facet of the data that is being documented.
 
-And metadata can also be used for other, more shifty purposes:
+* Photos, and images in general, contain metadata. For photos this includes how large the picture is, colour depth, resolution, the date and time when it was created, the GPS coordinates of the location they were taken at, camera shutter setting details, and possibly even the name of the program used to edit them. 
+* Document metadata is information about one or more aspects of a document, spreadsheet, pdf file, that is not always visible to the person creating them, but can be found by the person who receives them next. Comments, track changes, hidden text, mark-ups, properties, attachments and bookmarks are all examples of document metadata. Office documents like pdf or Office automatically add author and organisation information to documents and spreadsheets.
+* Web pages often include metadata in the form of meta tags. Description and keywords meta tags are commonly used to describe the Web page's content. Most search engines use this data when adding pages to their search index. 
+
+This type of metadata can be useful, but maybe you do not want to disclose this information on the web, because metadata can be used for other purposes as well:
 
 * Metadata is collected by corporations for psychological manipulation in persuasion and advertising.
 * Metadata also plays a number of important roles in [computer forensics](https://tymyrddin.wiki/forensics/start):
@@ -12,16 +16,13 @@ And metadata can also be used for other, more shifty purposes:
 * Metadata is used by hackers doing [reconnaissance](https://github.com/tymyrddin/orchard/blob/main/trees/reconnaissance/README.md) for an attack
 * And last but not least, it can be used to correlate data in dragnet and targeted [surveillance](https://www.tymyrddin.blog/tags/#surveillance).
 
-Photos, and images in general, contain metadata you may not want out there. For photos this includes the GPS coordinates of the location they were taken at, the date and time, camera shutter setting details, and possibly even the name of the program you used to edit them. This type of metadata can be useful, but you may want to remove it from your photos before sharing them online.
-
-Document metadata is information about one or more aspects of a document, spreadsheet, pdf file, that is not always visible to the person creating them, but can be found by the person who receives them next. Comments, track changes, hidden text, mark-ups, properties, attachments and bookmarks are all examples of document metadata. Metadata removal software identifies and removes the metadata contained within a document so it cannot be shared.
-
 ## Techniques for metadata removal
 
-* Using the Metadata Anonymisation Toolkit (MAT)
+* Metadata removal software like the [Metadata Anonymisation Toolkit (MAT)](MAT.md) identifies and removes the metadata contained within a file so it cannot be shared. 
 * Using a hex editor
 * Using vi as hex editor
 * Using pdftk and sed to clean pdf files
 * Edit exif metadata in images
+
 
 
