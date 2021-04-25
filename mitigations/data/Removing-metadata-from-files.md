@@ -19,10 +19,8 @@ This type of metadata can be useful, but maybe you do not want to disclose this 
 ## Techniques for metadata removal
 
 * Metadata removal software like the [Metadata Anonymisation Toolkit (MAT)](MAT.md) identifies and removes the metadata contained within a file so it cannot be shared. 
-* Using a hex editor
-* Using vi as hex editor
-* Using pdftk and sed to clean pdf files
-* Edit exif metadata in images
+* [Using a hex editor](Removing-metadata-with-hexeditors.md)
+* [Edit exif metadata in images](Edit-exif-metadata-in-images.md)
 
 
 

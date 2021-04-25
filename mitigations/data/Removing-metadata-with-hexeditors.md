@@ -22,6 +22,10 @@ Windows do not have any pre-installed hex editor in their operating systems. Hex
 * [HxD](https://mh-nexus.de/en/hxd/) Freeware Hex Editor and Disk Editor
 * [Free Hex Editor Neo](https://www.hhdsoftware.com/free-hex-editor)
 
+### File properties
+
+On windows, open file Properties in Windows Explorer for each file. In the Details tab, click "Remove Properties and Personal information". Choose to "Remove the following properties from this file", select which metadata to remove, and press OK. There may still be other data though.
+
 ## Mac
 
 * [iBored](https://apps.tempel.org/iBored/) - Also windows and linux
