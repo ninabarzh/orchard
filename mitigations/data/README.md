@@ -23,7 +23,6 @@ Information security threats come in many different forms. Some of the most comm
   * [Edit exif metadata in images](Edit-exif-metadata-in-images.md)
   * [Metadata Anonymisation Toolkit](MAT.md)
   * [BleachBit](BleachBit.md)
-
 * [Web applications](Web-applications.md)
   * [FloCed sites](FloCed-sites.md)
   * [Cookied Wordpresses](Cookied-wps.md)
