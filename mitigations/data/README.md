@@ -15,7 +15,17 @@ Information security, sometimes shortened to InfoSec, is the practice of prevent
 Information security threats come in many different forms. Some of the most common threats are software attacks, identity theft, theft of information, sabotage, information extortion, surveillance, censorship and data abuse for ever more profits and control.
 
 * [Web applications](Web-applications.md)
-* [Tor](Tor.md)
+  * [FloCed sites](FloCed-sites.md)
+  * [Cookied Wordpresses](Cookied-wps.md)
+* [Browser configuration](Browser-data.md)
+  * [Federated Learning of Cohorts](FLoC.md)
+  * [Cookies](Cookies.md) 
+  * [Tor browser](Tor.md)
+* [Removing metadata from files](Removing-metadata-from-files.md)
+  * [Removing metadata with hexeditors](Removing-metadata-with-hexeditors.md)
+  * [Edit exif metadata in images](Edit-exif-metadata-in-images.md)
+  * [Metadata Anonymisation Toolkit](MAT.md)
+  * [BleachBit](BleachBit.md)
 
 ## Problems or Suggestions
 

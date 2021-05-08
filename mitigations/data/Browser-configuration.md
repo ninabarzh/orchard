@@ -1,4 +1,4 @@
-## Browser data
+# Browser configuration
 
 The way in which browsers are configured (especially the browser plugins used), together with details of the Operating System in which the browser runs, allows its users to be uniquely identified and tracked. 
 

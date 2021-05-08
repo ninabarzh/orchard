@@ -1,6 +1,6 @@
 # Tor
 
-Onion routing networks like Tor are designed to resist a local adversary, one that can only see a subset of the network and the traffic on it. In a (sort of) mixnet like that, each node will only know the relay path in which it is involved, but not the whole path from the source to destination.
+Onion routing networks like [Tor](../network/Tor.md) are designed to resist a local adversary, one that can only see a subset of the network and the traffic on it. In a (sort of) mixnet like that, each node will only know the relay path in which it is involved, but not the whole path from the source to destination.
 
 ## Warnings
 
