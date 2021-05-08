@@ -26,6 +26,8 @@ Information security threats come in many different forms. Some of the most comm
 * [Web applications](Web-applications.md)
   * [FloCed sites](FloCed-sites.md)
   * [Cookied Wordpresses](Cookied-wps.md)
+* [Circumventing censorship](Circumventing-censorship.md)
+* [Avoiding surveillance](Avoiding-surveillance.md)
 
 ## Problems or Suggestions
 
