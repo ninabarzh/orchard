@@ -1,10 +1,10 @@
 # I2P 
 
-I2P is a Distributed Peer to Peer Anonymous Network Layer that is strictly message-based. It allows you to send data between computers running I2P anonymously with multilayer end-to-end encryption. The name I2P derived from Invisible IRC Project (IIP) which was one of FreeNet's sister projects. I2P focuses exclusively on internal communication and not on proxying to the regular internet. I2P uses so-called garlic routing which involves clumping packets together into bigger packets. 
+[I2P](https://geti2p.net/en/) is a Distributed Peer to Peer Anonymous Network Layer that is strictly message-based. It allows you to send data between computers running I2P anonymously with multilayer end-to-end encryption. The name I2P derived from Invisible IRC Project (IIP) which was one of FreeNet's sister projects. I2P focuses exclusively on internal communication and not on proxying to the regular internet. I2P uses so-called garlic routing which involves clumping packets together into bigger packets. 
 
 The combination of garlic routing, multilayer encryption -even the end points ("destinations") are cryptographic identifiers- and random padding on packets makes analysis of the content and detection of the origin of I2P traffic by third-party observers highly impractical if not nearly impossible.
 
-The best use for I2P is for peer to peer file sharing. 
+The best use for I2P is for peer to peer file sharing and communication. 
 
 ## Garlic routing
 
@@ -12,7 +12,7 @@ The best use for I2P is for peer to peer file sharing.
 
   * For building and routing through tunnels (layered encryption)
   * For determining the success or failure of end to end message delivery (bundling)
-  * For publishing some network database entries (dampening the probability of a successful traffic analysis attack) (ElGamal/AES)
+  * For publishing some network database entries (dampening the probability of a successful traffic analysis attack)
 
 ## Tunnels 
 
@@ -34,3 +34,8 @@ I2P is end-to-end encrypted. No information is sent in clear or decrypted. Each 
   * An additional end to end layer of encryption hides the data from the outbound tunnel endpoint and the inbound tunnel gateway.
   * Each tunnel has an encryption layer to avoid unauthorized disclosure to peers inside the network.
 
+## Installation
+
+I2P is available for Windows, Mac OS X, GNU/Linux / BSD / Solaris, Debian /Ubuntu and Android. 
+
+[Download the bundle for your device](https://geti2p.net/en/download) and install. That easy.
