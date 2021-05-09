@@ -1,5 +1,7 @@
 # Anonymising traffic
 
+Network traffic visibility is the beginning of security.
+
 Public networks like the internet are extremely vulnerable to traffic monitoring and surveillance. The most obvious way you can be tracked is by IP address. Packet headers identify the IP addresses of the recipient(s) and the packet routes can rather easily be tracked. There are many ways to change your IP address. And protecting ones IP address is not enough. Some applications and devices append extra headers to packets or other revealing data that can be correlated.
 
 * Depending on your situation and on why you wish to remain anonymous, consider plausible deniability and installing local traffic monitoring so you can check for leaks in your traffic yourself. There is no better way for staying (relatively) calm under near-paranoia circumstances than to not to have to depend on others.
