@@ -13,7 +13,7 @@ Passwords were the first mechanisms used for authenticating users on timeshared 
 
 ## Auditing passwords
 
-Try your hand at [cracking your own (current and new) passwords](../../../trees/crypto-attacks). 
+Try your hand at [cracking your own (current and new) passwords](../../trees/crypto-attacks). 
 
 ## Choosing a password manager
 
