@@ -1,7 +1,5 @@
 # DNS leaks
 
-A big threat to your anonymity when using a VPN service is that of DNS leaks. And the combination of [Fail Open](VPN-fail-open.md) and a DNS Leak is the worst.
-
 When you don’t set up DNS servers on your computer or router, your DNS queries will run on your ISP’s DNS servers. Without VPN (Failed Open), DNS requests are most likely sent unencrypted, which can lead to many different types of common DNS attacks. 
 
 * Domain hijacking (Redirection)
