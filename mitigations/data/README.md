@@ -33,6 +33,8 @@ Information security threats come in many different forms. Some of the most comm
   * [';--have i been pwned?](HIBP.md)
   * [Using GnuPG](Using-GnuPG.md)
   * [Anonymising email](Anonymising-email.md)
+* [Choosing file sharing services](Choosing-file-sharing-services.md)
+  * [Uploading files to a server](Uploading-files-to-a-server.md)
 * [Removing metadata from files](Removing-metadata-from-files.md)
   * [Removing metadata with hexeditors](Removing-metadata-with-hexeditors.md)
   * [Edit exif metadata in images](Edit-exif-metadata-in-images.md)
