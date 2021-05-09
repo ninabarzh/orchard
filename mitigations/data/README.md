@@ -25,6 +25,7 @@ Information security threats come in many different forms. Some of the most comm
   * [VPN Fails open](traffic/VPN-fail-open.md)
   * [DNS Leaks](traffic/DNS-leaks.md)
   * [Chaining](traffic/Chaining.md)
+  * [Edit hosts file](traffic/Edit-hosts-file.md)
 * [E2EE](e2ee)
   * [Choosing E2EE messaging](e2ee/Choosing-E2EE-messaging.md)
   * [Installing and using Wire](e2ee/Installing-and-using-Wire.md)
