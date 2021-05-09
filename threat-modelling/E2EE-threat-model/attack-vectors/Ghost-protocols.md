@@ -13,7 +13,7 @@ A coalition of 47 organisations and individuals wrote to the GCHQ, raising objec
 The by the GCHQ proposed ghastly ghost story would require:
 
 * [Service providers](../adversaries/Service-provider.md) to inject a new public key into a conversation, in effect turning a two-way conversation into a group chat where an [E2EE adversary](../adversaries/E2EE-adversary.md) is the [additional participant](../adversaries/Malicious-group-member.md), or add an intelligence participant to an existing group chat.
-* [Messaging apps](../../mitigations/data/e2ee/Choosing-E2EE-messaging.md) and service providers to change their software such that it would:
+* [Messaging apps](../../../mitigations/data/e2ee/Choosing-E2EE-messaging.md) and service providers to change their software such that it would:
     * Change the encryption schemes used.
     * Mislead users by suppressing the notifications that routinely appear when a new communicant joins a chat.
 
