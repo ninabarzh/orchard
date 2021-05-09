@@ -1,8 +1,6 @@
-# VPN
+# Choosing a VPN
 
 Virtual Private Networks can be used for connecting to private networks over public networks (internet). A VPN client communicates over the internet and sends the computer’s network traffic through the encrypted connection to a VPN server. The encryption provides a (more or less) secure connection, which means it is made harder for adversaries to snoop on the connection and see sensitive information. 
-
-## Choosing a VPN 
 
   * VPN solutions based on Point-to-Point Tunnelling Protocol (PPTP),  Layer Two Tunnelling Protocol (L2TP), Secure Socket Tunnelling Protocol (SSTP), or Internet Key Exchange (IKEv2) depend heavily on the features originally specified for Point-to-Point Protocol (PPP). PPP was designed to send data across dial-up or dedicated point-to-point connections. For IP, PPP encapsulates IP packets within PPP frames and then transmits the encapsulated PPP-packets across a point-to-point link. PPP was originally defined as the protocol to use between a dial-up client and a network access server. These is known as Layer 2 tunnelling, using //datalink layer frames// to encapsulate data payloads. 
   * Layer 3 tunnelling uses //network layer tunnelling protocols//, such as IPSec in the tunnel mode and IP over IP, for the exchange of data packets. These protocols use packets as a medium of exchange. Layer 3 tunnelling involves the addition of a new IP header to an IP packet before sending them across a tunnel created over an IP-based network. 

@@ -67,7 +67,7 @@ The SSH client at socially-correct will connect to the SSH server running at hom
 
 ![Remote port forwarding](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/remoteportforwarding.png)
 
-Even though the traffic is encrypted, the name resolution may not be encrypted => DNS leakage. Programs like firefox allow you to ensure that there is no such [DNS leakage](). In firefox, browse to  `about:config` and make sure the setting for   `network.proxy.socks_remote_dns` is set to true.
+Even though the traffic is encrypted, the name resolution may not be encrypted => DNS leakage. Programs like firefox allow you to ensure that there is no such [DNS leakage](DNS-leaks.md). In firefox, browse to  `about:config` and make sure the setting for   `network.proxy.socks_remote_dns` is set to true.
 
 ## Dynamic port forwarding
 
