@@ -24,7 +24,7 @@ Bridging and routing are functionally very similar, with the major difference be
   * you are running applications over the VPN which rely on network broadcasts (such as LAN games)
   * avoiding setting up a Samba or WINS server for MS file sharing across a VPN.
 
-[[https://github.com/leapcode/bitmask-vpn|Bitmask]] is an open source application to provide easy and secure encrypted communication. You can choose among several different service providers (like [Riseup](https://riseup.net/en/vpn) or [Calyx](https://calyxinstitute.org/projects/digital-services/vpn)) or start your own. 
+[Bitmask](https://github.com/leapcode/bitmask-vpn) is an open source application to provide easy and secure encrypted communication. You can choose among several different service providers (like [Riseup](https://riseup.net/en/vpn) or [Calyx](https://calyxinstitute.org/projects/digital-services/vpn)), or start your own. 
 
 
 
