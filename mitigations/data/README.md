@@ -4,6 +4,7 @@ The Internet is rife with [adversaries that are after our identity and informati
 
 Information security threats come in many different forms. Some of the most common threats are software attacks, identity theft, theft of information, sabotage, information extortion, surveillance, censorship and data abuse for ever more profits and control.
 
+* [Infosec goals](Infosec-goals.md)
 * [Safer browsing](Safer-browsing.md)
   * [Browser configuration editors](Browser-configuration-editors.md)
   * [Private browsing](Private-browsing.md)
@@ -24,6 +25,9 @@ Information security threats come in many different forms. Some of the most comm
   * [VPN Fails open](VPN-fail-open.md)
   * [DNS Leaks](DNS-leaks.md)
   * [Chaining](Chaining.md)
+* [Choosing E2EE messaging](Choosing-E2EE-messaging.md)
+  * [Installing and using Wire](Installing-and-using-Wire.md)
+  * [Installing and using Signal](Installing-and-using-Signal.md)
 * [Removing metadata from files](Removing-metadata-from-files.md)
   * [Removing metadata with hexeditors](Removing-metadata-with-hexeditors.md)
   * [Edit exif metadata in images](Edit-exif-metadata-in-images.md)
