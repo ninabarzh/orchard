@@ -1,10 +1,5 @@
 # Choosing E2EE messaging
 
-[Infosec goals](Infosec-goals.md):
-
-* Confidentiality: Only  the  two  participants  of  pair-wise  messaging  or  legitimate group member of group messaging can see the message plaintext.
-* Integrity: If a message is received and successfully validated, then it was indeed sent by the given sender,  i.e., other users cannot plant messages into it and they can not modify it.
-
 ## iMessage
 Apple first supported an E2EE scheme in iMessage, where a message that is compressed by gzip is encrypted by a sender’s secret key and distributed with a digital signature for the guarantee of the integrity to the recipient. 
 
@@ -30,7 +25,7 @@ Line is operated by Line Corporation, a subsidiary of Korean internet search eng
 
 Line is one of the most widely-deployed messaging applications, especially in Japan, Taiwan, Thailand and Indonesia in governmental, banking, payment, shopping, and music service applications. Line uses //Letter Sealing//, for a pairwise secure communication between the end users. Its specification was initially not public, but some reverse engineering resulted in a whitepaper describing the high-level specification. 
 
-It consists of key generation and registration, client-to-client key exchange (using the ECDH protocol), and message encryption phases. There seems to be a lack of forward secrecy and the feasibility of a [replay attack](../../threat-modelling/E2EE-threat-model/attacks/Replay-attack.md).
+It consists of key generation and registration, client-to-client key exchange (using the ECDH protocol), and message encryption phases. There seems to be a lack of forward secrecy and the feasibility of a [replay attack](../../../threat-modelling/E2EE-threat-model/attacks/Replay-attack.md).
 
 Line seems to also conform to censorship requirements by governments:
 * In China, Line suppresses content to conform with government censorship. Accounts registered with Chinese phone numbers download a list of banned words that cannot be sent or received through Line.

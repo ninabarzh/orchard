@@ -18,7 +18,7 @@ The Google Drive FAQ says the company will not use any data you mark as private 
 
 ## Onionshare
 
-An alternative, especially when distributing unauthorised content is [[https://github.com/micahflee/onionshare/wiki|Onionshare](https://docs.onionshare.org/2.3.1/en/), which allows for sending big files via Tor. When sharing a file, the program creates a Tor Hidden Service — a temporary, anonymous website — hosted on your computer. Give the intended recipient of the file the .onion address for that site, and they can securely and anonymously download it through their Tor Browser.
+An alternative, especially when distributing unauthorised content is [https://github.com/micahflee/onionshare/wiki|Onionshare](https://docs.onionshare.org/2.3.1/en/), which allows for sending big files via Tor. When sharing a file, the program creates a Tor Hidden Service — a temporary, anonymous website — hosted on your computer. Give the intended recipient of the file the .onion address for that site, and they can securely and anonymously download it through their Tor Browser.
 
 ## Sparkleshare
 
