@@ -44,6 +44,8 @@ Information security threats come in many different forms. Some of the most comm
   * [File encryption](data/File-encryption.md)
   * [Using cryptsetup (Linux)](data/Using-cryptsetup.md)
   * [Shredding files and deleting data](data/Shredding-files-and-deleting-data.md)
+  * [Archiving and compressing (Linux)](data/Archiving-and-compressing.md)
+  * [Using rsync (Linux)](data/Using-rsync.md)
 * [Metadata](metadata)
   * [Removing metadata with hexeditors](metadata/Removing-metadata-with-hexeditors.md)
   * [Edit exif metadata in images](metadata/Edit-exif-metadata-in-images.md)

@@ -1,4 +1,4 @@
-# Shredding files and deleting data
+# Shredding files and deleting data (Linux)
 
 Even when you erase everything on your hard disk, sometimes it is possible to recover (pieces of) data with forensics software and/or hardware. If that data is confidential, delete files and data securely so that no-one will recover them. Solid State Drives (SSD) may have introduced dramatic changes to the principles of computer forensics, in particular for [recovering files and partitions](https://tymyrddin.wiki/forensics/recovery) ...
 
