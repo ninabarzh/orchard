@@ -26,6 +26,7 @@ Information security threats come in many different forms. Some of the most comm
   * [Change nickname](Change-nickname.md)
   * [Renew IP lease](Renew-IP-lease.md)
   * [Digital mixing](Digital-mixing.md)
+  * [SSH](SSH.md)
   * [Tor](Tor.md)
   * [I2P](I2P.md)
   * [VPN](VPN.md)
