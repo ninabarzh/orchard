@@ -8,3 +8,4 @@ Unauthorised access to our data can occur due to a web application not properly 
 * Use third-party pentesting. Even the best senior programmers are susceptible to making mistakes. Review the application for potential vulnerabilities. For best results, do it regularly.
 * [FLoC](FLoC.md) requires that a website provide an explicit HTTP response header if it wants to opt out of the program. Google is counting on webmasters to not be bothered with [this task](FloCed-sites.md).
 * Although supposedly going extinct, [third party cookies](Cookies.md) are still in use by, for example, many Wordpress (feature adding) plugins. Wordpress covers around 30% of the websites on the internet. [Make the WP GDPR compliant](Cookied-wps.md).
+* [File sharing applications](Choosing-file-sharing-services.md) can give away information about users' identity. Particularly those involved in file transfer and logging in to other computers. 
