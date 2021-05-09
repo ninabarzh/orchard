@@ -37,5 +37,5 @@ There should only be one public IP address, namely that of the VPN server that y
 * [OpenNIC](https://www.opennic.org/) is a group of volunteers who run an alternate DNS network offering free DNS servers. Depending on your location, you are offered different servers. OpenNIC offers DNS neutrality (it does not censor content), and you get the right to choose how much data OpenNIC logs.
 * [OpenDNS](https://www.opendns.com) is a cloud-based service offering three solutions in their Home package, two of which are free. To connect with your nearest DNS server, and for faster page load times, it uses anycast routing.
 * [DNSWatch](https://dns.watch/) also offers DNS neutrality and does not log any DNS queries or record history.
-* [Quad9 DNS](https://www.quad9.net/) blocks malicious and suspicious domains using security intelligence from a group of  companies to improve security security. They do keep logs on some activity.
+* [Quad9 DNS](https://www.quad9.net/) blocks malicious and suspicious domains using security intelligence from a group of  companies to improve security. They do keep logs on some activity.
 
