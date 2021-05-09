@@ -4,7 +4,7 @@ Operating systems and applications can always be reinstalled, but your data is u
 
 * Set permissions on the data files and folders.
 * Some data is confidential; not only do you not want to lose it, you don't want others to even view it without authorisation.
-  * Use [removable storage](Using-removable-storage-media.md) for the most sensitive data (such as database and key files for [password managers](../Managing-passwords.md)) 
+  * Use [removable storage](Using-removable-storage-media.md) for the most sensitive data (such as database and key files for [password managers](Managing-passwords.md)) 
   * [Use file encryption](File-encryption.md)
   * Use disk encryption, for example [Using cryptsetup (Linux)](Using-cryptsetup.md)
 * Assume data loss is inevitable. It's not a matter of if, it is a matter of when. You best protect your data with a solid backup strategy.
