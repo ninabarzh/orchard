@@ -1,6 +1,6 @@
 # DNS leaks
 
-When you don’t set up DNS servers on your computer or router, your DNS queries will run on your ISP’s DNS servers. Without VPN (Failed Open), DNS requests are most likely sent unencrypted, which can lead to many different types of common DNS attacks. 
+When you don’t set up DNS servers on your computer or router, your DNS queries will run on your ISP’s DNS servers. Without VPN (or [VPN Fails Open](VPN-fail-open.md)), DNS requests are most likely sent unencrypted, which can lead to many different types of common DNS attacks. 
 
 * Domain hijacking (Redirection)
 * DNS flood attack (a type of DDoS attack) 
