@@ -32,7 +32,6 @@ Information security threats come in many different forms. Some of the most comm
   * [VPN](VPN.md)
   * [VPN Fails open](VPN-fail-open.md)
   * [DNS Leaks](DNS-leaks.md)
-  * [Setting DNS](Setting-DNS.md)
   * [Chaining](Chaining.md)
 * [Removing metadata from files](Removing-metadata-from-files.md)
   * [Removing metadata with hexeditors](Removing-metadata-with-hexeditors.md)
