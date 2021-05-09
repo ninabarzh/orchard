@@ -39,6 +39,7 @@ Information security threats come in many different forms. Some of the most comm
 * [File transfer](filetransfer)
   * [Choosing file sharing services](filetransfer/Choosing-file-sharing-services.md)
   * [Uploading files to a server](filetransfer/Uploading-files-to-a-server.md)
+  * [Checking integrity of downloads (Linux)](filetransfer/Checking-integrity-of-downloads.md)
 * [Data](data)
   * [Using removable storage media](data/Using-removable-storage-media.md)
   * [File encryption](data/File-encryption.md)
