@@ -17,6 +17,4 @@ The by the GCHQ proposed ghastly ghost story would require:
     * Change the encryption schemes used.
     * Mislead users by suppressing the notifications that routinely appear when a new communicant joins a chat.
 
-resources/vulnerabilities/endpoints/E2EE-messaging-applications.md
-
 The ghost story does almost as much damage as calling for backdoors by undermining trust in security altogether. 
