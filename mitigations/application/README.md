@@ -1,6 +1,6 @@
 # Application development
 
-Applications in general, and in a wider perspective, software development requires Software-based threat modelling ("//a structured approach that enables you to identify, quantify, and address the security risks associated with an application//").
+* Integrate security into the entire software development life-cycle.
 
 * [(Pen)Testing](testing)
   * [Code reviews](testing/Code-reviews.md)
