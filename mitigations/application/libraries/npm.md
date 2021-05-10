@@ -4,7 +4,7 @@
   * When updating the `.gitignore` file, also update `.npmignore`.
   * The ignore files function as blacklist. Instead, use the `files` property in `package.json`. It works as a whitelist and specifies the array of files to be included in the package (the ignore file functions as a blacklist). They can be used together to determine which files should explicitly be included and excluded from the package. The `files` property in `package.json` takes precedence over the ignore file.
   * Before publishing do a dry run by adding the `--dry-run` argument to the publish command to review what will be in the tarball.
-* Enforce the lockfile (`yarn install --frozen-lockfile`, `npm ci`
+* Enforce the lockfile (`yarn install --frozen-lockfile`, `npm ci`)
 * Reduce attack surface
   * Do not immediately and blindly upgrade to new versions; wait a while (but not until they are outdated of course).
   * Before upgrading, review changelog and release notes.
