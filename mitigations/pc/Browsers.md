@@ -6,10 +6,10 @@ Many of the [browser vulnerabilities](../../resources/vulnerabilities/endpoints/
 
 * View the metadata browsers are sending
 * Check extensions/add-ons/plugins for known vulnerabilities
-* Change default browser settings to exclude cookies, since they can be used to build up detailed profiles of surfing patterns over time.
-* Use private browsing.
-* Use safer browsing.
-* Use networked or single-point anonymisers to obscure identifying information.
+* Change default browser settings to exclude [cookies] amd FLoC, since they can be used to build up detailed profiles of surfing patterns over time.
+* Use [private browsing](../data/browsing/Private-browsing.md).
+* Use the rest of [safer browsing](../data/browsing) also.
+* Use [networked or single-point anonymisers][../data/traffic] to obscure identifying information.
 * Security awareness training
 * Lock down the browser and the software it can invoke.
 * Tighten associated application settings to disable unwanted features and to configure trust zones.
