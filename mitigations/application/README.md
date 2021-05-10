@@ -3,6 +3,7 @@
 Integrate security into the entire software development life-cycle.
 
 * [(Pen)Testing](testing)
+  * [Architecture and design validation](testing/Architecture-and-design-validation.md)
   * [Code reviews](testing/Code-reviews.md)
   * [Source code analysis](testing/Source-code-analysis.md)
   * [Web application vulnerability scanning](testing/Web-application-vulnerability-scanning.md)
