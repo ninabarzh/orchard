@@ -13,4 +13,5 @@ Lock down the development and production environment, using available security f
 * Use some security by obscurity (robots.txt, .htaccess, nginx .conf, etc.) (SQL Injection Attacks)
 * Use an application firewall (WAF)
 * Proactively monitor for updates and patches to servers, scripts, software and applications.
+* Search the domain for sensitive information, or strings that might not be secure. Dork it. (SQL Injection Attacks)
 
