@@ -9,5 +9,5 @@ Lock down the development and production environment, using available security f
 * Use isolation and separation such as sandboxes, docker, or similar, to limit access (and potential damages) to the environment. 
 * Adopt secure configurations using security benchmarks or hardening guides.
 * Use vulnerability scanners and regularly apply security patches to check that the system does not have any known vulnerabilities. 
-* An attacker may be able to compromise the application by [gaining unauthorised access to the system]((../../../trees/system-hacking/Gain-unauthorised-access.md).
+* An attacker may be able to compromise the application by [gaining unauthorised access to the system](../../../trees/system-hacking/Gain-unauthorised-access.md).
 
