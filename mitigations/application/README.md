@@ -1,6 +1,6 @@
 # Application development
 
-* Integrate security into the entire software development life-cycle.
+Integrate security into the entire software development life-cycle.
 
 * [(Pen)Testing](testing)
   * [Code reviews](testing/Code-reviews.md)
