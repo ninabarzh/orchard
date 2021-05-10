@@ -20,6 +20,7 @@ Integrate security into the entire software development life-cycle.
   * [Input](coding/Input.md)
   * [Output](coding/Output.md)
 * [Authentication](authentication)
+  * [Authentication mechanisms](authentication/Authentication-mechanisms.md)
 * [Libraries and frameworks](libraries)
   * [npm](libraries/npm.md)
   * [PyPI](libraries/PyPI.md)
