@@ -1,7 +1,5 @@
 # TLS/SSL PKI
 
-[What can possibly go wrong?](../threat-modelling/TLS-SSL-PKI.md)
-
   * Do not use SSL 3.0 on a server (this will be a problem if Internet Explorer 6.0 must still be supported). Use TLS 1.1 or TLS 1.2
   * Most current browsers/servers use ''TLS_FALLBACK_SCSV''. If a client requests a TLS protocol version that is lower than the highest supported by the server (and client), the server will treat it as an intentional downgrade and drop the connection.
   * Do not accept an incorrect padding structure after decryption.
