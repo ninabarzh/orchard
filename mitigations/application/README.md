@@ -3,6 +3,9 @@
 Applications in general, and in a wider perspective, software development requires Software-based threat modelling ("//a structured approach that enables you to identify, quantify, and address the security risks associated with an application//").
 
 * [(Pen)Testing](testing)
+  * [Code reviews](testing/Code-reviews.md)
+  * [Web application vulnerability scanning](testing/Web-application-vulnerability-scanning.md)
+  * [Web service scanning](testing/Web-service-scanning.md)
 * [Lockdown](lockdown)
   * [Communication with server](lockdown/Communication-with-server.md)
   * [Containers](lockdown/Containers.md)
