@@ -1,6 +1,4 @@
-# JavaScript
-
-## npm
+# npm
 
 * Avoid publishing secrets (API keys, passwords or other secrets) to the npm registry. 
   * When updating the `.gitignore` file, also update `.npmignore`.
