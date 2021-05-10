@@ -1,6 +1,7 @@
 # JavaScript
 
-* The [npm audit](https://docs.npmjs.com/getting-started/running-a-security-audit) command submits a description of the dependencies configured in a package to the associated default registry and asks for a report of known vulnerabilities. ''npm audit'' checks //direct dependencies//, //devDependencies//, //bundledDependencies//, and //optionalDependencies//, but **does not check** //peerDependencies//.
+## npm
+
 * Avoid publishing secrets (API keys, passwords or other secrets) to the npm registry. 
   * When updating the `.gitignore` file, also update `.npmignore`.
   * The ignore files function as blacklist. Instead, use the `files` property in `package.json`. It works as a whitelist and specifies the array of files to be included in the package (the ignore file functions as a blacklist). They can be used together to determine which files should explicitly be included and excluded from the package. The `files` property in `package.json` takes precedence over the ignore file.
@@ -19,6 +20,4 @@
     * Review installed npm and Node.js versions.
     * Run permission checks on the local and global `node_modules`, and package cache folders.
     * Check the local npm module cache checksum.
-* Audit for vulnerabilities in open source dependencies. Scan with `snyk` and/or `npm audit`.
-
-
+* Audit for vulnerabilities in open source dependencies. Scan with `snyk` and/or `npm audit`. See [Comparing npm audit with Snyk](https://www.nearform.com/blog/comparing-npm-audit-with-snyk/)
