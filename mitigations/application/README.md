@@ -4,8 +4,11 @@ Applications in general, and in a wider perspective, software development requir
 
 * [(Pen)Testing](testing)
   * [Code reviews](testing/Code-reviews.md)
+  * [Source code analysis](testing/Source-code-analysis.md)
   * [Web application vulnerability scanning](testing/Web-application-vulnerability-scanning.md)
   * [Web service scanning](testing/Web-service-scanning.md)
+  * [Network vulnerability scanning](testing/Network-vulnerability-scanning.md)
+  * [Database frangibility scanning](testing/Database-frangibility-scanning.md)
 * [Lockdown](lockdown)
   * [Communication with server](lockdown/Communication-with-server.md)
   * [Containers](lockdown/Containers.md)
