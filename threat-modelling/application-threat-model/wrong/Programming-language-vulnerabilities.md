@@ -1,5 +1,7 @@
 # Programming language vulnerabilities
 
+## JavaScript
+
 * [CVE's with keyword JavaScript](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=JavaScript)
 
 The most common JavaScript vulnerabilities:
@@ -9,6 +11,8 @@ The most common JavaScript vulnerabilities:
 * Client-side browser scripts have access to all of the content returned by a web application to the browser, and this includes cookies and tokens that could contain sensitive data (user session IDs). The usual exploit of XSS is to hijack the session.
 * [Cross-site request forgery (CSRF)](../../../trees/web-hacking/Cross-Site-Request-Forgery-(CSRF).md) attacks trick a browser into executing malicious requests on the websites the user is already logged in to (an may not necessarily be visited at that time). If sessions on the target site are cookie-based, requests to that site can be automatically enriched with authorisation cookies. Adversaries can implement their own web pages and execute malicious requests to other sites in the background when the user opens the site. 
 * `eval()` executes passed arguments if a JavaScript expression. If an adversary can manipulate input values, he or she can run any script.
+
+## Python
 
 * [CVE's with keyword Python](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=JavaScript)
 
