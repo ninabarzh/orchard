@@ -1,7 +1,8 @@
 # Communication with server
 
 Isolate communication between servers in the same account or team within the same region. Only services that are meant to be accessible by clients on the public internet need to be exposed on the public network.
-Making connections
+
+## Making connections
 
 * With a VPN a private network can be mapped that only selected servers can see. Other applications can be configured to pass their traffic over the virtual interface that the VPN software exposes.
 * With some server hosting services, Docker allows for setting up encrypted channels between containers, even when on other servers (within the local network).
