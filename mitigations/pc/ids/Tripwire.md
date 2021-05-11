@@ -42,29 +42,31 @@ To install tripwire on a debian-based system:
     Processing triggers for man-db (2.7.0.2-5) ...
     Setting up tripwire (2.4.2.2-4) ...
 
-![Tripwire](../../assets/images/tripwire1.png)
+https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/chrootkit.png
+
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire1.png)
 
 Use the arrow keys to navigate: 
 
-![Tripwire](../../assets/images/tripwire2.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire2.png)
 
-![Tripwire](../../assets/images/tripwire3.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire3.png)
 
-![Tripwire](../../assets/images/tripwire4.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire4.png)
 
-![Tripwire](../../assets/images/tripwire5.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire5.png)
 
-![Tripwire](../../assets/images/tripwire6.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire6.png)
 
-![Tripwire](../../assets/images/tripwire7.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire7.png)
 
 "Remember that passphrase", for example in keepassx (I also had keepassx generate the passphrase):
 
-![KeepassX](../../assets/images/tripwire-site-key-kpassx.png) 
+![KeepassX](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire-site-key-kpassx.png) 
 
 Repeat: 
 
-![Repeat](../../assets/images/tripwire8.png) 
+![Repeat](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire8.png) 
 
     Generating site key (this may take several minutes)...
 
@@ -132,9 +134,9 @@ Waaaait for it! When this listing has been generated, edit `/etc/tripwire/twpol.
 
     # geany /etc/tripwire/twpol.txt
 
-![Tripwire](../../assets/images/tripwire11.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire11.png)
 
-![Tripwire](../../assets/images/tripwire12.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire12.png)
 
 And there are other files in the default policy that may not make sense to monitor on your local system. These include lock files (which identify that some process is in use) and //pid// files (which identify the //process ID// of some //daemons//). Such files are likely to change often, if not at every system boot, and they can cause tripwire to generate false positives. You can comment out all of the `/var/lock/subsys` entries as well as the entry for `/var/run`.
 
@@ -170,7 +172,7 @@ Any `/dev` entries spell that the /dev file system also has other file systems m
 
 `binfmt_misc` is a capability of the Linux kernel which allows arbitrary executable file formats to be recognised and passed to certain user space applications, such as emulators and virtual machines. The executable formats are registered through a special purpose file system interface (similar to `/proc`). Debian-based distributions provide the functionality through an extra //binfmt-support// package. Needs monitoring. So, added those two as well. 
 
-![Tripwire](../../assets/images/tripwire14.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire14.png)
 
 After that you need to re-install default policy and generate the database again.
 
@@ -188,7 +190,7 @@ If they need to be restored, cleartext versions of these files can be created fr
 
     $ sudo /usr/sbin/tripwire -m c
 
-![Tripwire](../../assets/images/800px-tripwire15.png)
+![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/800px-tripwire15.png)
 
 The management at a directory level also means that addition of packages to a system will almost certainly require the updating or regeneration of the tripwire database. 
 
