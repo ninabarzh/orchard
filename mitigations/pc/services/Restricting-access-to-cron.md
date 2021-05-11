@@ -6,4 +6,4 @@ The two configuration files that control user access to the cron daemon are `cro
 
 The `cron.allow` file is used to allows users to schedule jobs using the `cron` daemon, if the username does not exist in the `cron.allow` configuration file the user will be denied access. The `cron.deny` configuration file houses the username of users that are not allowed to schedule jobs, both configuration files have the same syntax as the `at.deny` and `at.allow` configuration files. Each username should be specified on an individual line.
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/cron-allow.png)
+![Cron allow](../../assets/images/cron-allow.png)
