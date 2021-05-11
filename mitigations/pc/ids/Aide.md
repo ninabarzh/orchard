@@ -2,16 +2,11 @@
 
 The [Advanced Intrusion Detection Environment (Aide)](https://aide.github.io/), is a file integrity checker (FIA). It creates a database from the regular expression rules that it finds from the config file(s). Once this database is initialized it can be used to verify the integrity of the files. It has several message digest algorithms (md5, sha1, rmd160, tiger, crc32, sha256, sha512, whirlpool (additionally with libmhash: gost, haval, crc32b)) that are used to check the integrity of the file. All of the usual file attributes (//File type, Permissions, Inode, Uid, Gid, Link name, Size, Block count, Number of links, Mtime, Ctime// and //Atime//) can also be checked for inconsistencies. It can read databases from older or newer versions.
 
-===== Problems =====
-
-* Has a "[[https://bugs.archlinux.org/task/54213|floating point problem]]" during initialisation in Archlinux Xfce that I managed to reproduce without any effort, and in Fedora Xfce a `DBG: md_enable: algorithm 7 not available` out of the box. On debian it installs without problems and can be useful for non-technical people, but according to Rainer Wichmann:
-* Building without libmhash/libgcrypt is possible, but will result in silenty skipping checksums if policy 'R' (read-only) is used, although 'R' is supposed to include md5.
-* When specifying the root directory, apparently `'/.* R`' does not match `'/'; '/$ R`' matches, but only if there is no other rule, so it's useless (for example can't check the root directory inode).
-* There is no tool to list the database (however, it is human-readable, not binary).
-* Aide uses `mmap`() rather than read() to read a file. This is responsible for passing the 'Lock' test (the kernel denies mmapping a mandatorily locked file).
-* Aide tries to fix the 'Race' problem, but the solution does not work.
-* Omits checksum if file size is zero, which is incorrect for Linux `/proc` files.
-* For deleted/added files, only the path is printed.
+- [Aide](#aide)
+  - [Installation](#installation)
+  - [Initialisation](#initialisation)
+  - [Configuration](#configuration)
+  - [Usage](#usage)
 
 ## Installation
 

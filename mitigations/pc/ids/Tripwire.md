@@ -8,7 +8,7 @@ Tripwire was originally a free, open source product and is now a commercial prod
 * Needs `gcc` for compiling. Will not compile with newer gcc's.
 * Tripwire provides no details about modified/added/removed files, only path names, unless one uses `twprint --report-level 4`, which is pretty verbose.
 * Omits checksum if file size is zero, which is incorrect for Linux `/proc` files.
-* Setting it up is hilariously hellish, hence I am spelling it out
+* Setting it up is hilariously hellish, hence I am spelling it out here.
 
 - [Tripwire](#tripwire)
   - [Problems](#problems)
