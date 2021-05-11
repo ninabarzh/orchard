@@ -1,4 +1,4 @@
-# Output
+# Output validation
 
 Use structured mechanisms that automatically enforce the separation between data and code. These mechanisms may be able to provide the relevant quoting, encoding, and validation automatically, instead of relying on the developer to provide this capability at every point where output is generated. 
 

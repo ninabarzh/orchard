@@ -1,4 +1,4 @@
-## Input
+## Input validation
 
 Use a standard input validation mechanism to validate input for length, type of input, syntax, missing or extra inputs, and consistency across related fields. Understand all the potential areas where untrusted inputs can enter the application: parameters or arguments, cookies, anything read from the network, environment variables, reverse DNS lookups, query results, request headers, URL components, e-mail, files, databases, and any external systems that provide data to the application. Inputs may be obtained indirectly through API calls.
 
