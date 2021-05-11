@@ -41,6 +41,11 @@ There really is no such thing as a truly secure system as long is it is connecte
 * [Rootkit scanner](scanners)
   * [chrootkit](scanners/chrootkit.md)
   * [rkhunter](scanners/rkhunter.md)
+* [Malware](malware)
+  * [Malware attack vectors](malware/Malware-attack-vectors.md)
+  * [Malware detection](malware/Malware-detection.md)
+  * [Malware removal](malware/Malware-removal.md)
+  * [Browsers](malware/Browsers.md)
 
 ## Problems or Suggestions
 
