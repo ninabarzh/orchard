@@ -2,9 +2,7 @@
 
 ## JavaScript
 
-* [CVE's with keyword JavaScript](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=JavaScript)
-
-The most common JavaScript vulnerabilities:
+The most common JavaScript vulnerabilities ([CVE's with keyword JavaScript](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=JavaScript)):
 
 * [XSS attacks](../../../trees/web-hacking/Cross-Site-Scripting-(XSS).md) use data containing special characters in the HTML, JavaScript, or CSS of a web page. When the browser renders the page, it interpret those as part of the code instead of as a value to be displayed. This can be used to add additional browser-side code that gets executed.
 * Adversaries can also use special tools to send data directly to the server, entirely avoiding client-side validations and allowing entry of potentially malicious or unverified data.
@@ -14,9 +12,7 @@ The most common JavaScript vulnerabilities:
 
 ## Python
 
-* [CVE's with keyword Python](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=JavaScript)
-
-The most common Python vulnerabilities:
+The most common Python vulnerabilities ([CVE's with keyword Python](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=JavaScript):
 
 * Some of the most common attacks are [SQL injection attacks](../../../trees/application-hacking/SQL-injection.md), [XSS attacks](../../../trees/web-hacking/Cross-Site-Scripting-(XSS).md) and [Cross-site request forgery (CSRF)](../../../trees/web-hacking/Cross-Site-Request-Forgery-(CSRF).md) injection attacks. These types of attacks can impact not just the language but the environment as a whole.
 * [DoS](../../../trees/network-attacks/Denial-of-Service-(DoS).md) and [DDoS](../../../trees/network-attacks/Distributed-Denial-of-Service-(DDoS).md) styled attacks based on XML parsing attack vectors (using an XML standard library module, especially external XML files).
