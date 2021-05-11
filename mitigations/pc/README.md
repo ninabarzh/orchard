@@ -22,6 +22,16 @@ There really is no such thing as a truly secure system as long is it is connecte
   * [Firewire and thunderbolt](devices/Firewire-and-thunderbolt.md)
   * [Microphone](devices/Microphone.md)
   * [Webcam/Camera](devices/Camera-Webcam.md)
+* [Modifying kernel parameters](kernel)
+  * [Altering sysctl configuration](kernel/Altering-sysctl-configuration.md)
+  * [Spoof protection](kernel/Spoof-protection.md)
+  * [SYN cookies](kernel/SYN-cookies.md)
+  * [Packet forwarding](kernel/Packet-forwarding.md)
+  * [ICMP redirects](kernel/ICMP-redirects.md)
+  * [Single Ring Recovery](kernel/Single-Ring-Recovery.md)
+  * [Logging](kernel/Logging.md)
+  * [Magic SysRq key](kernel/Magic-SysRq-key.md)
+  * [Protected links](kernel/Protected-links.md)
 
 ## Problems or Suggestions
 
