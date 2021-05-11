@@ -46,25 +46,25 @@ To install tripwire on a debian-based system:
 
 Use the arrow keys to navigate: 
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire2.png)
+![Tripwire](../../assets/images/tripwire2.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire3.png)
+![Tripwire](../../assets/images/tripwire3.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire4.png)
+![Tripwire](../../assets/images/tripwire4.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire5.png)
+![Tripwire](../../assets/images/tripwire5.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire6.png)
+![Tripwire](../../assets/images/tripwire6.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire7.png)
+![Tripwire](../../assets/images/tripwire7.png)
 
 "Remember that passphrase", for example in keepassx (I also had keepassx generate the passphrase):
 
-![KeepassX](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire-site-key-kpassx.png) 
+![KeepassX](../../assets/images/tripwire-site-key-kpassx.png) 
 
 Repeat: 
 
-![Repeat](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire8.png) 
+![Repeat](../../assets/images/tripwire8.png) 
 
     Generating site key (this may take several minutes)...
 
@@ -132,7 +132,7 @@ Waaaait for it! When this listing has been generated, edit `/etc/tripwire/twpol.
 
     # geany /etc/tripwire/twpol.txt
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire11.png)
+![Tripwire](../../assets/images/tripwire11.png)
 
 ![Tripwire](../../assets/images/tripwire12.png)
 
