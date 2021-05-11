@@ -1,6 +1,6 @@
 # NFTables
 
-So let me try. Still at it and //Warning: Not been tested yet//.
+The successor of iptables. So let me try. Still at it and //Warning: Not been tested yet//.
  
 ## Basic idea 
 

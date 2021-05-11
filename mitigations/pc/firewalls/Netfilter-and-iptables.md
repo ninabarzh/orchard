@@ -1,7 +1,5 @@
 # Netfilter and iptables
 
-* [Netfilter](https://www.netfilter.org/)
-
 - [Netfilter and iptables](#netfilter-and-iptables)
   - [Installing persistence](#installing-persistence)
   - [Rules](#rules)

@@ -1,8 +1,5 @@
 # Gufw and ufw
 
-  * [Gufw](https://gufw.org/)
-  * Available from repository
-
 - [Gufw and ufw](#gufw-and-ufw)
   - [Installation](#installation)
   - [Enabling](#enabling)
