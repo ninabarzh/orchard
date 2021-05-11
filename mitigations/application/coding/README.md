@@ -11,6 +11,6 @@
 * Tokenise client-server communication with an additional token not stored in cookies. Each form can have a separate token when the session is established and be sent with each request during the session. 
 * Establish and maintain control over all [inputs](Input.md)
 * Establish and maintain control over all [outputs](Output.md)
-* Mitigate the most common language specific vulnerabilities
+* Mitigate the language specific most common vulnerabilities
   * [JavaScript](Javascript.md)
   * [Python](Python.md)
