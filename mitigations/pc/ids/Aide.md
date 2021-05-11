@@ -18,7 +18,7 @@ Open up `/etc/default/aide` with your favourite editor to change who to send its
 
     $ sudo geany /etc/default/aide
 
-![Aide](../../assets/images/aide1.png)
+![Aide]https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/aide1.png
 
 ## Initialisation
 
@@ -68,7 +68,7 @@ So let say that you have a copy of `aide.db` on an external disk. To use that sn
 
     $ sudo geany /etc/aide/aide.conf
 
-![Aide conf](../../assets/images/aide22.png)
+![Aide conf]https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/aide22.png
 
 Read through the file to acquaint yourself with aide. By default, changes in //Binaries// and //Libraries// directories are checked. Those are matched to the //BinLib// rule, which basically checks for any changes in permissions, ownership, modification, access and creation date, size change, md5 and sha1 signature, inode, number of links and block count. Then, it also checks for modifications in the //log files// against the rule //Logs//. Because log files tend to grow, you cannot use a signature there and you also have to ask aide not to check for size modification (S).
 

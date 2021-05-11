@@ -14,7 +14,7 @@ Linux distributions come with a firewall installed (IPtables are built into the 
 
 You can install `ufw` (command-line) or `gufw`, a GUI frontend to `ufw`, and that will also install `ufw`:
 
-![UFW and GUFW install](../../assets/images/install-ufw-gufw.png)
+![UFW and GUFW install](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/install-ufw-gufw.png)
 
 ## Enabling
 
@@ -24,7 +24,7 @@ The firewall is called `ufw` (**u**ncomplicated **f**ire**w**all), and can be op
 
 Type your password when prompted for it; this will remain entirely invisible, not even asterisks will be shown.
 
-![UFW and GUFW enable](../../assets/images//ufw-enable.png)
+![UFW and GUFW enable](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/ufw-enable.png)
 
 Ufw has a sensible set of default settings (profile), which are fine for the vast majority of home users. So unless you have special wishes: you're done!
 
