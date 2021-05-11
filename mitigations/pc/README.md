@@ -32,6 +32,9 @@ There really is no such thing as a truly secure system as long is it is connecte
   * [Logging](kernel/Logging.md)
   * [Magic SysRq key](kernel/Magic-SysRq-key.md)
   * [Protected links](kernel/Protected-links.md)
+* [Rootkit scanner](scanners)
+  * [chrootkit](scanners/chrootkit.md)
+  * [rkhunter](scanners/rkhunter.md)
 
 ## Problems or Suggestions
 
