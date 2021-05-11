@@ -18,6 +18,10 @@ There really is no such thing as a truly secure system as long is it is connecte
   * [Netfilter and iptables](firewalls/Netfilter-and-iptables.md)
   * [NFTables](firewalls/NFTables.md)
   * [ufw and gufw](firewalls/Gufw-and-ufw.md)
+* [Devices](devices)
+  * [Firewire and thunderbolt](devices/Firewire-and-thunderbolt.md)
+  * [Microphone](devices/Microphone.md)
+  * [Webcam/Camera](devices/Camera-Webcam.md)
 
 ## Problems or Suggestions
 
