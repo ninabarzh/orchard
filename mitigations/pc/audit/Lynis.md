@@ -14,4 +14,4 @@ Lynis first run:
 
     $ sudo lynis audit system
 
-![Lynis first run](../../assets/images/lynis-first-run.png/orchard/blob/main/mitigations/assets/lynis-first-run.png)
+![Lynis first run](../../assets/images/lynis-first-run.png)
