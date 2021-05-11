@@ -1,6 +1,6 @@
 # chrootkit
 
-chkrootkit (Free software) is a tool to locally check for signs of a rootkit.  
+chkrootkit (Free software) is a tool to locally check for signs of a rootkit.
 
 ## Installation
 
@@ -14,7 +14,7 @@ If you want an automatic daily run of `chkrootkit`, open `/etc/chkrootkit.conf` 
 
     $ sudo geany /etc/chkrootkit.conf
 
-{{ :en:security:rks:chrootkit.png |}}
+![chrootkit](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/chrootkit.png)
 
 ## Usage
 
@@ -24,7 +24,7 @@ Using chkrootkit (perform all tests):
 
 And you may get something like: 
 
-{{ :en:security:rks:chrootkit-run.png |}}
+![chrootkit run](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/chrootkit-run.png)
 
 The man utmp reads: //The utmp file allows one to discover information about who is currently using the system. There may be more users currently using the system, because not all programs use utmp logging.
 
@@ -36,12 +36,7 @@ In this case it is not the cooties, but xorg listening for remote desktop connec
 
 You may also get:
 
-`Searching for suspicious files and dirs, it may take a while... The following suspicious files and directories were found:  
-/usr/lib/jvm/.java-1.8.0-openjdk-amd64.jinfo`
+    Searching for suspicious files and dirs, it may take a while... The following suspicious files and directories were found: /usr/lib/jvm/.java-1.8.0-openjdk-amd64.jinfo
 
 This is a false positive.
 
-----
-{{tag>security computer linux rootkit-scanner chrootkit}}
-<-en:security:computer:linux:rootkit-scanner:rkhunter|rkhunter^en:security:computer:linux:rootkit-scanner:start|Rootkit scanner^->
-{{indexmenu_n>1}}
