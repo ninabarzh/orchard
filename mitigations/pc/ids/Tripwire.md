@@ -170,7 +170,7 @@ Any `/dev` entries spell that the /dev file system also has other file systems m
 
 `binfmt_misc` is a capability of the Linux kernel which allows arbitrary executable file formats to be recognised and passed to certain user space applications, such as emulators and virtual machines. The executable formats are registered through a special purpose file system interface (similar to `/proc`). Debian-based distributions provide the functionality through an extra //binfmt-support// package. Needs monitoring. So, added those two as well. 
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire14.png)
+![Tripwire](../../assets/tripwire14.png)
 
 After that you need to re-install default policy and generate the database again.
 
@@ -188,7 +188,7 @@ If they need to be restored, cleartext versions of these files can be created fr
 
     $ sudo /usr/sbin/tripwire -m c
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/tripwire15.png)
+![Tripwire](../../assets/tripwire15.png)
 
 The management at a directory level also means that addition of packages to a system will almost certainly require the updating or regeneration of the tripwire database. 
 

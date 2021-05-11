@@ -6,6 +6,17 @@ The tools can be both run altogether once to generate an audit report of the sys
 
 Debian's `tiger` incorporates new checks primarily oriented towards Debian distribution. The package provides all the security scripts and data files.
 
+- [Tiger](#tiger)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Examples](#examples)
+    - [Checking passwd files](#checking-passwd-files)
+    - [Checking user accounts](#checking-user-accounts)
+    - [Checking cron entries](#checking-cron-entries)
+    - [Checking system file permissions](#checking-system-file-permissions)
+    - [Checking network configuration](#checking-network-configuration)
+  
+
 ## Installation 
 
     $ sudo apt-get install tiger
@@ -119,7 +130,7 @@ Fix with:
 
     $ sudo sysctl ­w net.ipv4.conf.all.log_martians=1
 
-$ sudo sysctl ­w net.ipv4.conf.default.log_martians=1
+    $ sudo sysctl ­w net.ipv4.conf.default.log_martians=1
 
 Yes, yes, I had forgotten those default versions. Also corrected in [Modifying kernel parameters]. 
 
