@@ -13,6 +13,6 @@ If you are not being targeted by petty tyrants, but are merely watched over by d
 ## Needing more than that 
 When being **targeted**, neither will do. 
 
-Tripwire nor aide have built-in support for (centralized) logging and management that would allow delivering a service for guarding machines of non-technically inclined people. Ossec, Osiris and Samhain do have logging and management, but I have found no intelligent tree traversing for anomaly detection (yet) that would allow me to detect (new) (types of) malware and attacks. 
+Tripwire nor aide have built-in support for (centralised) logging and management that would allow delivering a service for guarding machines of non-technically inclined people. Ossec, Osiris and Samhain do have logging and management, but I have found no intelligent tree traversing for anomaly detection (yet) that would allow for the discovery of (new) (types of) malware and attacks. 
 
 Ossec, Osiris and Samhain are promising in terms of being able to support the delivery of a //hacking forensics service// and //digital resilience workshops// for activists, and for developing some anomaly detection intelligence modules. I will be trying out all three. Please stand by.

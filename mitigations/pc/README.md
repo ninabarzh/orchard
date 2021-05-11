@@ -10,6 +10,9 @@ There really is no such thing as a truly secure system as long is it is connecte
   * [Choosing an IDS](ids/Choosing-an-IDS.md)
   * [Tripwire](ids/Tripwire.md)
   * [Aide](ids/Aide.md)
+* [Restrict services](services)
+  * [Startup applications](services/Startup-applications.md)
+  * [Restricting access to cron](services/Restricting-access-to-cron.md)
 
 ## Problems or Suggestions
 
