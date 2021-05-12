@@ -8,7 +8,7 @@
 
 ## Generate a key
 
-    § ssh-keygen -t
+    $ ssh-keygen -t
 
 Enter a passphrase. It will create 2 files in the `~/.ssh` directory: `id_rsa`, a private key and `id_rsa.pub`, a public key. 
 
