@@ -1,6 +1,5 @@
-# Programming language vulnerabilities
 
-## JavaScript
+# JavaScript
 
 The most common JavaScript vulnerabilities ([CVE's with keyword JavaScript](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=JavaScript)):
 
@@ -10,11 +9,3 @@ The most common JavaScript vulnerabilities ([CVE's with keyword JavaScript](http
 * [Cross-site request forgery (CSRF)](../../../trees/web-hacking/Cross-Site-Request-Forgery-(CSRF).md) attacks trick a browser into executing malicious requests on the websites the user is already logged in to (an may not necessarily be visited at that time). If sessions on the target site are cookie-based, requests to that site can be automatically enriched with authorisation cookies. Adversaries can implement their own web pages and execute malicious requests to other sites in the background when the user opens the site. 
 * Frame busting is a severely limited protection from [clickjacking](../../trees/web-hacking/Clickjacking.md). For example, frame-busting JavaScript can be defeated by disabling JavaScript. Some clickjacking looks for [CSRF vulnerabilities](../../resources/vulnerabilities/endpoints/Applications.md) by looking for evidence of exclusively cookie based session ids, using a variety of heuristics to identify and verify whether various parameters are serving as session tokens. Combinations of lack of frame busting and/or CSRF issues can lead to opening up for clickjacking for pages requiring an authenticated session.
 * `eval()` executes passed arguments if a JavaScript expression. If an adversary can manipulate input values, he or she can run any script.
-
-## Python
-
-The most common Python vulnerabilities ([CVE's with keyword Python](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=JavaScript):
-
-* Some of the most common attacks are [SQL injection attacks](../../../trees/application-hacking/SQL-injection.md), [XSS attacks](../../../trees/web-hacking/Cross-Site-Scripting-(XSS).md) and [Cross-site request forgery (CSRF)](../../../trees/web-hacking/Cross-Site-Request-Forgery-(CSRF).md) injection attacks. These types of attacks can impact not just the language but the environment as a whole.
-* [DoS](../../../trees/network-attacks/Denial-of-Service-(DoS).md) and [DDoS](../../../trees/network-attacks/Distributed-Denial-of-Service-(DDoS).md) styled attacks based on XML parsing attack vectors (using an XML standard library module, especially external XML files).
-* `mltemp()` when used for creating temp files as a different process may also create a file with this name to attempt to load the wrong data or expose other temporary data.

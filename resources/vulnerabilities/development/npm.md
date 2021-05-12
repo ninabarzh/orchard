@@ -1,4 +1,4 @@
-# JavaScript
+# npm
 
 The JavaScript ecosystem is the largest in the world, and the npm repository includes nearly 100,000 libraries.
 * [npm Security](https://www.npmjs.com/policies/security) 

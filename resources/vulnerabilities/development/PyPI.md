@@ -1,4 +1,4 @@
-# Python
+# PyPI
 
 Python is one of the most used language on the internet and the [PyPI](https://pypi.org/) repository contains the most used libraries. Everybody can upload packages to it. 
 
