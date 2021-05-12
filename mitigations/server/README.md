@@ -23,7 +23,7 @@
   * [FirewallD](firewall/FirewallD.md)
   * [FireHOL](firewall/FireHOL.md)
   * [UFW](firewall/UFW.md)
-  * [Packet filtering with I/O Control](firewall/PF.md)
+  * [Packet filtering](firewall/PF.md)
   * [Fail2ban](firewall/Fail2ban.md)
   * [SSHguard](firewall/SSHguard.md)
   * [WAF](firewall/WAF.md)
