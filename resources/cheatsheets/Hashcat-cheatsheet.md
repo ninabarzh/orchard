@@ -1,6 +1,6 @@
 # Hashcat
 
-[https://hashcat.net/hashcat/](Hashcat) is the self-proclaimed world's fastest password recovery tool and the World's first and only in-kernel rule engine. It had a proprietary code base until 2015, but is now released as free software (MIT License). Versions are available for Linux, OS X, and Windows and can come in CPU-based or GPU-based variants.
+[Hashcat](https://hashcat.net/hashcat/) is the self-proclaimed world's fastest password recovery tool and the World's first and only in-kernel rule engine. It had a proprietary code base until 2015, but is now released as free software (MIT License). Versions are available for Linux, OS X, and Windows and can come in CPU-based or GPU-based variants.
 
 There are two main flavours of Hashcat:
 
