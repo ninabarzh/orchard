@@ -85,6 +85,7 @@ Install `rsyslog`, and edit `/etc/rsyslog.conf`:
 
 ## Configuration resources 
 
+* [rsyslog](https://www.rsyslog.com/)
 * [Configuring remote syslog from Unix/Linux and BSD/macOS](https://help.papertrailapp.com/kb/configuration/configuring-remote-syslog-from-unixlinux-and-bsdos-x/)
 * [Configuring remote syslog from Windows](https://help.papertrailapp.com/kb/configuration/configuring-remote-syslog-from-windows/)
 

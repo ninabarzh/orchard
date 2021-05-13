@@ -25,7 +25,7 @@ Rsyslog (default installed on debian) and syslog-ng are both light-weight. The c
 ## Future considerations
 
 To protect from intentional tampering with logs (intruder deleting indicators of presence):
-* Add another server, a [[en:security:computer:server:ids:snort|snort box]] (IDS) that is actually another central server (yet has no IP address) and copy each packet intended for the already existing central server. 
+* Add another server, a snort box (IDS) that is actually another central server (yet has no IP address) and copy each packet intended for the already existing central server. 
   * Promiscuous mode
   * Rule: Only listen for this IP address on this port (of existing central server)
 
