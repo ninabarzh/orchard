@@ -1,6 +1,6 @@
 # Network
 
-The policies and practices adopted to prevent, monitor, and recover from network attacks. On a general level mostly (for now), and here and there a sprinkle of concreteness based on our own home network.
+The policies and practices adopted to prevent, monitor, and recover from network attacks. On a general level mostly (for now), and a sprinkle of concreteness based on our own home network.
 
 * [Home network](local)
   * [Add a second NAT router (Home)](local/Add-a-second-NAT-router.md)
