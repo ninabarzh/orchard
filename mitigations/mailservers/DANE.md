@@ -3,7 +3,7 @@
 DNS-based Authentication of Named Entities (DANE) is an Internet security protocol to allow X.509 digital certificates, commonly used for Transport Layer Security (TLS), to be bound to domain names using Domain Name System Security Extensions (DNSSEC). TLSA resource record is an own type of DNS record.
 
 * [Postfix](Postfix.md) supports DANE
-* In Postdix, certificate usage 0 is unsupported, 1 is mapped to 3, and 2 is optional, thus it is recommended to publish a "3" record. 
+* In Postfix, certificate usage 0 is unsupported, 1 is mapped to 3, and 2 is optional, thus it is recommended to publish a "3" record. 
 
 - [DANE](#dane)
   - [Configuration](#configuration)
@@ -24,7 +24,8 @@ In `/etc/postfix/master.cf`
       -o smtp_dns_support_level=dnssec
       -o smtp_tls_security_level=dane
 
-### Multiple domains 
+### Multiple domains
+
 To use per-domain policies, for example for opportunistic DANE for domain.org and mandatory DANE for domain.com:
 
 In `/etc/postfix/main.cf`
