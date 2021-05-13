@@ -1,6 +1,5 @@
-# Local network
+# Home network
 
-* [LAN Segmentation](LAN-segmentation.md)
 * [Add a second NAT router (Home)](Add-a-second-NAT-router.md)
 * [Nethogs](Nethogs.md)
 * [Unauthorised devices](Unauthorised-devices.md)
@@ -15,7 +14,3 @@
 * [Services audit](Services-audit.md)
 * [Off (Home)](Off.md)
 * [Disable WPS (Home)](Disable-WPS.md)
-* [ARP spoofing](ARP-spoofing.md)
-* [DNS cache poisoning](DNS-cache-poisoning.md)
-* [NFTables](NFTables.md)
-* [Snortbox](Snort-box.md)

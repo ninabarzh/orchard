@@ -2,8 +2,7 @@
 
 The policies and practices adopted to prevent, monitor, and recover from network attacks. On a general level mostly (for now), and here and there a sprinkle of concreteness based on our own home network.
 
-* [Local network](local)
-  * [LAN Segmentation](local/LAN-segmentation.md)
+* [Home network](local)
   * [Add a second NAT router (Home)](local/Add-a-second-NAT-router.md)
   * [Nethogs](local/Nethogs.md)
   * [Unauthorised devices](local/Unauthorised-devices.md)
@@ -18,10 +17,12 @@ The policies and practices adopted to prevent, monitor, and recover from network
   * [Services audit](local/Services-audit.md)
   * [Off (Home)](local/Off.md)
   * [Disable WPS (Home)](local/Disable-WPS.md)
-  * [ARP spoofing](local/ARP-spoofing.md)
-  * [DNS cache poisoning](local/DNS-cache-poisoning.md)
-  * [NFTables](local/NFTables.md)
-  * [Snortbox](local/Snort-box.md)
+* [Intranet](intranet)
+  * [LAN Segmentation](intranet/LAN-segmentation.md)
+  * [ARP spoofing](intranet/ARP-spoofing.md)
+  * [DNS cache poisoning](intranet/DNS-cache-poisoning.md)
+  * [NFTables](intranet/NFTables.md)
+  * [Snortbox](intranet/Snort-box.md)
 * [Internet](internet)
   * [BGP hijacking](internet/BGP-hijacking.md)
   * [Certificate validation](internet/Certificate-validation.md)
