@@ -22,7 +22,8 @@ Start and enable it on boot
 
 Zones are predefined sets of rules specifying what traffic should be allowed based on the level of trust on the networks a computer is connected to. Network interfaces and sources can be assigned to a zone. From untrusted to trusted:
 
-|:--- | :--- |
+| Zones |  |
+|:---- | :---- |
 |`drop` |All incoming connections are dropped without any notification. Only outgoing connections are allowed.|
 |`block` |All incoming connections are rejected with an `icmp-host-prohibited` message for IPv4 and `icmp6-adm-prohibited` for IPv6n. Only outgoing connections are allowed. |
 |`public` |For use in untrusted public areas. Do not trust other computers on the network but allow selected incoming connections. |
