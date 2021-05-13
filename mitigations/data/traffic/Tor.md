@@ -16,37 +16,34 @@ In some countries, proving that you connected to a particular server is enough t
 ### Installation
 
 Create the `/etc/apt/sources.list.d/torproxy.list` file and append:
-```
-echo 'deb http://deb.torproject.org/torproject.org <distribution> main' >> /etc/apt/sources.list.d/torproxy.list
-```
+
+    echo 'deb http://deb.torproject.org/torproject.org <distribution> main' >> /etc/apt/sources.list.d/torproxy.list
+
 Add the `gpg` key used to sign the packages and update apt:
 
-```
-# curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
-# gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
-# apt update
-```
+    # curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
+    # gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
+    # apt update
 
 Also install `connect-proxy`, a simple relaying command to make tunnel TCP connections via SOCKS or HTTPS proxies. It is mainly intended to be used as proxy command of OpenSSH.
-```
-# apt-get install tor tor-geoipdb connect-proxy
-```
+
+    # apt-get install tor tor-geoipdb connect-proxy
+
 ### Configuration
 
 Create or open `~/.ssh/config`
-```
-$ vi ~/.ssh/config
-```
+
+    $ vi ~/.ssh/config
+
 Append the below entry (replacing XXX.XXX.XXX.XXX with actual server domain name or IP and user with actual user):
-```
-Host jumphost
-HostName XXX.XXX.XXX.XXX
-User user
-CheckHostIP no
-Compression yes
-Protocol 2
-ProxyCommand connect -4 -S localhost:$orport $(tor-resolve %h localhost:$orport) %p
-```
+
+    Host jumphost
+    HostName XXX.XXX.XXX.XXX
+    User user
+    CheckHostIP no
+    Compression yes
+    Protocol 2
+    ProxyCommand connect -4 -S localhost:$orport $(tor-resolve %h localhost:$orport) %p
 
 ## Blocking Tor
 

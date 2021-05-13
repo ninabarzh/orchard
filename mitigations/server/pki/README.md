@@ -2,6 +2,14 @@
 
 Public key infrastructure (PKI) is the umbrella term for everything needed in order to issue, distribute, store, use, verify, revoke, and otherwise manage and interact with certificates and keys. It’s an intentionally vague term, like “database infrastructure”. Certificates are the building blocks of most PKIs, and certificate authorities are the foundation.
 
+  * [Problems](Problems.md)
+  * [Internal PKI](Internal-PKI.md)
+  * [Pluggable Authentication Modules (PAM)](PAM.md)
+  * [Let's Encrypt](Let's-Encrypt.md)
+  * [TLS/SSL](TLS-SSL.md)
+
+## Notes
+
 * Many simple PKIs don’t even use certificates. When editing `~/.ssh/authorized_keys` you’re configuring a simple certificate-less form of PKI that SSH uses to bind public keys to names in flat files.
 * Because the PKI system is asymmetric, users need access to a public key and recipients of a message need a private key to decrypt the information. 
 * X.509 is a complex standard and complex technology is not easy to deploy on a large-scale. Use a specific profile of X.509 and validate it in a narrow set of implementations.
