@@ -1,5 +1,7 @@
 # Mail servers
 
+## Notes
+
 * Use multiple listeners for each interface and correlate them with certain allow and deny rules.
 * When having an external facing mailserver and an internal mailserver, relay rules based on sender address/recipient address, or relaying for authenticated users only can be implemented dependend on context and purpose (but NEITHER is to accept open relaying). 
 * Postfix is a MTA (Mail Transfer Agent) that sends and receives emails to and from other computers on the network using the Simple Mail Transfer Protocol (SMTP). It is widely used, well documented, and actively maintained and developed. It requires minimal configuration and is efficient with system resources.

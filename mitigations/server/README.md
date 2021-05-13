@@ -59,14 +59,6 @@
   * [Chattr](habits/Chattr.md)
   * [Puppet](habits/Puppet.md)
   * [Plain language](habits/Plain-language.md)
-* [Web servers](webservers)
-* [Mail servers](mailservers)
-* [Tor servers](torservers)
-  * [Entry/Guard relays](torservers/Entry-Guard-relays.md)
-  * [Bridge relays](torservers/Bridge-relay.md)
-  * [Middle relays](torservers/Middle-relay.md)
-  * [Exit relays](torservers/Middle-relay.md)
-* [Applications](applications)
 
 ## Problems or Suggestions
 

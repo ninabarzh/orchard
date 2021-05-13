@@ -1,5 +1,8 @@
 # Web servers
 
+
+## Notes
+
 * Reduce information disclosure (OS, version, ServerTokens)
 * Use a firewall.
 * Disable unused services.
@@ -12,4 +15,3 @@
 * Disable dangerous PHP functions if possible.
 * Be careful with naming files *.bak, *.txt or *.inc within the web document root.
 * Be careful using version management tools on doc root.
-
