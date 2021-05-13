@@ -6,6 +6,9 @@ These are all fruity and common mitigations (including and beyond the low-hangin
 
 * [Linux PCs](pc)
 * [Linux servers](server)
+* [Web servers](webservers)
+* [Mail servers](mailservers)
+* [Tor servers](torservers)
 * [Network](network)
 * [Data aka Information](data)
 * [Application aka Software development](application)
