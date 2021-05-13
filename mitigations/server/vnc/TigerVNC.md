@@ -127,7 +127,3 @@ Verify
 
 * [TigerVNC](https://tigervnc.org/)
 
-----
-{{tag>security computer server vnc installation tigervnc}}
-<-en:security:computer:server:vnc:tiger|TigerVNC^en:security:computer:server:vnc:start|Using VNC^en:security:computer:server:vnc:tiger|TigerVNC->
-{{indexmenu_n>2}}

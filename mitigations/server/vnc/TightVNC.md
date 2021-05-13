@@ -129,8 +129,3 @@ Verify
 
 * [TightVNC](https://www.tightvnc.com/)
 
-
-----
-{{tag>security computer server vnc installation tightvnc}}
-<-en:security:computer:server:vnc:tight|TightVNC^en:security:computer:server:vnc:start|Using VNC^en:security:computer:server:vnc:tight|TightVNC->
-{{indexmenu_n>1}}
