@@ -1,4 +1,4 @@
-# Add a second NAT router (Home)
+# Add a second NAT router
 
 If all of the machines on a NAT network are not equally secure and trustworthy, if a machine is infected, the malware could have access to every other uninfected machine sharing the once-secure LAN. By sending //ARP broadcasts// to the LAN, an infected machine can determine the IP and MAC addresses of every other machine on the LAN.
 

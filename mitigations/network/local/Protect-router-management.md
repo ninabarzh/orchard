@@ -1,4 +1,4 @@
-# Protect router management (Home)
+# Protect router management
 
 Most routers offer the option to view and modify their settings over the internet. For most users, managing the router from outside the home network is not necessary. Turn this feature off if not needed. If remote management is needed, consider using a Virtual Private Network (VPN) solution to establish a secure channel to the local network first and then access the router's interface.
 

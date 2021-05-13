@@ -1,4 +1,4 @@
-# Disable WPS (Home)
+# Disable WPS
 The Wi-Fi Protected Setup (WPS) protocol in home routers is like labelling it "HACK ME!". WPS was a bad idea to begin with, has a big design flaw in PIN authentication, comes from a source that is not trusted, is very complicated and as a result there have been multiple instances of poorly written, buggy implementations. The design flaw in the WPS specification for PIN authentication significantly reduces the time required for a cyber attacker to brute force an entire PIN, because it informs them when the first half of the eight-digit PIN is correct. Many routers lack a lockout policy after a certain number of failed attempts to guess the PIN, making a brute-force attack much more likely to occur. 
 
 ## Check for WPS 

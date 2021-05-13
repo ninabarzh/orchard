@@ -1,4 +1,4 @@
-# Change router defaults (Home)
+# Change router defaults
 
 Many routers, including wireless access points, are pre-configured with a default administrator passwords to simplify setup and attackers constantly try to break into devices using these publicly known credentials. They may be readily available on the internet, or may even be physically labelled on the router itself. 
 
