@@ -137,6 +137,7 @@ Next step is to [Build](https://www.la-samhna.de/samhain/manual/installation-bui
 ## Installation
       
 [Install](https://www.la-samhna.de/samhain/manual/installation-install.html):
+
     $ make install /usr/bin/install -c -m 700 samhain /usr/local/sbin/samhain
     /usr/bin/install: cannot create regular file '/usr/local/sbin/samhain': Permission denied
     chmod: cannot access '/usr/local/sbin/samhain': No such file or directory
@@ -213,7 +214,7 @@ Note: Archlinux does not have `apt`, and the `logs` are organised differently.
 
 The configuration file is divided into several sections:
 
-| :--- | :--- |
+| :---- | :---- |
 |Attributes |files specified in this section are checked only for change in permission and ownership|
 |LogFiles |files put in this section are not checked for timestamp, size, or cryptographic checksum changes, because they change often|
 |GrowingLogFiles|files put in this section are not checked for timestamp and cryptographic signature changes and increases in file size (decreases are noted)|
