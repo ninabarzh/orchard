@@ -2,6 +2,15 @@
 
 Isolating processes can reduce the likelihood of a compromised process affecting the entire environment. Process isolation can be achieved by spreading services across several physical servers, virtual machines, or within a single environment using chroot or Linux Containers.
 
+  * [Chroot jails](separation/Chroot-jails.md)
+  * [FreeBSD jails](separation/FreeBSD-jails.md)
+  * [KVM](separation/KVM.md)
+  * [Docker](separation/Docker.md)
+  * [Communication](separation/Communication.md)
+  * [Services audit](separation/Services-audit.md)
+
+## Notes
+
 * FreeBSD jails and chroot jails use operating-system-level virtualisation and are often used instead of virtual machines to create multiple isolated instances of a host OS. It is a kernel level virtualisation and has practically no overhead as compared to Virtual Machines, which provide virtualisation on an application layer level. chroot is useful for creating multiple isolated instances on the same hardware.
 * A Virtual Machine (VM) is a whole other guest computer running on top of a host computer (sitting on top of a layer of virtualisation).
     * If you want to install a binary Linux distribution as a guest, use KVM. It's faster and its' drivers are included in the official kernel tree. 

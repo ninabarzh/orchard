@@ -1,6 +1,12 @@
 # Linux server
 
 * [Separation and isolation](separation)
+  * [Chroot jails](separation/Chroot-jails.md)
+  * [FreeBSD jails](separation/FreeBSD-jails.md)
+  * [KVM](separation/KVM.md)
+  * [Docker](separation/Docker.md)
+  * [Communication](separation/Communication.md)
+  * [Services audit](separation/Services-audit.md)
 * [SSH](ssh)
   * [Installing SSH](ssh/Installing-SSH.md)
   * [Harden ssh server](ssh/Harden-ssh-server.md)
