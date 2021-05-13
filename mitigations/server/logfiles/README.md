@@ -1,4 +1,12 @@
-# Logs
+# Logfiles
+
+* [Commands](Commands.md)
+* [Path of a common intruder](Path-of-a-common-intruder.md)
+* [rsyslogd](rsyslogd.md)
+* [Logrotate](Logrotate.md)
+* [Centralised logging](Centralised-logging.md)
+
+## Notes
 
 * Make sure logs are working properly.
 * `syslog` on Debian contains everything except authentication-related messages. 
