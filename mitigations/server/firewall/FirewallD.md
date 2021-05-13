@@ -4,6 +4,15 @@ FirewallD uses the concepts of zones and services, instead of [IPTables](IPTable
 
 FirewallD can be configured and managed using the `firewall-cmd` command line utility. 
 
+- [FirewallD](#firewalld)
+  - [Install and enable FirewallD](#install-and-enable-firewalld)
+  - [Zones](#zones)
+  - [Ports and services](#ports-and-services)
+  - [Creating rulesets](#creating-rulesets)
+  - [Usage examples](#usage-examples)
+    - [OpenVPN](#openvpn)
+    - [SMTP](#smtp)
+
 ## Install and enable FirewallD
 
 If not installed on the system, install with
@@ -81,7 +90,7 @@ To open HTTP and HTTPS ports add permanent service rules to the dmz zone
 
 Start building the firewall! 
 
-## Usage 
+## Usage examples
 ###  OpenVPN
 
 When using the default port 1194, enable the openvpn service. Otherwise, create a new service with a different port.
