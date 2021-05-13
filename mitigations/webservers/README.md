@@ -7,7 +7,11 @@
   * [Restrict file and directory access](apache/Restrict-file-and-directory-access.md)
   * [Install and use mod_security](apache/mod_security.md)
 * [Nginx](nginx)
-
+  * [Chroot Nginx](nginx/Chroot-Nginx.md)
+  * [Hide version and OS identity](nginx/Hide-version-and-OS-identity.md)
+  * [Disable directory listing](nginx/Disable-SSI-and-CGI-execution.md)
+  * [Restrict file and directory access](nginx/Restrict-file-and-directory-access.md)
+  * [Install and use mod_security](nginx/mod_security.md)
 
 ## Notes
 

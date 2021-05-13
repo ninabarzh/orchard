@@ -53,14 +53,14 @@ The steps are similar to the ones used for creating a simple jail with bash and 
 
 * Find libraries with
     # ldd /chroot/httpd/usr/sbin/httpd
-        /lib/libsafe.so.2 => /lib/libsafe.so.2 (0x40017000)
-        libm.so.6 => /lib/libm.so.6 (0x40037000)
-        libcrypt.so.1 => /lib/libcrypt.so.1 (0x40059000)
-        libdb.so.2 => /lib/libdb.so.2 (0x40086000)
-        libexpat.so.0 => /usr/lib/libexpat.so.0 (0x40096000)
-        libdl.so.2 => /lib/libdl.so.2 (0x400b6000)
-        libc.so.6 => /lib/libc.so.6 (0x400b9000)
-        /lib/ld-linux.so.2 => /lib/ld-linux.so.2 (0x40000000)
+    /lib/libsafe.so.2 => /lib/libsafe.so.2 (0x40017000)
+    libm.so.6 => /lib/libm.so.6 (0x40037000)
+    libcrypt.so.1 => /lib/libcrypt.so.1 (0x40059000)
+    libdb.so.2 => /lib/libdb.so.2 (0x40086000)
+    libexpat.so.0 => /usr/lib/libexpat.so.0 (0x40096000)
+    libdl.so.2 => /lib/libdl.so.2 (0x400b6000)
+    libc.so.6 => /lib/libc.so.6 (0x400b9000)
+    /lib/ld-linux.so.2 => /lib/ld-linux.so.2 (0x40000000)
 
 * Copy libraries
 
