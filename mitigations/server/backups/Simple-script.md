@@ -1,8 +1,8 @@
 # Simple script
 
-    ''' Simple backup script which just creates the root structure in an other
+    """ Simple backup script which just creates the root structure in an other
     folder and syncs everything which recursevely lies within one of the source
-    folders. For files bigger than a threshold they are first gziped.'''
+    folders. For files bigger than a threshold they are first gziped."""
 
     import argparse
     import gzip
@@ -29,7 +29,7 @@
 
 
     def size_if_newer(source, target):
-        """ If newer it returns size, otherwise it returns False """
+        # If newer it returns size, otherwise it returns False
 
         src_stat = os.stat(source)
         try:
