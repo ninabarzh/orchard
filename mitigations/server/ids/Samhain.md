@@ -213,7 +213,7 @@ Note: Archlinux does not have `apt`, and the `logs` are organised differently.
     sudo vi /etc/samhainrc
 
 The configuration file is divided into several sections:
-
+|Parameter | Note |
 | :---- | :---- |
 |Attributes |files specified in this section are checked only for change in permission and ownership|
 |LogFiles |files put in this section are not checked for timestamp, size, or cryptographic checksum changes, because they change often|
