@@ -1,6 +1,6 @@
 # Network
 
-The policies and practices adopted to prevent, monitor, and recover from network attacks. On a general level mostly, and here and there a sprinkle of concreteness based on our own home network.
+The policies and practices adopted to prevent, monitor, and recover from network attacks. On a general level mostly (for now), and here and there a sprinkle of concreteness based on our own home network.
 
 * [Local network](local)
   * [LAN Segmentation](local/LAN-segmentation.md)
