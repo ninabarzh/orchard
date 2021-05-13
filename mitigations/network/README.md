@@ -1,10 +1,27 @@
 # Network
 
-The policies and practices adopted to prevent, monitor, and recover from network attacks. On a general level mostly. And some 
+The policies and practices adopted to prevent, monitor, and recover from network attacks. On a general level mostly.
 
 * [Local network](local)
+  * [LAN Segmentation](local/LAN-segmentation.md)
+  * [Add a second NAT router (Home)](local/Add-a-second-NAT-router.md)
+  * [Nethogs](local/Nethogs.md)
+  * [Unauthorised devices](local/Unauthorised-devices.md)
+  * [Reduce wireless signal strength (Home)](local/Reduce-wireless-signal-strength.md)
+  * [Change router defaults (Home)](local/Change-router-defaults.md)
+  * [Protect router management (Home)](local/Protect-router-management.md)
+  * [Upgrade router firmware](local/Upgrade-router-firmware.md)
+  * [Use the strongest encryption protocol available (Home)](local/Encryption.md)
+  * [DropBear SSH public key authentication (OpenWRT)](local/DropBear.md)
+  * [Portknocking (don't)](local/Portknocking.md)
+  * [Port forwarding](local/Port-forwarding.md)
+  * [Services audit](local/Services-audit.md)
+  * [Off (Home)](local/Off.md)
+  * [Disable WPS (Home)](local/Disable-WPS.md)
   * [ARP spoofing](local/ARP-spoofing.md)
   * [DNS cache poisoning](local/DNS-cache-poisoning.md)
+  * [NFTables](local/NFTables.md)
+  * [Snortbox](local/Snort-box.md)
 * [Internet](internet)
   * [BGP hijacking](internet/BGP-hijacking.md)
   * [Certificate validation](internet/Certificate-validation.md)

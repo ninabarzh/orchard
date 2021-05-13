@@ -1,5 +1,21 @@
 # Local network
 
-
+* [LAN Segmentation](LAN-segmentation.md)
+* [Add a second NAT router (Home)](Add-a-second-NAT-router.md)
+* [Nethogs](Nethogs.md)
+* [Unauthorised devices](Unauthorised-devices.md)
+* [Reduce wireless signal strength (Home)](Reduce-wireless-signal-strength.md)
+* [Change router defaults (Home)](Change-router-defaults.md)
+* [Protect router management (Home)](Protect-router-management.md)
+* [Upgrade router firmware](Upgrade-router-firmware.md)
+* [Use the strongest encryption protocol available (Home)](Encryption.md)
+* [DropBear SSH public key authentication (OpenWRT)](DropBear.md)
+* [Portknocking (don't)](Portknocking.md)
+* [Port forwarding](Port-forwarding.md)
+* [Services audit](Services-audit.md)
+* [Off (Home)](Off.md)
+* [Disable WPS (Home)](Disable-WPS.md)
 * [ARP spoofing](ARP-spoofing.md)
 * [DNS cache poisoning](DNS-cache-poisoning.md)
+* [NFTables](NFTables.md)
+* [Snortbox](Snort-box.md)
