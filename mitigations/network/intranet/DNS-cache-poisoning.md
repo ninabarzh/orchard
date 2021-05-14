@@ -1,3 +1,10 @@
 # DNS cache poisoning
 
-* Use Passive DNS databases for near-real-time detection of fraudulent delegation changes and cache poisoning. The databases can be queried frequently to know more about the addresses being mapped by the major domain names at the time. All the information will come directly from the passive Data sensors and in the case of any deviations from the regular mappings of data gathered from an authoritative source, it could mean a breach of web security. Passive DNS data is rich, and can also be used to help administrators block the resolution of suspicious new domain names, identify potential infringements and as source for threat intelligence.
+* Do domain name server audit trails to investigate unauthorised use and DNS cache poisoning.
+* Monitor traffic to create whitelists of valid DNS servers (for example by using DNS metadata (server source, destination IP address, domain names that were queried by the server, and DNS server registration data)) and be alerted if servers not on the list are used. 
+    * Firewalls can not function as general anti-DNS-spoofing tool, but it can inspect all DNS traffic for unauthorised byte patterns blocking particular name server software exploit attacks (DNSChanger, OSX/MaMi) and then shut down as specified. 
+    * Traffic analyser scripts can be made to search for suspicious file activity in DNS traffic between clients and resolvers.
+    * Resolver log analysis can be monitored to find unauthorised or malicious domains. 
+    * Intrusion Detection Systems can not mitigate the effects of the attack, but they can identify suspicious traffic patterns.
+    * Passive DNS replication data can be used for identifying unauthorised DNS services. Passive DNS data is rich, and can be used to help administrators block the resolution of suspicious new domain names, identify potential infringements and as source for threat intelligence.
+* Use whitelist in a firewall or network access control system (NAC)
