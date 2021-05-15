@@ -28,7 +28,7 @@ Signal, Keybase and Thunderbird (separated)
 - [ ] Clone a new debian Template VM
 - [ ] Install all development tools I have been using in the template 
 - [ ] Create Debian App VM's 
-- [ ] AppVM for using billing repository of ut7
+- [ ] AppVM for administrative repository ut7
 
 ## Pentesting
 
@@ -42,11 +42,9 @@ I know Kali, but wish to try BlackArch as possible alternative.
 ## CentOS server
 
 - [ ] Install the standard CentOS TemplateVM in dom0
-- [ ] Set up local server
-- [ ] Secure (as best as possible)
 - [ ] Install docker in the template
-- [ ] Get remote server
-- [ ] SSH and rsync
+- [ ] Get and set up remote server (unmanaged VPS) with CentOS
+- [ ] rsync docker
 
 ## Digital forensics
 
