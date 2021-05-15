@@ -117,5 +117,5 @@ To read a capture file:
 
     # tcpdump -r capture.log
 
-The captured data isn't stored in plain text and cannot be read with a text editor, you have to use `tcpdump` or [wireshark](Wireshark.md) which provides a graphical interface. 
+The captured data isn't stored in plain text and cannot be read with a text editor, you have to use a tool like [wireshark](Wireshark.md) which provides a graphical interface. 
 

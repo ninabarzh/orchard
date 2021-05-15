@@ -31,7 +31,7 @@ Click the stop capture button near the top left corner of the window when you wa
 
 ## Filtering packets 
 
-If you’re trying to inspect something specific, such as the traffic a program sends, it helps to close down all other applications using the network so you can narrow down the traffic. Still, you’ll likely have a large amount of packets to sift through. That’s where filtering come in.
+If you’re trying to inspect something specific, such as the traffic a program sends, it helps to close down all other applications using the network so you can narrow down the traffic. Still, you’ll likely have a large amount of packets to sift through. That’s where filtering comes in.
 
 The most basic way to apply a filter is by typing it into the filter box at the top of the window and clicking //Apply//. For example, type `dns` and you’ll see only DNS packets. 
 
