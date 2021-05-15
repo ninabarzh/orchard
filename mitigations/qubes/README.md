@@ -1,4 +1,4 @@
-# Docker PC
+# Qubes PC
 
 ## The plan
 
