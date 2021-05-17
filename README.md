@@ -4,10 +4,10 @@
 
 A repository for getting started with pentesting/red teaming/colourful teaming:
 
-* [Threat modelling](threat-modelling): bottom-up and top-down trailblazing with intent to create human-readable threat modelling examples.
-* [Attack trees](trees): Puzzle pieces to jump start exploitation. The pieces may not belong in a specific context or for a particular puzzle. If so, we make new pieces and add those.
-* [Resources](resources): Reuseful scripts and cheatsheets. 
-* [Mitigations](mitigations): Just a few notes.
+* [Terraforming threat modelling](threat-modelling): bottom-up and top-down trailblazing with intent to create human-readable threat modelling examples.
+* [Snapping us some dark matter](trees): Puzzle pieces (attack trees) to jump start exploitation. The pieces may not belong in a specific context or for a particular puzzle. If so, we make new pieces and add those.
+* [Creating shelf space](resources): Reuseful scripts and cheatsheets. 
+* [Munching galaxies](mitigations): Just a few notes on possible mitigations.
 * The wiki contains [some generalised background/contextual notes](https://github.com/tymyrddin/orchard/wiki/).
 
 

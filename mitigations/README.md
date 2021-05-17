@@ -1,16 +1,17 @@
-# Mitigations
+# Munching galaxies
 
-Where you stand depends on where you sit, and all threats are cross-vector threats. Without a clear mandate for measuring and reporting actual improvements in security, attempts at improving security makes absolutely no sense, not even for the low-hanging fruit. 
+As cosmic archaeologists, we are digging through the fossils of long-dead galaxies rather than human history, except that in our case humans still inhabit those galaxies.
 
-These are all fruity and common mitigations (including and beyond the low-hanging conditions or occurrences traceable to a cause) for threats that can still be found in the wild. None of this is complete of course. None of it ever will be. There is still more, in particular for intranet and internet networking, but I think this is a decent start.
+These are all near-galaxy mitigations (including and beyond the low-hanging fruit conditions or occurrences traceable to a cause) for ancient threats that can still be found in the internet universe. None of this is complete of course. None of it ever will be. There is still more, in particular for intranet and internet networking, but I think this is a decent start.
 
-* [Linux PCs](pc)
+* [Linux PC](pc)
+* [Qubes PC]
 * [Linux servers](server)
 * [Web servers](webservers)
 * [Mail servers](mailservers)
 * [Tor servers](torservers)
 * [Network](network)
-* [Data aka Information](data)
+* [Data aka Infosec](data)
 * [Application aka Software development](application)
 
 ## Problems or Suggestions

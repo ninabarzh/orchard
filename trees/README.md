@@ -1,4 +1,6 @@
-[Work in progress]
+# Snapping us some dark matter
+
+Making attack trees from researching security issues to help us organise our thoughts. Another work in progress. [Work in progress]
 
 Pentesting is not a linear process, more like a spontaneous choreography, a sequence of chosen movements as the dance unfolds. It is also highly [context and purpose dependent](https://github.com/tymyrddin/orchard/wiki/Purpose-of-pentesting).
 
