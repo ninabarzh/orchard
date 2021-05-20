@@ -2,7 +2,7 @@
 
 As a preparation for collaborative pentesting open source projects in production. First a server with docker locally (see [Qubes](../qubes/Server-with-docker.md) and [KVM VM](../kvm/Server-with-docker.md), both are centos 8), then if all works and feel comfortable, a remote.
 
-The plan at the moment is to get an unmanaged VPS or dedicated server (4GB, CentOS, 20GB of hard disk space, only available centos 7). I am considering Digital Ocean. If anybody knows a better place, let me know.
+The plan at the moment is to get an unmanaged VPS or dedicated server (4GB, CentOS, 20GB of hard disk space, only available droplet is centos 7). I am considering Digital Ocean. If anybody knows a better place, let me know.
 
 Guides
 
