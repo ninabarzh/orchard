@@ -19,4 +19,4 @@ The new Thinkpad X1 Carbon Gen 9 did not accept Qubes or Debian yet, but did ins
 * For remote management SSH tunnels and SASL (Simple Authentication and Security Layer) can be used.
   * SSH Tunnels can remotely connect to the host and do not require configuration in advance. It requires SSH login credentials on the host for a user that can manage virtualisation resources, which by default only ‘root’ can do (can be changed to allow non-root accounts).
   * SASL gives secure authentication and data encryption. In its most simple implementation, a separate user credential database is created to authenticate with the `libvirtd` daemon (non-login user ids can be used to manage virtualised resources on a KVM host). 
-* Make backups of each .vmdk image just after install, and set up incremental backups. Backup images manually after major changes.
+* Make backups of each `.vmdk` image just after install, and set up for incremental backups. Backup an image manually after major changes.
