@@ -21,8 +21,8 @@ Set up git with user name and email:
 
 ## Github SSH
 
-* If not have yet, [install SSH and learn about its options](../ssh.md).
-* If not have yet, get a [github account](https://github.com/) or [gitlab account](https://about.gitlab.com/).
+* If not have SSH yet, [install SSH and learn about its options](../ssh.md).
+* If not have [github account](https://github.com/) or [gitlab account](https://about.gitlab.com/), get one.
 
 Make a key pair:
 
