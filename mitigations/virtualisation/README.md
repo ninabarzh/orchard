@@ -5,8 +5,8 @@ The new Thinkpad X1 Carbon Gen 9 kept giving blackscreen as soon as the stick wa
 The below choices also make sure I get a decent amount of exposure to Qubes, KVMand Docker and will feel comfortable using them when I am done (I will have gone to install H&%% and back).
 
 - [ ] [Qubes (The plan)](qubes)
-  - [ ] [Password manager]
-  - [ ] [Traffic]
+  - [ ] [Password manager](qubes/Password-manager.md)
+  - [ ] [Traffic](qubes/Traffic.md)
   - [ ] [Communication]
   - [ ] [Development]
   - [ ] [CentOS server with docker]

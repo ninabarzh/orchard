@@ -15,8 +15,10 @@ Guides
 
 ## Install KeePassXC
 
+- [ ] install keepassx from repository
 
+## Security and privacy
 
-## Keep databases and keys in vault(s)
-
-- [ ] keepassxc database
+- [ ] keepassxc database in a vault
+- [ ] key in another vaulted store
+- [ ] backups of both
