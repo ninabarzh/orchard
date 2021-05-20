@@ -13,7 +13,7 @@ The new Thinkpad X1 Carbon Gen 9 did not accept Debian yet, but did install Ubun
 
 ## Notes
 
-* Host security is critically important, because if a host is compromised, then all VMs running on it can be compromised. This is no different than for non-virtualised hosts. The usual tools can be used, including firewall and SELinux. Additional measures could be isolating VM network traffic from host traffic. 
+* Host security is critically important, because if a host is compromised, then all VMs running on it can be compromised. The security measures are not different than for non-virtualised hosts. The usual tools can be used, including firewall and SELinux. Additional measures could be isolating VM network traffic from host traffic. 
 * VM security involves not just securing the OS running on the VMs, but also securing the VM images from within the host. Because VM images are accessible from the host either on local or remote storage, VM images can additionally be secured using VM image encryption and the `svirt` service.
 * For remote management SSH tunnels and SASL (Simple Authentication and Security Layer) can be used.
   * SSH Tunnels can remotely connect to the host and do not require configuration in advance. It requires SSH login credentials on the host for a user that can manage virtualisation resources, which by default only ‘root’ can do (can be changed to allow non-root accounts).
