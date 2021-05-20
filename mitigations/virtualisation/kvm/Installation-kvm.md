@@ -1,8 +1,8 @@
-# Installation
+# Installation KVM
 
-- [Installation](#installation)
+- [Installation KVM](#installation-kvm)
   - [Preparation](#preparation)
-  - [Installation](#installation-1)
+  - [Installation](#installation)
   - [Test](#test)
   - [Creating VM's](#creating-vms)
     - [GUI](#gui)
