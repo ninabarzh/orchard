@@ -7,10 +7,11 @@ The below choices also make sure I get a decent amount of exposure to Qubes, KVM
 - [x] [Ubuntu with KVM](kvm)
   - [x] [Secure host](../pc)
   - [x] [Installation KVM](kvm/Installation-kvm.md)
-  - [x] [Default VM for communication (debian)]
-  - [ ] [Development VM (debian)]
+  - [x] [Default VM for communication (debian)](kvm/Default.md)
+  - [ ] [Development VM (debian)](kvm/Development.md)
   - [ ] [Whonix gateway VM]
-  - [ ] [Pentesting VM (kali or blackarch)]
+  - [x] [Pentesting VM (blackarch)](kvm/Pentesting-blackarch.md)
+  - [x] [Pentesting VM (kali)](kvm/Pentesting-kali.md)
   - [ ] [Digital forensics VM]
   - [ ] [Server with docker VM (CentOS)](kvm/Server-with-docker.md)
 - [ ] [Qubes (The plan)](qubes)
@@ -22,3 +23,4 @@ The below choices also make sure I get a decent amount of exposure to Qubes, KVM
   - [ ] [Digital forensics](qubes/Digital-forensics.md)
   - [ ] [Server with docker](qubes/Server-with-docker.md)
 - [ ] [Docker](docker)
+- [x] [SSH](ssh.md)

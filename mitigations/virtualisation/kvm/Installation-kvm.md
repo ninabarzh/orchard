@@ -105,7 +105,7 @@ To list the available formats for qemu images
 
 And to convert to a format qemu/kvm can import:
 
-$ qemu-img convert -O qcow2 [name].vmdk [newname].qcow2
+    $ qemu-img convert -O qcow2 [name].vmdk [newname].qcow2
 
 Put the qcow2 image in the kvm guest repository and create a new Guest VM with virt-manager using the image.
 

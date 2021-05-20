@@ -1,1 +1,1 @@
-# Server with docker (The plan)
+# Server with docker
