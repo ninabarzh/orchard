@@ -26,10 +26,32 @@ Set up git with user name and email:
 
 Make a key pair:
 
-    $ ssh-keygen -f ~/github-key-rsa -t rsa -b 4096 -C "[name]@example.com"
+    $ ssh-keygen -f ~/github-key-ed25519 -t ed25519 -C "[name]@example.com" 
 
-Copy the public key (the contents of the newly-created github-key-rsa.pub file) into your clipboard.
+Start the `ssh-agent` in the background:
 
+    $ eval "$(ssh-agent -s)"
+
+Check to see if `~/.ssh/config` exists:
+
+    $ ls ~/.ssh/
+
+Edit config file:
+
+    $ vi ~/.ssh/config
+
+Add:
+
+    Host *
+        AddKeysToAgent yes
+        UseKeychain yes
+        IdentityFile ~/.ssh/github-key-ed25519
+
+Add SSH private key to the ssh-agent:
+
+    $ ssh-add -K ~/.ssh/github-key-ed25519
+
+[Add public key to github](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). Copy the public key (the contents of the newly-created github-key-rsa.pub file) into clipboard.
 * Go to your github or gitlab //Account Settings//
 * Click //SSH Keys// on the left.
 * Click //Add SSH Key// on the right.
@@ -37,10 +59,11 @@ Copy the public key (the contents of the newly-created github-key-rsa.pub file) 
 
 ### Test
 
-In a terminal/shell on the local machine:
+Check github connection:
 
     $ ssh -T git@github.com
     Hi [name]! You've successfully authenticated, but Github does
 not provide shell access.
 
-We don't want shell access, we did want to know whether we would get a reply, indicating the connection is working.
+If instead, you get `Permission denied`, it is [time for troubleshooting](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-ssh/error-permission-denied-publickey).
+
