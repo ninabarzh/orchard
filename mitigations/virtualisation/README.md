@@ -7,10 +7,10 @@ The below choices also make sure I get a decent amount of exposure to Qubes, KVM
   - [x] [Installation KVM](kvm/Installation-kvm.md)
   - [x] [Default VM for communication (debian)](kvm/Default.md)
   - [ ] [Development VM (debian)](kvm/Development.md)
-  - [ ] [Whonix gateway VM]
+  - [ ] [Whonix gateway VM](kvm/Whonix.md)
   - [x] [Pentesting VM (blackarch)](kvm/Pentesting-blackarch.md)
   - [x] [Pentesting VM (kali)](kvm/Pentesting-kali.md)
-  - [ ] [Digital forensics VM]
+  - [ ] [Digital forensics VM](kvm/Forensics.md)
   - [ ] [Server with docker VM (CentOS)](kvm/Server-with-docker.md)
 - [ ] [Qubes (The plan)](qubes)
   - [ ] [Password manager](qubes/Password-manager.md)
