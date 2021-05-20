@@ -7,11 +7,11 @@ The below choices also make sure I get a decent amount of exposure to Qubes, KVM
 - [ ] [Qubes (The plan)](qubes)
   - [ ] [Password manager](qubes/Password-manager.md)
   - [ ] [Traffic](qubes/Traffic.md)
-  - [ ] [Communication]
-  - [ ] [Development]
-  - [ ] [CentOS server with docker]
-  - [ ] [Pentesting]
-  - [ ] [Digital forensics]
+  - [ ] [Communication](qubes/Communication.md)
+  - [ ] [Development](qubes/Development.md)
+  - [ ] [Server with docker](qubes/Server-with-docker.md)
+  - [ ] [Pentesting](qubes/Pentesting.md)
+  - [ ] [Digital forensics](qubes/Digital-forensics.md)
 - [x] [Ubuntu with KVM](kvm) 
   - [x] VM for communication (debian)
   - [ ] VM for development (debian)
