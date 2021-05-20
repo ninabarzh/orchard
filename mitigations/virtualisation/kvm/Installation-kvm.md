@@ -3,7 +3,7 @@
 - [Installation KVM](#installation-kvm)
   - [Preparation](#preparation)
   - [Installation](#installation)
-  - [Test](#test)
+  - [Tests](#tests)
   - [Creating VM's](#creating-vms)
     - [GUI](#gui)
     - [CLI](#cli)
@@ -39,7 +39,7 @@ Only members of the `libvirt` and `kvm` groups can run VM's. Add user(s):
 
 To delete users from the groups, replace `adduser` with `deluser`.
 
-## Test
+## Tests
 
 To check virsh is running and chosen users have access:
 
@@ -47,9 +47,13 @@ To check virsh is running and chosen users have access:
 
 Not much to see yet, but confirms running without a problem.
 
-Check `libvirtd` service is running:
+To check libvirtd service (`/etc/init.d/libvirtd`) is started on boot:
 
-    $ sudo systemctl status libvirtd
+    $ chkconfig libvirtd on
+
+or:
+
+    $ systemctl enable libvirtd
 
 If not active, try:
 
@@ -87,7 +91,6 @@ The virtual machine will get "default" networking.
     --disk=/main-storage-pool/testvm-01.qcow2,size=10 \
     --network=default \
     --graphics none
-
 
 ## Importing OVA's
 
@@ -136,10 +139,3 @@ To disable autostart:
 
     $ virsh autostart [vmname] --disable
 
-To check libvirtd service (`/etc/init.d/libvirtd`) is started on boot:
-
-    $ chkconfig libvirtd on
-
-or:
-
-    $ systemctl enable libvirtd
