@@ -19,16 +19,28 @@ Check with:
 
     $ git --version
 
-Set up git with user name and email:
+Set up git with user name and email. If you have set your email to private in github and it is the only repository you use for all repositories, you can set it globally: 
 
-    $ git config --global user.email "[name]@example.com"
+    $ git config --global user.email "{ID}+{username}@users.noreply.github.com"
+
+    $ git config --global user.name "{username}"
+
+If also using other repository hosts, set it in a repository
+
+    $ git config user.email "{ID}+{username}@users.noreply.github.com"
+
+    $ git config --global user.name "{username}"
+
+If this is a change of name and/or email address, reset the author information on the last commit with:
+
+    $ git commit --amend --reset-author
 
 ## Github SSH
 
 * If not have SSH yet, [install SSH and learn about its options](../ssh.md).
 * If not have [github account](https://github.com/) or [gitlab account](https://about.gitlab.com/), get one.
 
-Make a key pair:
+Make a key pair (Use "{ID}+{username}@users.noreply.github.com" for "[name]@example.com" if you have set a private email address in github:
 
     $ ssh-keygen -f ~/github-key-ed25519 -t ed25519 -C "[name]@example.com" 
 
@@ -71,7 +83,7 @@ Add public key (content of clipboard) to github:
 * Click green //New SSH Key// on the right.
 * Add a label (like “Development VM on Thinkpad”) and paste the public key into the big text box.
 
-### First connect
+## First connect
 
 Check github connection:
 
