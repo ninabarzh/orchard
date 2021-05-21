@@ -122,3 +122,6 @@ Install code:
 In VSCode, install the [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension and authenticate.
 
 ### PyCharm Community
+
+Installation using the [Toolbox App](https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox) is the easiest.
+
