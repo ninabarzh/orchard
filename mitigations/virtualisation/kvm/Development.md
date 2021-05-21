@@ -45,6 +45,7 @@ Edit config file:
 Add:
 
     Host *
+        IgnoreUnknown UseKeychain
         AddKeysToAgent yes
         UseKeychain yes
         IdentityFile ~/.ssh/github-key-ed25519
@@ -71,8 +72,12 @@ Add public key (content of clipboard) to github:
 Check github connection:
 
     $ ssh -T git@github.com
-    Hi [name]! You've successfully authenticated, but Github does
-not provide shell access.
+    
+    The authenticity of host 'github.com (xxx.xxx.xxx.xxx)' can't be established.
+    RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+    Are you sure you want to continue connecting (yes/no)? yes
+    Warning: Permanently added 'github.com,xxx.xxx.xxx.xxx' (RSA) to the list of known hosts.
+    Hi [name]! You've successfully authenticated, but GitHub does not provide shell access.
 
-If instead, you get `Permission denied`, it is [time for troubleshooting](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-ssh/error-permission-denied-publickey).
+If instead, you get `Permission denied` or other error messages, it is [time for troubleshooting](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-ssh/error-permission-denied-publickey).
 
