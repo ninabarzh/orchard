@@ -4,6 +4,10 @@
   - [Git](#git)
   - [Github SSH](#github-ssh)
     - [First connect](#first-connect)
+    - [Clone repositories](#clone-repositories)
+  - [Install IDE's](#install-ides)
+    - [VSCode](#vscode)
+    - [PyCharm Community](#pycharm-community)
 
 ## Git
 
@@ -80,4 +84,30 @@ Check github connection:
     Hi [name]! You've successfully authenticated, but GitHub does not provide shell access.
 
 If instead, you get `Permission denied` or other error messages, it is [time for troubleshooting](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-ssh/error-permission-denied-publickey).
+
+### Clone repositories
+
+    $ git clone git@github.com:[name]/[repo-name]
+
+## Install IDE's
+
+I use glorified editors, if only for the coloured code. For JavaScript I use VSCode, for Python I use pyCharm (community version).
+
+### VSCode
+
+    $ sudo apt install software-properties-common apt-transport-https
+
+Get and enable the repository:
+    $ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+    $ sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
+    $ sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
+Install code:
+
+    $ sudo apt update
+    $ sudo apt install code
+
+In VSCode, install the [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) extension and authenticate.
+
+### PyCharm Community
 
