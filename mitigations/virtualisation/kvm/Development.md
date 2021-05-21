@@ -4,6 +4,10 @@
   - [Git](#git)
   - [Github SSH](#github-ssh)
     - [First connect](#first-connect)
+    - [Clone repositories](#clone-repositories)
+  - [Install IDE's](#install-ides)
+    - [VSCode](#vscode)
+    - [PyCharm Community](#pycharm-community)
 
 ## Git
 
@@ -93,7 +97,7 @@ Check github connection:
 
 If instead, you get `Permission denied` or other error messages, it is [time for troubleshooting](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-ssh/error-permission-denied-publickey).
 
-## Clone repositories
+### Clone repositories
 
     $ git clone git@github.com:[name]/[repo-name]
 
