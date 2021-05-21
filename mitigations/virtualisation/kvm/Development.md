@@ -36,9 +36,11 @@ Check to see if `~/.ssh/config` exists:
 
     $ ls ~/.ssh/
 
+If not create it and move the keys in.
+
 Edit config file:
 
-    $ vi ~/.ssh/config
+    $ sudo vi ~/.ssh/config
 
 Add:
 
@@ -49,12 +51,19 @@ Add:
 
 Add SSH private key to the ssh-agent:
 
-    $ ssh-add -K ~/.ssh/github-key-ed25519
+    $ ssh-add -k ~/.ssh/github-key-ed25519
 
-[Add public key to github](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). Copy the public key (the contents of the newly-created github-key-rsa.pub file) into clipboard.
+Copy the public key (the contents of the newly-created github-key-rsa.pub file) into clipboard.
+
+    $ sudo apt-get update
+    $ sudo apt-get install xclip
+
+    $ xclip -selection clipboard < ~/.ssh/github-key-ed25519.pub
+
+Add public key (content of clipboard) to github:
 * Go to your github or gitlab //Account Settings//
-* Click //SSH Keys// on the left.
-* Click //Add SSH Key// on the right.
+* Click //SSH and GPG Keys// on the left.
+* Click green //New SSH Key// on the right.
 * Add a label (like “Development VM on Thinkpad”) and paste the public key into the big text box.
 
 ### Test
