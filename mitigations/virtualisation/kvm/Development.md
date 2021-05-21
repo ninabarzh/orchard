@@ -3,7 +3,7 @@
 - [Development VM](#development-vm)
   - [Git](#git)
   - [Github SSH](#github-ssh)
-    - [Test](#test)
+    - [First connect](#first-connect)
 
 ## Git
 
@@ -67,7 +67,7 @@ Add public key (content of clipboard) to github:
 * Click green //New SSH Key// on the right.
 * Add a label (like “Development VM on Thinkpad”) and paste the public key into the big text box.
 
-### Test
+### First connect
 
 Check github connection:
 
