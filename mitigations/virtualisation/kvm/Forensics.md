@@ -10,6 +10,7 @@ Versions
 
 [CLI] Update returned exit code not zero after "Running: sift-config" during sift install.
 
+    >> Running: sift-config-tools
     Update returned exit code not zero
     Error: Update returned exit code not zero
         at ChildProcess.<anonymous> (/snapshot/sift-cli/sift-cli.js:542:23)
