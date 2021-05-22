@@ -2,8 +2,8 @@
 
 The new Thinkpad X1 Carbon Gen 9 did not accept Qubes or Debian yet, but did install Ubuntu.
 
-* [Secure host](../pc)
 * [Installation KVM on ubuntu host](Installation.md)
+* [Secure ubuntu host](../pc)
 * [Default VM for communication (debian)](Default.md)
 * [Development VM (debian)](Development.md)
 * [Research with a Whonix gateway and Whonix workstation VM](Whonix.md)
