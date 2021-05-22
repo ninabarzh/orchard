@@ -6,7 +6,7 @@ The new Thinkpad X1 Carbon Gen 9 did not accept Qubes or Debian yet, but did ins
 * [Installation KVM](Installation.md)
 * [Default VM for communication (debian)](Default.md)
 * [Development VM (debian)](Development.md)
-* [Whonix Gateway VM](Whonix.md)
+* [Research with a Whonix gateway and Whonix workstation VM](Whonix.md)
 * [Pentesting VM (blackarch)](Pentesting-blackarch.md)
 * [Pentesting VM (kali)](Pentesting-kali.md)
 * [Digital forensics VM](Forensics.md)
