@@ -10,7 +10,7 @@ The new Thinkpad X1 Carbon Gen 9 did not accept Qubes or Debian yet, but did ins
 * [Pentesting VM (blackarch)](Pentesting-blackarch.md)
 * [Pentesting VM (kali)](Pentesting-kali.md)
 * [Digital forensics (sift) VM](Forensics.md)
-* [Docker machine VM (centos)](Server-with-docker.md)
+* [Docker machine (centos) VM](Server-with-docker.md)
 
 ## Notes
 
