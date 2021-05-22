@@ -2,6 +2,8 @@
 
 ## Installing centos in VM
 
+Went without a glitch. Will take getting used to though.
+
 ## Installing docker machine
 
 Install [docker machine](https://github.com/docker/machine). See [releases](https://github.com/docker/machine/releases)
