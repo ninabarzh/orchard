@@ -2,6 +2,8 @@
 
 The below choices also make sure I get a decent amount of exposure to Qubes, KVM and Docker and will feel comfortable using them when I am done (I will have gone to install H&%% and back).
 
+- [x] [SSH](ssh.md)
+- [x] [pdftk](pdftk.md)
 - [x] [Ubuntu with KVM](kvm)
   - [x] [Secure host](../pc)
   - [x] [Installation KVM](kvm/Installation-kvm.md)
@@ -21,5 +23,3 @@ The below choices also make sure I get a decent amount of exposure to Qubes, KVM
   - [ ] [Digital forensics](qubes/Digital-forensics.md)
   - [ ] [Server with docker](qubes/Server-with-docker.md)
 - [ ] [Docker](docker)
-- [x] [SSH](ssh.md)
-- [x] [pdftk](pdftk.md)
