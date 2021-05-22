@@ -18,7 +18,7 @@ Versions
         at maybeClose (internal/child_process.js:1051:16)
         at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
 
-I am now in my 6th attempt, but thanks to [digitalsleuth](https://github.com/digitalsleuth), not giving up!
+I am now in my 6th attempt, but thanks to [digitalsleuth](https://github.com/digitalsleuth), not giving up yet.
 
     $ sudo apt-get install python2 git curl -y
 
@@ -29,3 +29,5 @@ I am now in my 6th attempt, but thanks to [digitalsleuth](https://github.com/dig
     $ python2 -m pip install git+https://github.com/digitalsleuth/pefile.git
 
     $ sudo sift install
+    
+Nope. Still. Giving up. For now. A pull request has been merged which will see this issue fixed in the next release. I'll just hold until then.
