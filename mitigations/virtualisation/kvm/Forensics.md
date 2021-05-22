@@ -53,3 +53,7 @@ Add an alias in `~/.bash_aliases` to be able to call it as `pdftk`:
 Test with:
 
     $ pdftk --version
+    
+## Quicktable
+
+    $ sudo cpan install HTML:QuickTable
