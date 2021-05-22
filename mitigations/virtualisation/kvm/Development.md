@@ -89,6 +89,8 @@ If instead, you get `Permission denied` or other error messages, it is [time for
 
     $ git clone git@github.com:[name]/[repo-name]
 
+And set up the virtual environments.
+
 ## Install IDE's
 
 I use glorified editors, if only for the coloured code. For JavaScript I use VSCode, for Python I use pyCharm (community version).
@@ -111,3 +113,4 @@ In VSCode, install the [GitHub Pull Requests and Issues](https://marketplace.vis
 
 ### PyCharm Community
 
+Installation using the [Toolbox App](https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox) is the easiest.
