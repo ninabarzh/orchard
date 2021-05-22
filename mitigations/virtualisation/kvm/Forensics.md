@@ -30,4 +30,6 @@ I am now in my 6th attempt, but thanks to [digitalsleuth](https://github.com/dig
 
     $ sudo sift install
     
-Nope. Still. Giving up. For now. A pull request has been merged which will see this issue fixed in the next release. I'll just hold until then.
+Nope. Still. But after reboot I did have the sift station. Don't know what is working and what is not yet.
+
+A pull request has been merged which will see this issue fixed in the next release. I'll just hold until then.
