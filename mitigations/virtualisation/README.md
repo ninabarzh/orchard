@@ -12,7 +12,7 @@ The below choices also make sure I get a decent amount of exposure to Qubes, KVM
   - [x] [Research with a Whonix gateway and Whonix workstation VM](kvm/Whonix.md)
   - [x] [Pentesting VM (blackarch)](kvm/Pentesting-blackarch.md)
   - [x] [Pentesting VM (kali)](kvm/Pentesting-kali.md)
-  - [x] [Digital forensics VM](kvm/Forensics.md)
+  - [x] [Digital forensics (SIFT) VM](kvm/Forensics.md)
   - [ ] [Docker machine VM (CentOS)](kvm/Server-with-docker.md)
 - [ ] [Qubes (The plan)](qubes)
   - [ ] [Password manager](qubes/Password-manager.md)
