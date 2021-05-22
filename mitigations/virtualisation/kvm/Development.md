@@ -4,10 +4,10 @@
   - [Git](#git)
   - [Github SSH](#github-ssh)
   - [First connect](#first-connect)
-  - [Clone repositories](#clone-repositories)
   - [Install IDE's](#install-ides)
     - [VSCode](#vscode)
     - [PyCharm Community](#pycharm-community)
+  - [Clone repositories](#clone-repositories)
 
 ## Git
 
@@ -97,10 +97,6 @@ Check github connection:
 
 If instead, you get `Permission denied` or other error messages, it is [time for troubleshooting](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-ssh/error-permission-denied-publickey).
 
-## Clone repositories
-
-    $ git clone git@github.com:[name]/[repo-name]
-
 ## Install IDE's
 
 I use glorified editors, if only for the coloured code. For JavaScript I use VSCode, for Python I use pyCharm (community version).
@@ -126,3 +122,8 @@ In VSCode, install the [GitHub Pull Requests and Issues](https://marketplace.vis
 
 Installation using the [Toolbox App](https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox) is the easiest.
 
+## Clone repositories
+
+    $ git clone git@github.com:[name]/[repo-name]
+
+And get everything to work again.
