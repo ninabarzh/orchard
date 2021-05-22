@@ -1,59 +1,30 @@
 # Digital forensics
 
-Create an Ubuntu 20.04 VM, install the sift workstation repository on it per [Sans sift workstation](https://www.sans.org/tools/sift-workstation) and [sift-cli installation](https://github.com/teamdfir/sift-cli#installation) guides:
+Create an Ubuntu VM and install the sift workstation repository on it per the [Sans sift workstation](https://www.sans.org/tools/sift-workstation) and [sift-cli installation](https://github.com/teamdfir/sift-cli#installation) guides.
+
+Versions
+
+    Ubuntu 20.04
+    sift-cli@1.10.0+0-g48a701b
+    sift v2021.4.4
 
 [CLI] Update returned exit code not zero after "Running: sift-config" during sift install.
 
-## Install pdftk
+    Update returned exit code not zero
+    Error: Update returned exit code not zero
+        at ChildProcess.<anonymous> (/snapshot/sift-cli/sift-cli.js:542:23)
+        at ChildProcess.emit (events.js:315:20)
+        at maybeClose (internal/child_process.js:1051:16)
+        at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
 
- `pdftk` is missing from the official repository. I wish to avoid the JS version, and wish to avoid snap, so I tried this solution (by abu-bua):
+I am now in my 6th attempt, but thanks to [digitalsleuth](https://github.com/digitalsleuth), not giving up!
 
- Install schroot
+    $ sudo apt-get install python2 git curl -y
 
-    $ sudo apt install schroot debootstrap
+    $ sudo curl -o /tmp/get-pip.py https://bootstrap.pypa.io/pip/2.7/get-pip.py
 
-Create `/etc/schroot/chroot.d/xenial.conf` file with content:
+    $ sudo python2 /tmp/get-pip.py
 
-    [xenial]
-    description=Ubuntu 16.04
-    directory=/srv/chroot/xenial
-    root-users=$USER
-    type=directory
-    users=$USER
+    $ python2 -m pip install git+https://github.com/digitalsleuth/pefile.git
 
-Create the xenial directory:
-
-    $ sudo mkdir -p /srv/chroot/xenial
-
-Install:
-
-    $ sudo debootstrap xenial /srv/chroot/xenial
-    [snip]
-    I: Base system installed successfully
-
-Set up the xenial apt repositories in `/srv/chroot/xenial/etc/apt/sources.list`:
-
-    deb http://archive.ubuntu.com/ubuntu xenial main restricted universe multiverse
-    deb http://security.ubuntu.com/ubuntu xenial-security main restricted universe multiverse
-
-Update:
-
-    $ schroot -c xenial -u root apt-get update
-
-Install `pdftk`
-
-    $ schroot -c xenial -u root apt-get install pdftk
-
-It can now be used using `schroot -c xenial -- pdftk`
-
-Add an alias in `~/.bash_aliases` to be able to call it as `pdftk`:
-
-    alias pdftk='schroot -c xenial -- pdftk'
-
-Test with:
-
-    $ pdftk --version
-    
-## Quicktable
-
-    $ sudo cpan install HTML:QuickTable
+    $ sudo sift install
