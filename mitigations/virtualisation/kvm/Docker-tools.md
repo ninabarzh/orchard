@@ -46,7 +46,7 @@ Check with:
     
 ## Installing docker compose
 
-To install [docker compose]([Docker compose releases](https://github.com/docker/compose). See [releases]([Docker compose releases](https://github.com/docker/compose/releases)
+To install [docker compose](https://github.com/docker/compose), see [releases]([Docker compose releases](https://github.com/docker/compose/releases)
 
     $ sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose &&
     sudo chmod +x /usr/local/bin/docker-compose
@@ -57,7 +57,7 @@ Check with:
 
 ## Installing docker machine
 
-To install [docker machine](https://github.com/docker/machine). See [releases](https://github.com/docker/machine/releases).
+To install [docker machine](https://github.com/docker/machine), see [releases](https://github.com/docker/machine/releases).
 
     $ sudo curl -L https://github.com/docker/machine/releases/download/v0.16.2/docker-machine-`uname -s`-`uname -m` -o /usr/local/bin/docker-machine &&
     sudo chmod +x /usr/local/bin/docker-machine
