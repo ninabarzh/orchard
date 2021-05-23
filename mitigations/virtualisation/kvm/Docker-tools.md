@@ -137,4 +137,40 @@ Install code:
 
 A JS hello to build a first simple workflow.
 
+    $ mkdir Development
+    $ cd Development
+    $ mkdir node-docker
+    
+Create a simple REST API with a a mock server:
+
+    $ cd node-docker
+    $ npm init -y    
+    Wrote to /home/{user}/Development/node-docker/package.json:
+    {
+        "name": "node-docker",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        "keywords": [],
+        "author": "",
+        "license": "ISC"
+    }
+    
+    $ npm install ronin-server ronin-mocks
+    
+Open in VSCode and add to `server.js`:
+
+    const ronin     = require( 'ronin-server' )
+    const mocks     = require( 'ronin-mocks' )
+
+    const server = ronin.server()
+
+    server.use( '/', mocks.server( server.Router(), false, true ) )
+    server.start()
+
+
+
 
