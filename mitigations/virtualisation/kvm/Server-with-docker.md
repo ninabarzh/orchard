@@ -1,10 +1,10 @@
-# Docker machine (The plan)
+# Docker machine
 
 ## Installing centos in VM
 
-Went without a glitch. Will take getting used to though.
+Went without a glitch. Will take getting used to though. Prior to the eighth iteration, CentOS used the yum package manager. As of CentOS 8, package management has migrated from yum to Dandified Yum (DNF). 
 
-## Installing docker machine
+## Docker Machine
 
 Install [docker machine](https://github.com/docker/machine). See [releases](https://github.com/docker/machine/releases)
 
@@ -16,6 +16,5 @@ Check with:
 
     $ docker-machine version
     
-## Add completion
+Add completion with [these 3 scripts](https://github.com/docker/machine/tree/master/contrib/completion/bash). If need be adapt scripts.
 
-[These 3 scripts](https://github.com/docker/machine/tree/master/contrib/completion/bash). If need be adapt scripts.
