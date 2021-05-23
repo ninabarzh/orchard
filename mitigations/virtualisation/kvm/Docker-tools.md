@@ -10,6 +10,11 @@ We can run our containers in Docker Machine and get the composition done by Dock
   - [Installing docker](#installing-docker)
   - [Installing docker compose](#installing-docker-compose)
   - [Installing docker machine](#installing-docker-machine)
+  - [Scripts](#scripts)
+    - [See active machines](#see-active-machines)
+    - [Switch between machines](#switch-between-machines)
+    - [Bash completion](#bash-completion)
+  - [Hello world](#hello-world)
 
 ## Installing centos in VM
 
@@ -85,7 +90,7 @@ In `~/.bashrc` add:
 
     $ sudo wget https://raw.githubusercontent.com/docker/machine/master/contrib/completion/bash/docker-machine.bash -O /etc/bash_completion.d/docker-machine.bash
 
-If not works, the bash-completion package may not be installed:
+If not works, the `bash-completion` package may not be installed:
 
     sudo dnf install bash-completion
     
