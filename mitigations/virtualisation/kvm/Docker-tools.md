@@ -110,7 +110,9 @@ If not works, the `bash-completion` package may not be installed:
 Check Node.js and Node Package Manager (NPM) versions:
     
     $ node -v
+    v14.16.0
     $ npm -v
+    6.14.11
     
 ## Installing VScode
 
@@ -160,6 +162,7 @@ Create a simple REST API with a a mock server:
     }
     
     $ npm install ronin-server ronin-mocks
+    $ touch server.js
     
 Open in VSCode and add to `server.js`:
 
@@ -170,6 +173,44 @@ Open in VSCode and add to `server.js`:
 
     server.use( '/', mocks.server( server.Router(), false, true ) )
     server.start()
+    
+### Create dockerfile
+
+    # syntax=docker/dockerfile:1
+
+    FROM node:14.16.0
+    ENV NODE_ENV=production
+
+    WORKDIR /app
+
+    COPY ["package.json", "package-lock.json*", "./"]
+
+    RUN npm install --production
+
+    COPY . .
+
+    CMD [ "node", "server.js" ]
+    
+### Create .dockerignore file
+
+Content:
+
+    node_modules
+    
+### Build image
+    
+    $ sudo docker build --tag node-docker .
+    [sudo] password for nina: 
+    Sending build context to Docker daemon  12.98MB
+    Step 1/7 : FROM node:14.16.0
+    14.16.0: Pulling from library/node
+    ...
+    Successfully built b00e291ed20a
+    Successfully tagged node-docker:latest
+
+
+
+    
 
 
 
