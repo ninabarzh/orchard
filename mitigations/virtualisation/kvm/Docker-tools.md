@@ -94,9 +94,47 @@ If not works, the `bash-completion` package may not be installed:
 
     sudo dnf install bash-completion
     
+
+## Installing Node.js
+
+    $ dnf module list nodejs   
+    Docker CE Stable - x86_64                        50 kB/s |  12 kB     00:00      
+    CentOS Linux 8 - AppStream
+    Name      Stream    Profiles                                Summary             
+    nodejs    10 [d]    common [d], development, minimal, s2i   Javascript runtime  
+    nodejs    12        common [d], development, minimal, s2i   Javascript runtime  
+    nodejs    14        common [d], development, minimal, s2i   Javascript runtime  
+    
+    $ sudo dnf module install -y nodejs:14
+    
+Check Node.js and Node Package Manager (NPM) versions:
+    
+    $ node -v
+    $ npm -v
+    
+## Installing VScode
+
+    $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    
+    $ sudo vi /etc/yum.repos.d/vscode.repo
+    
+Add content to enable the repository:
+
+    [code]
+    name=Visual Studio Code
+    baseurl=https://packages.microsoft.com/yumrepos/vscode
+    enabled=1
+    gpgcheck=1
+    gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+
+Check with `cat`.
+
+Install code:
+
+    $ sudo dnf install code
+
 ## Hello world
 
-
-
+A JS hello to build a first simple workflow.
 
 
