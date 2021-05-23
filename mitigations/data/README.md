@@ -61,8 +61,6 @@ The Internet is rife with [adversaries that are after our identity and informati
 
 ## Problems or Suggestions
 
-[Open an issue here](https://github.com/tymyrddin/orchard/issues)
-
-## Contributing
-
 This project welcomes contributions and suggestions. 
+
+[Open an issue here](https://github.com/tymyrddin/orchard/issues)

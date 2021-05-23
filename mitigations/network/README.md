@@ -30,8 +30,7 @@ The policies and practices adopted to prevent, monitor, and recover from network
 
 ## Problems or Suggestions
 
+This project welcomes contributions and suggestions. 
+
 [Open an issue here](https://github.com/tymyrddin/orchard/issues)
 
-## Contributing
-
-This project welcomes contributions and suggestions. 

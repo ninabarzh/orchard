@@ -49,8 +49,6 @@ There really is no such thing as a truly secure system as long is it is connecte
 
 ## Problems or Suggestions
 
-[Open an issue here](https://github.com/tymyrddin/orchard/issues)
-
-## Contributing
-
 This project welcomes contributions and suggestions. 
+
+[Open an issue here](https://github.com/tymyrddin/orchard/issues)
