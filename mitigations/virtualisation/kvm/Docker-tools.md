@@ -14,7 +14,12 @@ We can run our containers in Docker Machine and get the composition done by Dock
     - [See active machines](#see-active-machines)
     - [Switch between machines](#switch-between-machines)
     - [Bash completion](#bash-completion)
+  - [Installing Node.js](#installing-nodejs)
+  - [Installing VScode](#installing-vscode)
   - [Hello world](#hello-world)
+    - [Create dockerfile](#create-dockerfile)
+    - [Create .dockerignore file](#create-dockerignore-file)
+    - [Build image](#build-image)
 
 ## Installing centos in VM
 
@@ -193,7 +198,7 @@ Open in VSCode and add to `server.js`:
     
 ### Create .dockerignore file
 
-Content:
+Content of file:
 
     node_modules
     
