@@ -5,6 +5,12 @@ We can run our containers in Docker Machine and get the composition done by Dock
 * Compose defines a multi-container application in a single file, then spins the application up with a single command which does everything that needs to be done to get it running.
 * Machine can create Docker hosts on local computer, on cloud providers, and inside a data center. Given a token, it creates servers, installs Docker on them, then configures the Docker client to talk to them.
 
+- [Docker tools](#docker-tools)
+  - [Installing centos in VM](#installing-centos-in-vm)
+  - [Installing docker](#installing-docker)
+  - [Installing docker compose](#installing-docker-compose)
+  - [Installing docker machine](#installing-docker-machine)
+
 ## Installing centos in VM
 
 Went without a glitch. Will take getting used to though. Prior to the eighth iteration, CentOS used the yum package manager. As of CentOS 8, package management has migrated from yum to Dandified Yum (DNF). 

@@ -13,7 +13,7 @@ The below choices also make sure I get a decent amount of exposure to Qubes, KVM
   - [x] [Pentesting VM (blackarch)](kvm/Pentesting-blackarch.md)
   - [x] [Pentesting VM (kali)](kvm/Pentesting-kali.md)
   - [x] [Digital forensics (SIFT) VM](kvm/Forensics.md)
-  - [ ] [Docker machine VM (CentOS)](kvm/Server-with-docker.md)
+  - [x] [Docker tools machine VM (CentOS)](kvm/Docker-tools.md)
 - [ ] [Qubes (The plan)](qubes)
   - [ ] [Password manager](qubes/Password-manager.md)
   - [ ] [Traffic](qubes/Traffic.md)
