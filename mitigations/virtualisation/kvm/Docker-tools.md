@@ -49,6 +49,14 @@ Check with:
 
     $ sudo docker --version
     
+I am not adding a user to the docker group for security reasons.
+
+Configure Docker to start on boot:
+
+    $ sudo systemctl enable docker.service
+    $ sudo systemctl enable containerd.service
+
+    
 ## Installing docker compose
 
 To install [docker compose](https://github.com/docker/compose), see [releases](https://github.com/docker/compose/releases)
@@ -213,10 +221,33 @@ Content of file:
     Successfully built b00e291ed20a
     Successfully tagged node-docker:latest
 
+### Create database container
 
+Create volumes to store persistent data and configuration:
 
+    $ sudo docker volume create mongodb
+    $ sudo docker volume create mongodb_config
     
+Create a user-defined bridge network for application and database to talk with each other (and gives a DNS lookup service useful for creating the connection string later):
+    
+    $ docker network create mongodb
 
+Docker will pull the image from Hub and run it locally:
 
+    $ sudo docker run -it --rm -d -v mongodb:/data/db \
+      -v mongodb_config:/data/configdb -p 27017:27017 \
+      --network mongodb \
+      --name mongodb \
+      mongo
 
+Update `server.js` to use MongoDB and not an in-memory data store:
+
+    const ronin     = require( 'ronin-server' )
+    const mocks     = require( 'ronin-mocks' )
+    const database  = require( 'ronin-database' )
+    const server = ronin.server()
+
+    database.connect( process.env.CONNECTIONSTRING )
+    server.use( '/', mocks.server( server.Router(), false, false ) )
+    server.start()
 
