@@ -8,8 +8,9 @@ The resources also contain (links to) other resources for understanding how tech
 
 ## Problems or Suggestions
 
+This project welcomes contributions and suggestions. 
+
 [Open an issue here](https://github.com/tymyrddin/orchard/issues)
 
-## Contributing
 
-This project welcomes contributions and suggestions. 
+

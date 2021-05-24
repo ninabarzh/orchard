@@ -13,8 +13,6 @@ A repository for getting started with pentesting/red teaming/colourful teaming:
 
 ## Problems or Suggestions
 
-[Open an issue here](https://github.com/tymyrddin/orchard/issues)
-
-## Contributing
-
 This project welcomes contributions and suggestions. 
+
+[Open an issue here](https://github.com/tymyrddin/orchard/issues)

@@ -11,8 +11,6 @@ Where you stand depends on where you sit, and all threats are cross-vector threa
 
 ## Problems or Suggestions
 
-[Open an issue here](https://github.com/tymyrddin/orchard/issues)
-
-## Contributing
-
 This project welcomes contributions and suggestions. 
+
+[Open an issue here](https://github.com/tymyrddin/orchard/issues)

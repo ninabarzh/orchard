@@ -3,11 +3,11 @@
 - [Development VM](#development-vm)
   - [Git](#git)
   - [Github SSH](#github-ssh)
-    - [First connect](#first-connect)
-    - [Clone repositories](#clone-repositories)
+  - [First connect](#first-connect)
   - [Install IDE's](#install-ides)
     - [VSCode](#vscode)
     - [PyCharm Community](#pycharm-community)
+  - [Clone repositories](#clone-repositories)
 
 ## Git
 
@@ -19,16 +19,28 @@ Check with:
 
     $ git --version
 
-Set up git with user name and email:
+Set up git with user name and email. If you have set your email to private in github and it is the only repository you use for all repositories, you can set it globally: 
 
-    $ git config --global user.email "[name]@example.com"
+    $ git config --global user.email "{ID}+{username}@users.noreply.github.com"
+
+    $ git config --global user.name "{username}"
+
+If also using other repository hosts, set it in a repository
+
+    $ git config user.email "{ID}+{username}@users.noreply.github.com"
+
+    $ git config --global user.name "{username}"
+
+If this is a change of name and/or email address, reset the author information on the last commit with:
+
+    $ git commit --amend --reset-author
 
 ## Github SSH
 
 * If not have SSH yet, [install SSH and learn about its options](../ssh.md).
 * If not have [github account](https://github.com/) or [gitlab account](https://about.gitlab.com/), get one.
 
-Make a key pair:
+Make a key pair (Use "{ID}+{username}@users.noreply.github.com" for "[name]@example.com" if you have set a private email address in github:
 
     $ ssh-keygen -f ~/github-key-ed25519 -t ed25519 -C "[name]@example.com" 
 
@@ -71,7 +83,7 @@ Add public key (content of clipboard) to github:
 * Click green //New SSH Key// on the right.
 * Add a label (like “Development VM on Thinkpad”) and paste the public key into the big text box.
 
-### First connect
+## First connect
 
 Check github connection:
 
@@ -85,12 +97,6 @@ Check github connection:
 
 If instead, you get `Permission denied` or other error messages, it is [time for troubleshooting](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-ssh/error-permission-denied-publickey).
 
-### Clone repositories
-
-    $ git clone git@github.com:[name]/[repo-name]
-
-And set up the virtual environments.
-
 ## Install IDE's
 
 I use glorified editors, if only for the coloured code. For JavaScript I use VSCode, for Python I use pyCharm (community version).
@@ -100,6 +106,7 @@ I use glorified editors, if only for the coloured code. For JavaScript I use VSC
     $ sudo apt install software-properties-common apt-transport-https
 
 Get and enable the repository:
+
     $ wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
     $ sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
     $ sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
@@ -114,3 +121,9 @@ In VSCode, install the [GitHub Pull Requests and Issues](https://marketplace.vis
 ### PyCharm Community
 
 Installation using the [Toolbox App](https://www.jetbrains.com/help/pycharm/installation-guide.html#toolbox) is the easiest.
+
+## Clone repositories
+
+    $ git clone git@github.com:[name]/[repo-name]
+
+And get everything to work again.

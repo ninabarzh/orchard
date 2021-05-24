@@ -84,8 +84,7 @@ The below categorisation is somewhat arbitrary, some trees have more detail, som
 
 ## Problems or Suggestions
 
+This project welcomes contributions and suggestions. 
+
 [Open an issue here](https://github.com/tymyrddin/orchard/issues)
 
-## Contributing
-
-This project welcomes contributions and suggestions. 
