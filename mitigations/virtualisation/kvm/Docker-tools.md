@@ -16,10 +16,8 @@ We can run our containers in Docker Machine and get the composition done by Dock
     - [Bash completion](#bash-completion)
   - [Installing Node.js](#installing-nodejs)
   - [Installing VScode](#installing-vscode)
-  - [Hello world](#hello-world)
-    - [Create dockerfile](#create-dockerfile)
-    - [Create .dockerignore file](#create-dockerignore-file)
-    - [Build image](#build-image)
+  - [Hello world JS](#hello-world-js)
+  - [Hello world Python](#hello-world-python)
 
 ## Installing centos in VM
 
@@ -59,7 +57,7 @@ Configure Docker to start on boot:
     
 ## Installing docker compose
 
-To install [docker compose](https://github.com/docker/compose), see [releases](https://github.com/docker/compose/releases)
+To install [docker compose](https://github.com/docker/compose), see [releases](https://github.com/docker/compose/releases).
 
     $ sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose &&
     sudo chmod +x /usr/local/bin/docker-compose
@@ -107,7 +105,6 @@ If not works, the `bash-completion` package may not be installed:
 
     sudo dnf install bash-completion
     
-
 ## Installing Node.js
 
     $ dnf module list nodejs   
@@ -148,7 +145,7 @@ Install code:
 
     $ sudo dnf install code
 
-## Hello world
+## Hello world JS
 
 A JS hello to build a first simple workflow.
 
@@ -187,7 +184,7 @@ Open in VSCode and add to `server.js`:
     server.use( '/', mocks.server( server.Router(), false, true ) )
     server.start()
     
-### Create dockerfile
+Create dockerfile:
 
     # syntax=docker/dockerfile:1
 
@@ -204,13 +201,11 @@ Open in VSCode and add to `server.js`:
 
     CMD [ "node", "server.js" ]
     
-### Create .dockerignore file
-
-Content of file:
+Create .dockerignore file with content:
 
     node_modules
     
-### Build image
+Build image:
     
     $ sudo docker build --tag node-docker .
     [sudo] password for nina: 
@@ -221,7 +216,7 @@ Content of file:
     Successfully built b00e291ed20a
     Successfully tagged node-docker:latest
 
-### Create database container
+Create database container.
 
 Create volumes to store persistent data and configuration:
 
@@ -247,8 +242,8 @@ Docker will pull the image from Hub and run it locally:
     c359e054deed443eb6be849c300e712b4f7192b132b2997070a605ca0f721317
 
 Update `server.js` to use MongoDB and not an in-memory data store:
-* Add the `ronin-database` module
-* Updated the code to connect to the database and set the in-memory flag to false
+* Add the `ronin-database` module.
+* Update the code to connect to the database and set the in-memory flag to false.
 
     const ronin     = require( 'ronin-server' )
     const mocks     = require( 'ronin-mocks' )
@@ -259,3 +254,5 @@ Update `server.js` to use MongoDB and not an in-memory data store:
     server.use( '/', mocks.server( server.Router(), false, false ) )
     server.start()
 
+
+## Hello world Python
