@@ -309,8 +309,11 @@ To remove all networks not used by at least one container:
     Deleted Networks:
     mongodb
 
-Still error. Hmmm. I have just installed a VPN on this VM. Openvpn adds routes for `0.0.0.0/1` and `128.0.0.0/1` (the entire IP range), and docker can not find a range of IP addresses to create a private network. I do not want to disable (`service openvpn stop`) it.  Thinking ... But for now I will just disable. Works like a charm now.
-    
-    
+Still error. Hmmm. I have just installed a VPN on this VM. Openvpn adds routes for `0.0.0.0/1` and `128.0.0.0/1` (the entire IP range), and docker can not find a range of IP addresses to create a private network. I do not want to disable (`service openvpn stop`) it.  Thinking ... But for now I will just disable. Works like a charm now. Nearly.
 
+    [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+    
+[DEP0018](https://github.com.cnpmjs.org/nodejs/node/issues/32081) is apparently a highly contested warning.
+    
+    
 ## Hello world Python
