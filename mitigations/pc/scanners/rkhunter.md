@@ -34,7 +34,7 @@ Update the rkhunter database:
 
     $ sudo rkhunter --update
 
-Is temporarily not possible, see [CVE-2017-7480](https://security-tracker.debian.org/tracker/CVE-2017-7480)
+Is temporarily not possible with versions older than 1.4.4, see [CVE-2017-7480](https://security-tracker.debian.org/tracker/CVE-2017-7480)
 
 Once resolved, this command has to be run on a regular basis to keep the database of known rootkits current. You can use cron to schedule running of this command at regular intervals. 
 
