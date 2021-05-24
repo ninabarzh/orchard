@@ -18,7 +18,7 @@ Open up `/etc/default/aide` with your favourite editor to change who to send its
 
     $ sudo geany /etc/default/aide
 
-![Aide]https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/aide1.png
+![Aide](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/aide1.png)
 
 ## Initialisation
 
