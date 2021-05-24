@@ -239,8 +239,16 @@ Docker will pull the image from Hub and run it locally:
       --network mongodb \
       --name mongodb \
       mongo
+    Unable to find image 'mongo:latest' locally
+    latest: Pulling from library/mongo
+    ...
+    Digest: sha256:8b35c0a75c2dbf23110ed2485feca567ec9ab743feee7a0d7a148f806daf5e86
+    Status: Downloaded newer image for mongo:latest
+    c359e054deed443eb6be849c300e712b4f7192b132b2997070a605ca0f721317
 
 Update `server.js` to use MongoDB and not an in-memory data store:
+* Add the `ronin-database` module
+* Updated the code to connect to the database and set the in-memory flag to false
 
     const ronin     = require( 'ronin-server' )
     const mocks     = require( 'ronin-mocks' )
