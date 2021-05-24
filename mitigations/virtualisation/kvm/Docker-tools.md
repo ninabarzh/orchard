@@ -47,7 +47,9 @@ Check with:
 
     $ sudo docker --version
     
-I am not adding a user to the docker group for security reasons.
+Add user to the docker group (otherwise you may get connection refusals later):
+
+    $ sudo usermod -a -G docker {user}
 
 Configure Docker to start on boot:
 
@@ -251,6 +253,12 @@ Update `server.js` to use MongoDB and not an in-memory data store (add the `roni
     database.connect( process.env.CONNECTIONSTRING )
     server.use( '/', mocks.server( server.Router(), false, false ) )
     server.start()
+    
+Run the mongodb container and then the rest-server container.
+    
+### Use Compose locally
+    
+    
 
 
 ## Hello world Python
