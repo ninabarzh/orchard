@@ -11,7 +11,7 @@ You can install it from repository:
 `unhide` is automatically installed too.
 
 ### Sourceforge
-Or you can get get it from [[http://sourceforge.net/projects/rkhunter/sourceforge|sourceforge]] or check current version number and use `wget`:
+Or you can get get it from [sourceforge](http://sourceforge.net/projects/rkhunter/sourceforge) or check current version number and use `wget`:
 
     $ wget http://downloads.sourceforge.net/project/rkhunter/rkhunter/1.4.2/rkhunter-1.4.2.tar.gz
 
