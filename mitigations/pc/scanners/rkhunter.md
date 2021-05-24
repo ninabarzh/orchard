@@ -38,8 +38,6 @@ Is temporarily not possible, see [CVE-2017-7480](https://security-tracker.debian
 
 Once resolved, this command has to be run on a regular basis to keep the database of known rootkits current. You can use cron to schedule running of this command at regular intervals. 
 
-{{ :en:security:rks: |}}
-
 ![Update db and baseline](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/update-rkhunter-db-and-baseline.png)
 
 ### Baseline
