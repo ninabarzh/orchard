@@ -309,10 +309,8 @@ To remove all networks not used by at least one container:
     Deleted Networks:
     mongodb
 
-Still error. Hmmm. I am using a VPN on this machine. Don want to disable (`service openvpn stop`) it. Openvpn adds routes for `0.0.0.0/1` and `128.0.0.0/1` (the entire IP range), and docker can not find a range of IP addresses to create a private network. Thinking ...
-
+Still error. Hmmm. I have just installed a VPN on this VM. Openvpn adds routes for `0.0.0.0/1` and `128.0.0.0/1` (the entire IP range), and docker can not find a range of IP addresses to create a private network. I do not want to disable (`service openvpn stop`) it.  Thinking ... But for now I will just disable. Works like a charm now.
     
     
-
 
 ## Hello world Python
