@@ -13,18 +13,18 @@ You can install it from repository:
 ### Sourceforge
 Or you can get get it from [sourceforge](http://sourceforge.net/projects/rkhunter/sourceforge) or check current version number and use `wget`:
 
-    $ wget http://downloads.sourceforge.net/project/rkhunter/rkhunter/1.4.2/rkhunter-1.4.2.tar.gz
+    $ wget http://downloads.sourceforge.net/project/rkhunter/rkhunter/1.4.6/rkhunter-1.4.6.tar.gz
 
 After download, extract the files and enter the resulting directory:
 
     $ tar xzvf rkhunter*
-$ cd rkhunter*
+    $ cd rkhunter*
 
 Run the install script:
 
     $ sudo ./installer.sh --layout /usr --install
 
-{{ :en:security:rks:rkhunter-running-install-script.png |}}
+![Install script](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/rkhunter-running-install-script.png)
 
 ## Configuration
 
@@ -34,11 +34,13 @@ Update the rkhunter database:
 
     $ sudo rkhunter --update
 
-Is temporarily not possible, see [[https://security-tracker.debian.org/tracker/CVE-2017-7480|CVE-2017-7480]]
+Is temporarily not possible, see [CVE-2017-7480](https://security-tracker.debian.org/tracker/CVE-2017-7480)
 
 Once resolved, this command has to be run on a regular basis to keep the database of known rootkits current. You can use cron to schedule running of this command at regular intervals. 
 
-{{ :en:security:rks:update-rkhunter-db-and-baseline.png |}}
+{{ :en:security:rks: |}}
+
+![Update db and baseline](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/update-rkhunter-db-and-baseline.png)
 
 ### Baseline
 
@@ -52,7 +54,7 @@ Set baseline file properties by checking the current values and storing them as 
 
 You'll get groups of results, warnings, and at the end a summary of the results. 
 
-{{ :en:security:rks:rkhunter-first-run.png |}}
+![First run](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/rkhunter-first-run.png)
 
 You can have a look at more details of the warnings in `/var/log/rkhunter.log`.
 
@@ -60,8 +62,8 @@ You can have a look at more details of the warnings in `/var/log/rkhunter.log`.
 
 And immediately encounter these noticeable two (on lines 17 and 44): 
 
-{{ :en:security:rks:rkhunter-log.png |}}
-----
+![RKhunter log](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/rkhunter-log.png)
+
 
 Open up rkhunter's configuration file and while going through the warnings in the log, make the necessary changes:
 
@@ -69,51 +71,52 @@ Open up rkhunter's configuration file and while going through the warnings in th
 
 Remove the `#` in front of MAIL-ON-WARNING and replace the fake email adresses with your local mail account (see above): 
 
-{{ :en:security:rks:mail-on-warning.png |}}
+![Mail on warning](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/mail-on-warning.png)
 
 Likewise set the package manager: 
 
-{{ :en:security:rks:package-manager-set.png |}}
+![Package manager](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/package-manager-set.png)
 
 I am also getting warnings from the `deleted_files` test: 
 
-{{ :en:security:rks:deleted-files-test.png |}}
+![Deleted files](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/deleted-files-test.png)
 
 No problem. Caja and pulseaudio need to be able to use `tmp` files. You can make the strings to allow processes using deleted files for in `/etc/rkhunter.conf` (debian-based):
 
     $ sudo awk '/Process: / {print "ALLOWPROCDELFILE="$3}' /var/log/rkhunter.log | sort -u
-[sudo] password for user:
-ALLOWPROCDELFILE=/usr/bin/caja
-ALLOWPROCDELFILE=/usr/bin/pulseaudio
+    [sudo] password for user:
+    ALLOWPROCDELFILE=/usr/bin/caja
+    ALLOWPROCDELFILE=/usr/bin/pulseaudio
 
 Select and copy/paste the strings to the `/etc/rkhunter.conf` file (right-click mouse will give you the option to copy from command-line).
 
 And a warning from the `packet_cap_apps` test: 
 
-{{ :en:security:rks:packet-cap-apps-test.png |}}
+![packet_cap_apps test](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/packet-cap-apps-test.png)
+
 
 Get the strings for allowing (current) packet capturing applications:
 
     $ sudo awk -F"'" '/is listening on the network/ {print "ALLOWPROCLISTEN="$2}' /var/log/rkhunter.log
-[sudo] password for user: 
-ALLOWPROCLISTEN=/sbin/wpa_supplicant
-ALLOWPROCLISTEN=/sbin/dhclient
-
+    [sudo] password for user: 
+    ALLOWPROCLISTEN=/sbin/wpa_supplicant
+    ALLOWPROCLISTEN=/sbin/dhclient
 
 and add as well: 
 
-{{ :en:security:rks:allow-processes.png |}}
+![allow processes](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/allow-processes.png)
 
 The presence of the hidden `/etc/.java` directory also gives me a warning. So often do `/dev/.udev`, `/dev/.static` and `/dev/.initramfs`. These are known hidden (sofar) non-malignent hidden directories and can simply be whitelisted (only need commenting out):
 
-{{ :en:security:rks:java-hidden-dir.png |}} 
+![hidden dirs](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/java-hidden-dir.png)
+
 
 ALL GREEN. Purrrrfect baseline. For now. :) In the near future more applications may try to use deleted files, and after installation of applications more warnings may appear that I'll have to deal with to keep it green! 
 
 ### Unhide
 ACTUALLY, nearly all green and two purple: 
 
-{{ :en:security:rks:hidden-processes-skipped.png |}}
+![skipped](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/hidden-processes-skipped.png)
 
 * `unhide` (ps) is for detecting hidden processes and implements six techniques:
   * Compare `/proc` vs `/bin/ps` output
