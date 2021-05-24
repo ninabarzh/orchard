@@ -257,6 +257,60 @@ Update `server.js` to use MongoDB and not an in-memory data store (add the `roni
 Run the mongodb container and then the rest-server container.
     
 ### Use Compose locally
+
+Creating a `docker-compose.dev.yml`:
+
+    version: '3.8'
+
+    services:
+     notes:
+      build:
+       context: .
+      ports:
+       - 8000:8000
+       - 9229:9229
+      environment:
+       - SERVER_PORT=8000
+       - CONNECTIONSTRING=mongodb://mongo:27017/notes
+      volumes:
+       - ./:/app
+      command: npm run debug
+
+     mongo:
+      image: mongo:4.2.8
+      ports:
+       - 27017:27017
+      volumes:
+       - mongodb:/data/db
+       - mongodb_config:/data/configdb
+    volumes:
+     mongodb:
+     mongodb_config:
+
+To start the application in debug mode, add a line to `package.json` in the scripts section:
+
+    "debug": "nodemon --inspect=0.0.0.0:9229 server.js"
+    
+Install the `nodemon`:
+
+    $ npm install nodemon
+    
+Start application
+
+    $ docker-compose -f docker-compose.dev.yml up --build
+    Creating network "node-docker_default" with the default driver
+    ERROR: could not find an available, non-overlapping IPv4 address pool among the defaults to assign to the network
+   
+To remove all networks not used by at least one container:
+
+    $ docker network prune
+    WARNING! This will remove all custom networks not used by at least one container.
+    Are you sure you want to continue? [y/N] y
+    Deleted Networks:
+    mongodb
+
+Still error. Hmmm. I am using a VPN on this machine. Don want to disable (`service openvpn stop`) it. Thinking ...
+
     
     
 
