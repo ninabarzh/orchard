@@ -241,9 +241,7 @@ Docker will pull the image from Hub and run it locally:
     Status: Downloaded newer image for mongo:latest
     c359e054deed443eb6be849c300e712b4f7192b132b2997070a605ca0f721317
 
-Update `server.js` to use MongoDB and not an in-memory data store:
-* Add the `ronin-database` module.
-* Update the code to connect to the database and set the in-memory flag to false.
+Update `server.js` to use MongoDB and not an in-memory data store (add the `ronin-database` module and update the code to connect to the database and set the in-memory flag to false).
 
     const ronin     = require( 'ronin-server' )
     const mocks     = require( 'ronin-mocks' )
