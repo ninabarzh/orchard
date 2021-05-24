@@ -17,6 +17,7 @@ We can run our containers in Docker Machine and get the composition done by Dock
   - [Installing Node.js](#installing-nodejs)
   - [Installing VScode](#installing-vscode)
   - [Hello world JS](#hello-world-js)
+    - [Use Compose locally](#use-compose-locally)
   - [Hello world Python](#hello-world-python)
 
 ## Installing centos in VM
@@ -309,11 +310,12 @@ To remove all networks not used by at least one container:
     Deleted Networks:
     mongodb
 
-Still error. Hmmm. I have just installed a VPN on this VM. Openvpn adds routes for `0.0.0.0/1` and `128.0.0.0/1` (the entire IP range), and docker can not find a range of IP addresses to create a private network. I do not want to disable (`service openvpn stop`) it.  Thinking ... But for now I will just disable. Works like a charm now. Nearly.
+Still error. Hmmm. I have just installed a VPN on this VM. Openvpn adds routes for `0.0.0.0/1` and `128.0.0.0/1` (the entire IP range), and docker can not find a range of IP addresses to create a private network. I do not want to disable (`service openvpn stop`) it.  Thinking ... But for now I will just disable the vpn. Works like a charm now. Nearly.
 
     [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
     
-[DEP0018](https://github.com.cnpmjs.org/nodejs/node/issues/32081) is apparently a highly contested warning.
-    
+[DEP0018](https://github.com.cnpmjs.org/nodejs/node/issues/32081) is a highly contested warning.
+
+"Rejection" is the canonical term for a promise reporting an error. As defined in ES6, a promise is a state machine representation of an asynchronous operation and can be in one of 3 states: "pending", "fulfilled", or "rejected". A pending promise represents an asynchronous operation that's in progress and a fulfilled promise represents an asynchronous operation that's completed successfully. A rejected promise represents an asynchronous operation that failed for some reason. For example, trying to connect to a nonexistent MongoDB instance using the MongoDB driver will give a promise rejection. Apparently mongodb does not exist yet before notes does.    
     
 ## Hello world Python
