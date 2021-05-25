@@ -128,4 +128,4 @@ Install code:
 
     $ sudo dnf install code
 
-In VSCode, install the [docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+In VSCode, install the [docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker).
