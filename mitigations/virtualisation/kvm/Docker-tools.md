@@ -47,6 +47,7 @@ To install the latest version of docker:
 Check with:
 
     $ sudo docker --version
+    Docker version 20.10.6, build 370c289
     
 Add user to the docker group (otherwise you may get connection refusals later):
 
@@ -68,6 +69,7 @@ To install [docker compose](https://github.com/docker/compose), see [releases](h
 Check with:
 
     $ docker-compose --version
+    docker-compose version 1.29.2, build 5becea4c
 
 ## Installing docker machine
 
@@ -79,6 +81,7 @@ To install [docker machine](https://github.com/docker/machine), see [releases](h
 Check with:
 
     $ docker-machine version
+    docker-machine version 0.16.2, build bd45ab13
     
 ## Scripts
     
@@ -149,6 +152,8 @@ Install code:
     $ sudo dnf install code
 
 ## Hello world JS
+
+### Containers
 
 A JS hello to build a first simple workflow.
 
@@ -348,6 +353,11 @@ A possible solution is to add the mongo dependency in the notes service in`docke
      mongodb:
      mongodb_config:
      
-But, this way Docker controls the start order of services not the ready state. Looking into [controlled compose](https://github.com/dansteen/controlled-compose)
+But, this way [Docker controls the start order of services not the ready state](https://docs.docker.com/compose/startup-order/). Looking into [controlled compose](https://github.com/dansteen/controlled-compose), but for now will continue.
+
+### Debugging
+Install Chrome for the Open dedicated DevTools for Node (about:inspect)
+
+### Testing
     
 ## Hello world Python
