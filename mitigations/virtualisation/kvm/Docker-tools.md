@@ -358,6 +358,62 @@ But, this way [Docker controls the start order of services not the ready state](
 ### Debugging
 Install Chrome for the Open dedicated DevTools for Node (about:inspect)
 
+`server.js`:
+
+    const ronin     = require( 'ronin-server' )
+    const mocks     = require( 'ronin-mocks' )
+    const database  = require( 'ronin-database' )
+    const server = ronin.server()
+
+    database.connect( process.env.CONNECTIONSTRING )
+    server.use( '/foo', (req, res) => {
+        return res.json({ "foo": "bar" })
+      }) 
+    server.use( '/', mocks.server( server.Router(), false, false ) )
+    server.start()
+    
+Check in run terminal that nodemon noticed the changes and reloaded our application.
+
+Go to Chrome DevTools and set a breakpoint on the line containing the `return res.json({ "foo": "bar" })` statement, and then run curl command to trigger the breakpoint:
+
+    $ curl --request GET --url http://localhost:8000/foo
+    
+Check code stopped and debugging can be used.
+
 ### Testing
+
+Make a test directory with a `test.js` in it:
+
+    $ mkdir -p test
+    
+`test.js`:
+
+    var assert = require('assert');
+    describe('Array', function() {
+      describe('#indexOf()', function() {
+        it('should return -1 when the value is not present', function() {
+          assert.equal([1, 2, 3].indexOf(4), -1);
+        });
+      });
+    });
+
+POST a JSON payload:
+
+    $ curl --request POST \
+    >   --url http://localhost:8000/test \
+    >   --header 'content-type: application/json' \
+    >   --data '{
+    > "msg": "testing"
+    > }'
+    {"code":"success","payload":{"_id":"60ad2f626b284b002c4cad93","msg":"testing","createDate":"2021-05-25T17:09:54.314Z"}}
+
+GET request to the same endpoint to make sure the JSON payload was saved and retrieved correctly:
+    $ curl http://localhost:8000/test
+    {"code":"success","meta":{"total":2,"count":2},"payload":[{"_id":"60ad04b94f0bd2004297cea9","msg":"testing","createDate":"2021-05-25T14:07:53.403Z"},{"_id":"60ad2f626b284b002c4cad93","msg":"testing","createDate":"2021-05-25T17:09:54.314Z"}]}
+    
+Install mocha:
+
+    $ npm install --save-dev mocha
+
     
 ## Hello world Python
