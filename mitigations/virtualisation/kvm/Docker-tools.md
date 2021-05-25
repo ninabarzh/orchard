@@ -318,7 +318,7 @@ Still error. Hmmm. I have just installed a VPN on this VM. Openvpn adds routes f
 
 "Rejection" is the canonical term for a promise reporting an error. As defined in ES6, a promise is a state machine representation of an asynchronous operation and can be in one of 3 states: "pending", "fulfilled", or "rejected". A pending promise represents an asynchronous operation that's in progress and a fulfilled promise represents an asynchronous operation that's completed successfully. A rejected promise represents an asynchronous operation that failed for some reason. For example, trying to connect to a nonexistent MongoDB instance using the MongoDB driver will give a promise rejection. Apparently `mongo` does not exist before `notes` does.   
 
-Could possibly be dealt with by adding the mongo dependency in the notes service in`docker-compose.dev.yml`:
+A possible solution is to add the mongo dependency in the notes service in`docker-compose.dev.yml`:
 
     version: '3.8'
 
@@ -347,6 +347,7 @@ Could possibly be dealt with by adding the mongo dependency in the notes service
     volumes:
      mongodb:
      mongodb_config:
-
+     
+But, this way Docker controls the start order of services not the ready state. Looking into [controlled compose](https://github.com/dansteen/controlled-compose)
     
 ## Hello world Python
