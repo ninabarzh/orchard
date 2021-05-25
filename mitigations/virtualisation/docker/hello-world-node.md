@@ -28,7 +28,6 @@ Check Node.js and Node Package Manager (NPM) versions:
     v14.16.0
     $ npm -v
     6.14.11
-    
 
 ## Make containers
 
