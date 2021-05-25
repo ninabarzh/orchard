@@ -23,3 +23,5 @@ The below choices also make sure I get a decent amount of exposure to Qubes, KVM
   - [ ] [Digital forensics](qubes/Digital-forensics.md)
   - [ ] [Docker-tools](qubes/Docker-tools.md)
 - [ ] [Docker](docker)
+  - [x] [Hello world node](docker/hello-world-node.md)
+  - [ ] [Hello world python](docker/hello-world-python.md)

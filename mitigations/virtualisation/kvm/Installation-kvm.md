@@ -168,4 +168,4 @@ Make a directory on the guest, and mount the filesystem onto that folder:
 
     $ sudo mount -t 9p -o trans=virtio,version=9p2000.L /vmshare /home/{username}/vmshare
 
-Note that RHEL and CentOS do not enable the 9p filesystem driver in their kernel. Try [Mount a 9p Share in a Centos 7 or 8 KVM Guest using kernel-plus](https://www.dvlv.co.uk/how-to-mount-a-9p-share-in-a-centos-7-or-8-kvm-guest.html) or [kernel-ml](https://elrepo.org/tiki/kernel-ml).
+Note that RHEL and CentOS do not enable the `9p` filesystem driver in their kernel. Try [Mount a 9p Share in a Centos 7 or 8 KVM Guest using kernel-plus](https://www.dvlv.co.uk/how-to-mount-a-9p-share-in-a-centos-7-or-8-kvm-guest.html) or [kernel-ml](https://elrepo.org/tiki/kernel-ml).
