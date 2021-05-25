@@ -29,26 +29,6 @@ Check Node.js and Node Package Manager (NPM) versions:
     $ npm -v
     6.14.11
     
-## Installing VScode
-
-    $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    
-    $ sudo vi /etc/yum.repos.d/vscode.repo
-    
-Add content to enable the repository:
-
-    [code]
-    name=Visual Studio Code
-    baseurl=https://packages.microsoft.com/yumrepos/vscode
-    enabled=1
-    gpgcheck=1
-    gpgkey=https://packages.microsoft.com/keys/microsoft.asc
-
-Check with `cat`.
-
-Install code:
-
-    $ sudo dnf install code
 
 ## Make containers
 

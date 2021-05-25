@@ -14,6 +14,7 @@ We can run our containers in Docker Machine and get the composition done by Dock
     - [See active machines](#see-active-machines)
     - [Switch between machines](#switch-between-machines)
     - [Bash completion](#bash-completion)
+  - [Installing VScode](#installing-vscode)
 
 
 ## Installing centos in VM
@@ -107,3 +108,44 @@ If not works, the `bash-completion` package may not be installed:
 
     sudo dnf install bash-completion
     
+## Installing VScode
+
+    $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    
+    $ sudo vi /etc/yum.repos.d/vscode.repo
+    
+Add content to enable the repository:
+
+    [code]
+    name=Visual Studio Code
+    baseurl=https://packages.microsoft.com/yumrepos/vscode
+    enabled=1
+    gpgcheck=1
+    gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+
+Check with `cat`.
+
+Install code:
+
+    $ sudo dnf install code
+
+Install the [docker extension]## Installing VScode
+
+    $ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+    
+    $ sudo vi /etc/yum.repos.d/vscode.repo
+    
+Add content to enable the repository:
+
+    [code]
+    name=Visual Studio Code
+    baseurl=https://packages.microsoft.com/yumrepos/vscode
+    enabled=1
+    gpgcheck=1
+    gpgkey=https://packages.microsoft.com/keys/microsoft.asc
+
+Check with `cat`.
+
+Install code:
+
+    $ sudo dnf install code()
