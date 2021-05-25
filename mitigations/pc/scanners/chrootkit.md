@@ -26,9 +26,11 @@ And you may get something like:
 
 ![chrootkit run](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/chrootkit-run.png)
 
-The man utmp reads: //The utmp file allows one to discover information about who is currently using the system. There may be more users currently using the system, because not all programs use utmp logging.
+The man utmp reads: 
 
-Warning: utmp must not be writable, because many system programs (foolishly) depend on its integrity. You risk faked system logfiles and modifications of system files if you leave utmp writable to any user.//
+    The utmp file allows one to discover information about who is currently using the system. There may be more users currently using the system, because not all programs use utmp logging.
+
+    Warning: utmp must not be writable, because many system programs (foolishly) depend on its integrity. You risk faked system logfiles and modifications of system files if you leave utmp writable to any user.
 
 These messages are always worth checking out because chkrootkit compares all the user processes running in the system with what is registered in `/var/run/utmp`, reporting the fact that this particular process run by root is not registered (is hidden). It doesn't mean your system has cooties (rootkits or loggers), but it might.
 

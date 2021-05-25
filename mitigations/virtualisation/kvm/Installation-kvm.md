@@ -10,6 +10,7 @@
   - [Importing OVA's](#importing-ovas)
   - [Cloning VM's](#cloning-vms)
   - [Autostart](#autostart)
+  - [Sharing files](#sharing-files)
 
 ## Preparation
 
@@ -139,3 +140,32 @@ To disable autostart:
 
     $ virsh autostart [vmname] --disable
 
+## Sharing files
+
+Not recommended (exposing host-managed files to VMs!), but an option in special circumstances.
+
+On the host, make a directory for sharing:
+
+    $ mkdir /home/{username}/vmshare
+
+In virt-manager, click on the "i" icon => Add Hardware => Filesystem. 
+* Type: mount
+* Driver: default. The other options are `Handle` and `Path`.
+Path is the option you want to use
+* Mode: - Mode is how UIDs and permissions are handled between guest and host.           
+  * `Passthrough` - files on the filesystem are directly created with client-user’s credentials. The guest may try to set ownership permissions on a file, and the host may block it based on the qemu’s user account. This could be an option if running a VM as user, and running apps in the VM as the same user.
+  * `Squashed` - is equivalent to passthrough security model with the exception of ignoring failure of privileged operations like chown. This could be a slightly better option if running a VM as user, and running apps in the VM as the same user.
+  * `Mapped` - Files are created with qemu user credentials and the client-user’s credentials are saved in extended attributes, separating host and client permissions. On the host, you have to `chown -R qemu:qemu` all the files you intend to share with the guest. On the guest, you can chown/chmod as much as you want. Any metadata changes made by the guest are stored in global extended attributes, allowing sharing between guests, because they will see the same UIDs.
+* Source path: The path on the host you want to export, for example `/home/{username}/vmshare`
+* Target path: Not a path, but a label, identifying this share to the guest, for example `/vmshare`
+* You can export the filesystem as a readonly mount, for example if you want only one guest to be able to write changes to the data, and the others only be able to read it.
+
+Make `libvirt-qemu` the owner of the directory on the host, and chmod the directory (if needed):
+
+    $ sudo chown libvirt-qemu /home/{username}/vmshare
+
+Make a directory on the guest, and mount the filesystem onto that folder:
+
+    $ sudo mount -t 9p -o trans=virtio,version=9p2000.L /vmshare /home/{username}/vmshare
+
+Note that RHEL and CentOS do not enable the 9p filesystem driver in their kernel. 
