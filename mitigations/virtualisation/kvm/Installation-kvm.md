@@ -42,13 +42,13 @@ To delete users from the groups, replace `adduser` with `deluser`.
 
 ## Tests
 
-To check virsh is running and chosen users have access:
+To check `virsh` is running and chosen users have access:
 
     $ virsh list --all
 
 Not much to see yet, but confirms running without a problem.
 
-To check libvirtd service (`/etc/init.d/libvirtd`) is started on boot:
+To check `libvirtd` service (`/etc/init.d/libvirtd`) is started on boot:
 
     $ chkconfig libvirtd on
 
@@ -68,7 +68,7 @@ If not active, try:
 
     $ sudo apt install virt-manager
 
-Start virt-manager with:
+Start `virt-manager` with:
 
     $ sudo virt-manager
 
@@ -76,9 +76,7 @@ And install the `.iso`
 
 ### CLI
 
-Use the `virt-install` command to create a VM via Linux terminal. Example:
-
-The virtual machine will get "default" networking.
+Use the `virt-install` command to create a VM via Linux terminal. Example (the virtual machine will get "default" networking):
 
     virt-install \
     --name vmname \
@@ -101,14 +99,14 @@ Extract the files:
 
 The `.vmdk` file format was developed for the use in VMWare or Virtualbox. It is an open format.
 
-To list the available formats for qemu images
+To list the available formats for `qemu` images
     $ qemu-img -h | tail -n1
 
-And to convert to a format qemu/kvm can import:
+And to convert to a format `qemu/kvm` can import:
 
     $ qemu-img convert -O qcow2 [name].vmdk [newname].qcow2
 
-Put the qcow2 image in the kvm guest repository and create a new Guest VM with virt-manager using the image.
+Put the `qcow2` image in the kvm guest repository and create a new Guest VM with `virt-manager` using the image.
 
 ## Cloning VM's
 
@@ -148,7 +146,7 @@ On the host, make a directory for sharing:
 
     $ mkdir /home/{username}/vmshare
 
-In virt-manager, click on the "i" icon => Add Hardware => Filesystem. 
+In the virt-manager GUI, click on the "i" icon => Add Hardware => Filesystem. 
 * Type: mount
 * Driver: default. The other options are `Handle` and `Path`.
 Path is the option you want to use
