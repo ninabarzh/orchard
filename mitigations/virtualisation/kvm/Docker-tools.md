@@ -316,6 +316,38 @@ Still error. Hmmm. I have just installed a VPN on this VM. Openvpn adds routes f
     
 [DEP0018](https://github.com.cnpmjs.org/nodejs/node/issues/32081) is a highly contested warning.
 
-"Rejection" is the canonical term for a promise reporting an error. As defined in ES6, a promise is a state machine representation of an asynchronous operation and can be in one of 3 states: "pending", "fulfilled", or "rejected". A pending promise represents an asynchronous operation that's in progress and a fulfilled promise represents an asynchronous operation that's completed successfully. A rejected promise represents an asynchronous operation that failed for some reason. For example, trying to connect to a nonexistent MongoDB instance using the MongoDB driver will give a promise rejection. Apparently mongodb does not exist yet before notes does.    
+"Rejection" is the canonical term for a promise reporting an error. As defined in ES6, a promise is a state machine representation of an asynchronous operation and can be in one of 3 states: "pending", "fulfilled", or "rejected". A pending promise represents an asynchronous operation that's in progress and a fulfilled promise represents an asynchronous operation that's completed successfully. A rejected promise represents an asynchronous operation that failed for some reason. For example, trying to connect to a nonexistent MongoDB instance using the MongoDB driver will give a promise rejection. Apparently mongodb does not exist yet before notes does.   
+
+Could possibly be dealt with by adding the mongo dependency in the notes service in`docker-compose.dev.yml`:
+
+    version: '3.8'
+
+    services:
+     notes:
+      build:
+       context: .
+      ports:
+       - 8000:8000
+       - 9229:9229
+      depends_on:
+       - ¨mongo¨
+      environment:
+       - SERVER_PORT=8000
+       - CONNECTIONSTRING=mongodb://mongo:27017/notes
+      volumes:
+       - ./:/app
+      command: npm run debug
+
+     mongo:
+      image: mongo:4.2.8
+      ports:
+       - 27017:27017
+      volumes:
+       - mongodb:/data/db
+       - mongodb_config:/data/configdb
+    volumes:
+     mongodb:
+     mongodb_config:
+
     
 ## Hello world Python
