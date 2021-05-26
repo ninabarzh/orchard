@@ -1,33 +1,12 @@
 # Hello world JS
 
-The simplest workflow for a docker node.js application.
+The simplest workflow for a docker node.js application on [Docker tools VM](../kvm/Docker-tools.md).
 
 - [Hello world JS](#hello-world-js)
-  - [Installing Node.js](#installing-nodejs)
-  - [Installing VScode](#installing-vscode)
   - [Make containers](#make-containers)
   - [Using Compose](#using-compose)
   - [Debugging](#debugging)
   - [Testing](#testing)
-
-## Installing Node.js
-
-    $ dnf module list nodejs   
-    Docker CE Stable - x86_64                        50 kB/s |  12 kB     00:00      
-    CentOS Linux 8 - AppStream
-    Name      Stream    Profiles                                Summary             
-    nodejs    10 [d]    common [d], development, minimal, s2i   Javascript runtime  
-    nodejs    12        common [d], development, minimal, s2i   Javascript runtime  
-    nodejs    14        common [d], development, minimal, s2i   Javascript runtime  
-    
-    $ sudo dnf module install -y nodejs:14
-    
-Check Node.js and Node Package Manager (NPM) versions:
-    
-    $ node -v
-    v14.16.0
-    $ npm -v
-    6.14.11
 
 ## Make containers
 
