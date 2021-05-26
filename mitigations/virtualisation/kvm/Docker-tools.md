@@ -15,8 +15,6 @@ We can run our containers in Docker Machine and get the composition done by Dock
     - [Switch between machines](#switch-between-machines)
     - [Bash completion](#bash-completion)
   - [Installing VSCode](#installing-vscode)
-  - [Installing Node.js](#installing-nodejs)
-  - [Installing Python](#installing-python)
 
 ## Installing centos in VM
 
@@ -131,65 +129,6 @@ Install code:
     $ sudo dnf install code
 
 In VSCode, install the [docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker).
-
-## Installing Node.js
-
-    $ dnf module list nodejs   
-    Docker CE Stable - x86_64                        50 kB/s |  12 kB     00:00      
-    CentOS Linux 8 - AppStream
-    Name      Stream    Profiles                                Summary             
-    nodejs    10 [d]    common [d], development, minimal, s2i   Javascript runtime  
-    nodejs    12        common [d], development, minimal, s2i   Javascript runtime  
-    nodejs    14        common [d], development, minimal, s2i   Javascript runtime  
-    
-    $ sudo dnf module install -y nodejs:14
-    
-Check Node.js and Node Package Manager (NPM) versions:
-    
-    $ node -v
-    v14.16.0
-    $ npm -v
-    6.14.11
-
-## Installing Python
-
-Unlike other Linux distributions, Python is not installed by default on CentOS 8.
-
-Per repository:
-
-    $ sudo dnf install python3
-
-and
-
-    $ python3 --version
-    Python 3.6.8
-
-But I need 3.8+. Hence:
-
-    $ sudo dnf install wget yum-utils make gcc openssl-devel bzip2-devel libffi-devel zlib-devel
-    
-Download (see [releases](https://www.python.org/ftp/python/)) and install:
-
-    $ wget https://www.python.org/ftp/python/3.9.5/Python-3.9.5.tgz
-    $ tar xzf Python-3.9.5.tgz
-    $ cd Python-3.9.5
-    $ sudo ./configure --with-system-ffi --with-computed-gotos --enable-loadable-sqlite-extensions
-    $ sudo make -j ${nproc}
-    
-Make alternative install:
-
-    $ sudo make altinstall
-    ...
-    Installing collected packages: setuptools, pip
-      WARNING: The script pip3.9 is installed in '/usr/local/bin' which is not on PATH.
-      Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
-    Successfully installed pip-21.1.1 setuptools-56.0.0
-    WARNING: Running pip as root will break packages and permissions. You should install packages reliably by using venv: https://pip.pypa.io/warnings/venv
-    
-Check with:
-
-    $ python3.9 -V 
-    Python 3.9.5
 
 
 
