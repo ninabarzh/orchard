@@ -292,6 +292,155 @@ Install mocha:
 
     $ npm install --save-dev mocha
     
-Update `package.json`:
+Update `package.json` with `"test": "mocha ./**/*.js"`:
 
-Update Dockerfile:
+    {
+      "name": "node-docker",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha ./**/*.js",
+        "debug": "nodemon --inspect=0.0.0.0:9229 server.js"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+        "nodemon": "^2.0.7",
+        "ronin-database": "^0.1.1",
+        "ronin-mocks": "^0.1.6",
+        "ronin-server": "^0.1.3"
+      }
+    }
+
+Dockerfile for multi-stage testing:
+
+    # syntax=docker/dockerfile:1
+
+    FROM node:14.16.0
+
+    WORKDIR /code
+
+    COPY package.json package.json
+    COPY package-lock.json package-lock.json
+
+    FROM base as test
+    RUN npm ci
+    COPY . .
+    CMD [ "npm", "run", "test" ]
+
+    FROM base as prod
+    RUN npm ci --production
+    COPY . .
+    CMD [ "node", "server.js" ]
+    
+Build:
+
+    $ docker build -t node-docker --target test .
+    Sending build context to Docker daemon   76.8kB
+    Step 1/8 : FROM node:14.16.0 as base
+     ---> abea835c0b3b
+    Step 2/8 : WORKDIR /code
+     ---> Running in 72677d4774b5
+    Removing intermediate container 72677d4774b5
+     ---> ad9ab2a8358a
+    Step 3/8 : COPY package.json package.json
+     ---> c3fd1fc57e2e
+    Step 4/8 : COPY package-lock.json package-lock.json
+     ---> 9db103078488
+    Step 5/8 : FROM base as test
+     ---> 9db103078488
+    Step 6/8 : RUN npm ci
+     ---> Running in cd130ecf5d46
+
+    > nodemon@2.0.7 postinstall /code/node_modules/nodemon
+    > node bin/postinstall || exit 0
+
+    Love nodemon? You can now support the project via the open collective:
+     > https://opencollective.com/nodemon/donate
+
+    added 229 packages in 15.946s
+    Removing intermediate container cd130ecf5d46
+     ---> 2fd75d778b1f
+    Step 7/8 : COPY . .
+     ---> 2c7975eddeea
+    Step 8/8 : CMD [ "npm", "run", "test" ]
+     ---> Running in 2598bf5a1a51
+    Removing intermediate container 2598bf5a1a51
+     ---> 02fe284e0759
+    Successfully built 02fe284e0759
+    Successfully tagged node-docker:latest
+    
+And run:
+
+    $ docker run -it --rm -p 8000:8000 node-docker
+
+    > node-docker@1.0.0 test /code
+    > mocha ./**/*.js
+
+    sh: 1: mocha: not found
+    npm ERR! code ELIFECYCLE
+    
+    ...
+    
+  Yet `mocha` is installed. Installing it globally (`-g` flag) hangs the build process at step 6.
+  
+    $ docker build -t node-docker --target test .
+    Sending build context to Docker daemon  97.28kB
+    Step 1/8 : FROM node:14.16.0 as base
+     ---> abea835c0b3b
+    Step 2/8 : WORKDIR /code
+     ---> Using cache
+     ---> ad9ab2a8358a
+    Step 3/8 : COPY package.json package.json
+     ---> 978f4fa26cbf
+    Step 4/8 : COPY package-lock.json package-lock.json
+     ---> 4e52fac77355
+    Step 5/8 : FROM base as test
+     ---> 4e52fac77355
+    Step 6/8 : RUN npm ci
+     ---> Running in bc8e844a3401
+
+Removing `node_modules`, then reinstalling everything with `npm install` did the trick.
+
+    $ docker run -it --rm -p 8000:8000 node-docker
+
+    > node-docker@1.0.0 test /code
+    > mocha ./**/*.js
+
+
+
+      Array
+        #indexOf()
+          ✓ should return -1 when the value is not present
+
+
+      1 passing (4ms)
+      
+  Update Dockerfile:
+
+    # syntax=docker/dockerfile:1
+    FROM node:14.16.0 as base
+
+    WORKDIR /code
+
+    COPY package.json package.json
+    COPY package-lock.json package-lock.json
+
+    FROM base as test
+    RUN npm ci
+    COPY . .
+    RUN npm run test
+
+    FROM base as prod
+    RUN npm ci --production
+    COPY . .
+    CMD [ "node", "server.js" ]
+    
+To run tests, now only the build command suffices:
+
+    $ docker build -t node-docker --target test .
+    
+
+      
