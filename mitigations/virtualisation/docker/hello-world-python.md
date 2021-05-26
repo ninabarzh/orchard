@@ -165,3 +165,23 @@ Open a new terminal and make a GET request to the server:
 
     $ curl localhost:5000
     Hello, Docker!
+    
+Create database containers.
+
+Create volumes to store persistent data and configuration:
+    
+    $ docker volume create mysql
+    $ docker volume create mysql_config
+    
+Create a user-defined bridge network for application and database to talk with each other (and gives a DNS lookup service useful for creating the connection string later):
+
+    $ docker network create mysqlnet
+    
+Docker will pull the image from Hub and run it locally:
+
+    $ docker run --rm -d -v mysql:/var/lib/mysql \
+      -v mysql_config:/etc/mysql -p 3306:3306 \
+      --network mysqlnet \
+      --name mysqldb \
+      -e MYSQL_ROOT_PASSWORD=p@ssw0rd1 \
+      mysql
