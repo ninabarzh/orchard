@@ -275,3 +275,5 @@ Test:
     $ curl http://localhost:5000/initdb
     $ curl http://localhost:5000/widgets
     []
+    
+## Using Compose
