@@ -29,3 +29,99 @@ Check by starting application:
        Use a production WSGI server instead.
      * Debug mode: off
      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+Create Dockerfile:
+     
+    # syntax=docker/dockerfile:1
+
+    FROM python:3.9.5
+
+    WORKDIR /app
+
+    COPY requirements.txt requirements.txt
+    RUN pip3.9 install -r requirements.txt
+
+    COPY . .
+
+    CMD [ "python3.9", "-m" , "flask", "run", "--host=0.0.0.0"]
+
+Build image:
+
+    $ docker build --tag python-docker .
+    Sending build context to Docker daemon   5.12kB
+    Step 1/6 : FROM python:3.9.5
+    3.9.5: Pulling from library/python
+    d960726af2be: Pull complete 
+    e8d62473a22d: Pull complete 
+    8962bc0fad55: Pull complete 
+    65d943ee54c1: Pull complete 
+    532f6f723709: Pull complete 
+    1334e0fe2851: Pull complete 
+    062ada600c9e: Pull complete 
+    aec2e3a89371: Pull complete 
+    1ec7c3bcb4b2: Pull complete 
+    Digest: sha256:65367d1d3eb47f62127f007ea1f74d1ce11be988044042ab45d74adc6cfceb21
+    Status: Downloaded newer image for python:3.9.5
+     ---> 5b3b4504ff1f
+    Step 2/6 : WORKDIR /app
+     ---> Running in 7f9ce3f322c8
+    Removing intermediate container 7f9ce3f322c8
+     ---> fa5afe0ed131
+    Step 3/6 : COPY requirements.txt requirements.txt
+     ---> 0a6e8a47cfe2
+    Step 4/6 : RUN pip3.9 install -r requirements.txt
+     ---> Running in b9ee8a184ed8
+    Collecting click==8.0.1
+      Downloading click-8.0.1-py3-none-any.whl (97 kB)
+    Collecting Flask==2.0.1
+      Downloading Flask-2.0.1-py3-none-any.whl (94 kB)
+    Collecting itsdangerous==2.0.1
+      Downloading itsdangerous-2.0.1-py3-none-any.whl (18 kB)
+    Collecting Jinja2==3.0.1
+      Downloading Jinja2-3.0.1-py3-none-any.whl (133 kB)
+    Collecting MarkupSafe==2.0.1
+      Downloading MarkupSafe-2.0.1-cp39-cp39-manylinux2010_x86_64.whl (30 kB)
+    Collecting Werkzeug==2.0.1
+      Downloading Werkzeug-2.0.1-py3-none-any.whl (288 kB)
+    Installing collected packages: MarkupSafe, Werkzeug, Jinja2, itsdangerous, click, Flask
+    Successfully installed Flask-2.0.1 Jinja2-3.0.1 MarkupSafe-2.0.1 Werkzeug-2.0.1 click-8.0.1 itsdangerous-2.0.1
+    WARNING: Running pip as root will break packages and permissions. You should install packages reliably by using venv: https://pip.pypa.io/warnings/venv
+    Removing intermediate container b9ee8a184ed8
+     ---> e8da28a86d98
+    Step 5/6 : COPY . .
+     ---> bbfcf6aea711
+    Step 6/6 : CMD [ "python3.9", "-m" , "flask", "run", "--host=0.0.0.0"]
+     ---> Running in 28c4e9b32583
+    Removing intermediate container 28c4e9b32583
+     ---> a89aa71ba28b
+    Successfully built a89aa71ba28b
+    Successfully tagged python-docker:latest
+    
+Shit. WARNING: Running pip as root will break packages and permissions. You should install packages reliably by using venv: https://pip.pypa.io/warnings/venv
+Not using venv. Using docker.
+
+    $ docker images
+    REPOSITORY          TAG       IMAGE ID       CREATED          SIZE
+    python-docker       latest    a89aa71ba28b   10 minutes ago   896MB
+    node-docker         latest    0517c3e1a6f2   6 hours ago      968MB
+    node-docker_notes   latest    0404e6f8e810   24 hours ago     961MB
+    python              3.9.5     5b3b4504ff1f   46 hours ago     886MB
+    mongo               latest    07630e791de3   2 weeks ago      449MB
+    node                14.16.0   abea835c0b3b   8 weeks ago      943MB
+    
+Run image inside of a container, mapping the host’s port 5000 to the container’s port 5000 (`--publish 5000:5000`):
+
+    $ docker run --publish 5000:5000 python-docker
+     * Environment: production
+       WARNING: This is a development server. Do not use it in a production deployment.
+       Use a production WSGI server instead.
+     * Debug mode: off
+     * Running on all addresses.
+       WARNING: This is a development server. Do not use it in a production deployment.
+     * Running on http://172.17.0.2:5000/ (Press CTRL+C to quit)
+    172.17.0.1 - - [26/May/2021 17:54:38] "GET / HTTP/1.1" 200 -
+    
+Open a new terminal and make a GET request to the server:
+
+    $ curl localhost:5000
+    Hello, Docker!
