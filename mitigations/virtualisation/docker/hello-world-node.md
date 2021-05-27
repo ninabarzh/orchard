@@ -255,6 +255,8 @@ Go to Chrome DevTools and set a breakpoint on the line containing the `return re
     
 Check code stopped and debugging can be used (minimally inspect and watch variables, set conditional breakpoints, view stack traces).
 
+Note: Debugging services running in a container is possible, but brings additional complexity. Use normal debugging by default, and debugging in the container only when needed.
+
 ## Testing
 
 Make a test directory with a `test.js` in it:
