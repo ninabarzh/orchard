@@ -25,3 +25,4 @@ The below choices also make sure I get a decent amount of exposure to Qubes, KVM
 - [ ] [Docker](docker)
   - [x] [Hello world node](docker/hello-world-node.md)
   - [x] [Hello world python](docker/hello-world-python.md)
+  - [x] [MCC](docker/mcc-docker.md)
