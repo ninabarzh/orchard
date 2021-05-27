@@ -1,8 +1,9 @@
 # Hello world JS
 
-The simplest workflow for a docker node.js application on [Docker tools VM](../kvm/Docker-tools.md).
+The simplest workflow for a docker node.js application on [Docker tools VM](../kvm/Docker-tools.md) based on the docker tutorials, adapted to my environment and expanded.
 
 - [Hello world JS](#hello-world-js)
+  - [Installing Node.js](#installing-nodejs)
   - [Make containers](#make-containers)
   - [Using Compose](#using-compose)
   - [Debugging](#debugging)
