@@ -191,7 +191,7 @@ Docker will pull the image from Hub and run it locally:
       -e MYSQL_ROOT_PASSWORD=p@ssw0rd1 \
       mysql
 
-Update `app.js` to use MySQL as a datastore, and add some routes to the server (fetching records and inserting records):
+Update `app.py` to use MySQL as a datastore, and add some routes to the server (fetching records and inserting records):
   
     import mysql.connector
     import json
@@ -282,3 +282,48 @@ Test:
     []
     
 ## Using Compose
+
+`docker-compose.dev.yml`:
+
+    version: '3.8'
+
+    services:
+     web:
+      build:
+       context: .
+      ports:
+      - 5000:5000
+      volumes:
+      - ./:/app
+
+     mysqldb:
+      image: mysql
+      ports:
+      - 3306:3306
+      environment:
+      - MYSQL_ROOT_PASSWORD=p@ssw0rd1
+      volumes:
+      - mysql:/var/lib/mysql
+      - mysql_config:/etc/mysql
+
+    volumes:
+      mysql:
+      mysql_config:
+
+Build:
+
+    $ docker-compose -f docker-compose.dev.yml up --build
+
+Test:
+
+    $ curl http://localhost:5000/initdb
+    $ curl http://localhost:5000/widgets
+    []
+
+## Debugging
+
+See [Debug Python within a container](https://code.visualstudio.com/docs/containers/debug-python)
+
+## Testing
+
+See [Python testing in Visual Studio Code](https://code.visualstudio.com/docs/python/testing)
