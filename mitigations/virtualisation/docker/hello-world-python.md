@@ -326,6 +326,8 @@ Test:
 
 See [Debug Python within a container](https://code.visualstudio.com/docs/containers/debug-python)
 
+Note: Debugging services running in a container is possible, but brings additional complexity. Use normal debugging by default, and debugging in the container only when needed.
+
 ## Testing
 
 See [Python testing in Visual Studio Code](https://code.visualstudio.com/docs/python/testing)
