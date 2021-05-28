@@ -1,6 +1,6 @@
 # Virtualisation
 
-The below choices also make sure I get a decent amount of exposure to Qubes, KVM and Docker and will feel comfortable using them when I am done (I will have gone to install H&%% and back).
+The below choices also make sure I get a decent amount of exposure to virtualisation tools and will feel comfortable using them when I am done (I will have gone to install H&%% and back).
 
 - [x] [SSH](ssh.md)
 - [x] [pdftk](pdftk.md)
