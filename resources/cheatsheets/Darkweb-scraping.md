@@ -1,4 +1,6 @@
-# Snowballing darkweb by scraping
+# Darkweb scraping
+
+Example in [Snowballing darkweb](https://github.com/tymyrddin/qyrvunth/tree/main/snowballing).
 
 ## Requirements
 
