@@ -26,7 +26,7 @@ For automation, selenium requires a driver. The Tor browser is based on Firefox.
 ## Initialisation
 
     # Set the web driver to use Firefox and set the url of the hidden service to be scraped.
-    binary = FirefoxBinary(/path/to/firefox/binary)
+    binary = FirefoxBinary("/path/to/firefox/binary")
     driver = webdriver.Firefox(firefox_binary = binary)
     url = https://example.onion
 
