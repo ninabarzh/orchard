@@ -1,7 +1,5 @@
 # Darkweb scraping
 
-Example in [Snowballing darkweb](https://github.com/tymyrddin/qyrvunth/tree/main/snowballing).
-
 ## Requirements
 
 When snowballing the darkweb by scraping one needs a Tor browser or [Whonix workstation VM](https://github.com/tymyrddin/orchard/blob/main/mitigations/virtualisation/kvm/Whonix.md).
@@ -83,3 +81,7 @@ Exporting lists to .json file
 Many hidden services have anti-crawling measures in place, primarily captchas are used. Auto-solvers exist, but many sites use unique captcha types that the solvers cannot solve. 
 
 Scraping the dark web can be dangerous. Use [applicable infosec](https://github.com/tymyrddin/orchard/tree/main/mitigations/data) to the best of your knowledge and abilities. 
+
+## Examples
+
+* [Snowballing darkweb](https://github.com/tymyrddin/qyrvunth/tree/main/snowballing).
