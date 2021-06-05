@@ -8,7 +8,7 @@ Pandas is a data manipulation package which can be used to store and export scra
 
     $ pip install pandas
 
-Selenium is a browser automation packageuseful for crawling websites and extracting data.
+Selenium is a browser automation package useful for crawling websites and extracting data.
 
     $ pip install selenium
 
@@ -67,10 +67,19 @@ Crawling between pages if page numbers are included in the URL is possible by lo
 Exporting lists to .csv file as tabular data using Pandas: 
 
     df['postURL'] = post_url_list
-    df['author'] = post_author_list
-    df['postTitle'] = post_title_listdf.to_csv('scrape.csv')
+    df['author'] = post_author_lPandas is a data manipulation package which can be used to store and export scraped data scraped to `.json` or `.csv` files.
 
-Exporting lists to .json file
+    $ pip install pandas
+
+Selenium is a browser automation packageuseful for crawling websites and extracting data.
+
+    $ pip install selenium
+
+For automation, selenium requires a driver. The Tor browser is based on Firefox. 
+
+* Get Mozilla’s Geckodriver and extract it to the `~/.local/bin folder`.
+* Get the path to the Tor browser Firefox binary on the local machine. 
+
 
     df['postURL'] = post_url_list
     df['author'] = post_author_list
@@ -84,4 +93,4 @@ Scraping the dark web can be dangerous. Use [applicable infosec](https://github.
 
 ## Examples
 
-* [Snowballing darkweb](https://github.com/tymyrddin/qyrvunth/tree/main/snowballing).
+* [Snowballing darkweb](https://github.com/tymyrddin/qyrvunth/tree/main//scraping/snowballing-darkweb.py).
