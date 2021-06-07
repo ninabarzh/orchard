@@ -14,7 +14,7 @@ Selenium is a browser automation package useful for crawling websites and extrac
 
 For automation, selenium requires a driver. The Tor browser is based on Firefox. 
 
-* Get Mozilla’s Geckodriver and extract it to the `~/.local/bin folder`.
+* Get Mozilla’s Geckodriver and extract it to the `~/.local/bin` folder.
 * Get the path to the Tor browser Firefox binary on the local machine. 
 
 ## Imports
