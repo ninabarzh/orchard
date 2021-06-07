@@ -64,10 +64,13 @@ Crawling between pages if page numbers are included in the URL is possible by lo
         url = 'first part of url' + str(page_num) + 'last part of url'
         driver.get(url)
 
+## Export
+
 Exporting lists to a `.csv` file as tabular data using Pandas: 
 
     df['postURL'] = post_url_list
-    df['author'] = post_author_lPandas is a data manipulation package which can be used to store and export scraped data scraped to `.json` or `.csv` files.
+    df['author'] = post_author_list
+    df['postTitle'] = post_title_listdf.to_csv('scrape.csv')
 
 Exporting lists to a `.json` file as tabular data using Pandas: 
 
