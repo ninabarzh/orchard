@@ -1,6 +1,6 @@
 # The Dark Web 
 
-Some reuseful links
+Some reuseful `.onion` links
 
 ## Start
 * [The Hidden Wiki](http://zqktlwi4fecvo6ri.onion/wiki/index.php/Main_Page)
