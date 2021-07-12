@@ -2,7 +2,7 @@
 
 Sometimes it is only possible to access a remote server using ssh by[first logging in to another server (or firewall/jump host)](Jumping-hosts.md). ProxyCommand is an alternative for that is supposedly more secure than [SSH agent forwarding](ForwardAgent.md).
 
-![SSH infra](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/infra.png)
+![SSH infra](../../assets/images/infra.png)
 
 It is possible to connect via an intermediate machine using a SOCKS proxy. SOCKS4 and SOCKS5 proxies are both supported by OpenSSH. SOCKS5 allows for transparent traversal of a firewall or other application barrier by strong authentication with the help of GSS-API. Dynamic application-level port forwarding allows the outgoing port to be allocated on the fly thereby creating a proxy at the TCP session level.
 

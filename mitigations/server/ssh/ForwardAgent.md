@@ -2,7 +2,7 @@
 
 Sometimes it is only possible to access a remote server using ssh by [first logging in to another server (or firewall/jump host)](Jumping-hosts.md). SSH agent forwarding can be used to make access to a server simple. It allows for the use of local SSH keys instead of leaving keys (without passphrases!) sitting on the server.
 
-![SSH infra](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/infra.png)
+![SSH infra](../../assets/images/infra.png)
 
 The -A option enables forwarding of the authentication agent connection:
 

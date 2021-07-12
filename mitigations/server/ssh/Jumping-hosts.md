@@ -2,7 +2,7 @@
 
 Sometimes it is only possible to access a remote server using `ssh` by first logging in to another server (or firewall/jump host). 
 
-![SSH infra](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/infra.png)
+![SSH infra](../../assets/images/infra.png)
 
 This means having to authenticate twice and the chain can be long and not limited to just two hosts. I can only access the remote server named "Backend server" via ssh by first login into an intermediary server called "Firewall host" or "Jump host". First, login to jump host:
 

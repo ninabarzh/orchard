@@ -30,7 +30,7 @@ Besides a en:hacking:cryptography:cryptanalysis:man-itm|[mitm attack]] (Make sur
 * [when using ssh on a LAN](#checkhostip) (where DHCP is used and IP addresses change) 
 * [when jumping to multiple hosts from a jump host](#hostkeyalias). 
 
-![SSH infra](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/infra.png)
+![SSH infra](../../assets/images/infra.png)
 
 ## Bypassing verification (not recommended) 
 
