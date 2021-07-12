@@ -16,7 +16,9 @@ Imagine wikileaks being blocked using a proxy filter in a university network som
 
 Let’s name the machine in the university network //socially-correct// and a home machine //home//. The home machine has a public IP and is running a SSH server. The student in case has //ssh user access// on //home// and //socially-correct// has access to `host:hostport` (is not blocked).
 
-    $ ssh -L localport:host:hostport user@home -N 
+```
+$ ssh -L localport:host:hostport user@home -N 
+```
 
 where:
 
@@ -30,9 +32,11 @@ where:
 
 For example, to create the SSH tunnel execute following from the //socially-correct machine//:
 
-  $ ssh -L 9001:wikileaks.org:80 user@home
+```
+$ ssh -L 9001:wikileaks.org:80 user@home
+```
 
-![Port forwarding](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/port-forwarding.png)
+![Port forwarding](../../assets/images/port-forwarding.png)
 
 Open a browser and go to http://localhost:9001 to see if the tunnel is working.
 
@@ -47,7 +51,9 @@ The SSH man pages say:
 
 Local port forwarding can also be used to set up a VNC session between socially-correct and a home server. From socially-correct:
 
-    $ ssh -L 5900:localhost:5900 user@home
+```
+$ ssh -L 5900:localhost:5900 user@home
+```
 
 The localhost is relative to the gateway (home in this case), not the machine from where the tunnel is initiated. So this will make a connection to port 5900 of the home computer where the VNC client would be listening. 
 
@@ -55,17 +61,19 @@ The localhost is relative to the gateway (home in this case), not the machine fr
 
 To be able to SSH from the Internet into a machine behind a firewall, you need the machine in question to open an SSH connection to the outside world and include a `-R` tunnel whose "entry" point is the "remote" side of his connection.
 
-![Reverse tunnelling](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/ssh-l-r.png)
+![Reverse tunnelling](../../assets/images/ssh-l-r.png)
 
 What if we wish to connect to an internal university website from home with a set-up like above in tunnelling with local port forwarding? The university firewall is blocking all incoming traffic. We can connect from home to the university internal network so that we can browse the internal site. We can initiate the tunnel from the socially-correct computer behind the firewall. This is possible since only incoming traffic is blocked and outgoing traffic is allowed. The client will now be at the home computer and instead of using the `-L` option, the `-R` option, which specifies a reverse tunnel is to be created, is used. 
 
 From socially-correct:
 
-    $ ssh -R 9001:internalsite.org:80 user@home 
+```
+$ ssh -R 9001:internalsite.org:80 user@home 
+```
 
 The SSH client at socially-correct will connect to the SSH server running at home creating a SSH channel. The server will bind port 9001 on the home machine to listen for incoming requests that are then routed through the created SSH channel between home and socially-correct. Now it’s possible to browse the internal site by visiting http://localhost:9001 in a web browser on the home machine. The socially-correct machine for work at the university will then create a connection to internalsite.org and relay back the response to home via the created SSH channel. 
 
-![Remote port forwarding](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/remoteportforwarding.png)
+![Remote port forwarding](../../assets/images/remoteportforwarding.png)
 
 Even though the traffic is encrypted, the name resolution may not be encrypted => DNS leakage. Programs like firefox allow you to ensure that there is no such [DNS leakage](DNS-leaks.md). In firefox, browse to  `about:config` and make sure the setting for   `network.proxy.socks_remote_dns` is set to true.
 
@@ -73,7 +81,9 @@ Even though the traffic is encrypted, the name resolution may not be encrypted =
 
 Dynamic port forwarding allows for configuring one local port for tunnelling data to all remote destinations. This requires Socket Secure SOCKS. At the client side of the tunnel a Socks proxy would be created and the application uses the Socks protocol to specify where the traffic should be sent when it leaves the other end of the ssh tunnel. In a set-up like used in local port forwarding and reverse port forwarding, from the socially-correct machine at university:
 
-    $ ssh -D 9001 user@home 
+```
+$ ssh -D 9001 user@home 
+```
 
 SSH will create a Socks proxy listening in for connections at local port 9001 and when receiving a request routes the traffic via the SSH channel created between socially-correct and home. Configure the browser to point to the Socks proxy at port `9001` at `localhost`. 
 

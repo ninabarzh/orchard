@@ -11,7 +11,7 @@ And any man in the middle of your traffic can see your online behaviour and the 
 
 Using your ISP’s DNS servers as default DNS servers doesn’t do anything for security or privacy.
 
-![Leaky boat](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/leaky-boat.png)
+![Leaky boat](../../assets/images/leaky-boat.png)
 
 ## Use wireshark to check for leaks 
 
@@ -24,11 +24,11 @@ To check if you have DNS leaks, fire up wireshark:
   * Start capturing on eth0 and connect to the VPN.
   * After capturing either a fixed number of packets, or an amount of data or for a specific time period, go to //Statistics -> Endpoints//
 
-![Wireshark endpoints](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/statistics-endpoints.png)
+![Wireshark endpoints](../../assets/images/statistics-endpoints.png)
 
 There should only be one public IP address, namely that of the VPN server that you’re connected to. The ''10.0.2.15'' in this image is a local address.
 
-![Wireshark endpoints](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/statistics-endpoints2.png)
+![Wireshark endpoints](../../assets/images/statistics-endpoints2.png)
 
 ## Choosing alternative DNS servers
 

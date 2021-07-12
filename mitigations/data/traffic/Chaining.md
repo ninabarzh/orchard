@@ -16,4 +16,4 @@ It also prevents Tor from seeing who you are behind the VPN/SSH. If an adversary
 
 This is impossible to do without using virtual machines and is not easy to set up. It also creates a bottleneck where all your traffic goes, making correlations easy and the VPN/SSH can over time build a profile of everything you do, and over time de-anonymise your traffic.
 
-![Chaining](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/chaining.png)
+![Chaining](../../assets/images/chaining.png)

@@ -10,24 +10,32 @@ Avoiding all of that knowledge, the [MAC address generator tool](https://miniweb
 
 With 'macchanger' you can change the MAC address of any Ethernet network device:
 
-* Turn off your network interface:
+Turn off your network interface:
 
-  $ sudo ifconfig eth0 down
+```
+$ sudo ifconfig eth0 down
+```
 
-* Use 'macchanger' to randomly generate new MAC address and assign it to ''eth0'' network interface:
+Use 'macchanger' to randomly generate new MAC address and assign it to ''eth0'' network interface:
 
-  $ sudo macchanger -r eth0
-  Current MAC: 00:10:4C:25:7A:3F (unknown)
-  Faked MAC:   32:cf:cb:6c:63:cd (unknown)
+```
+$ sudo macchanger -r eth0
+Current MAC: 00:10:4C:25:7A:3F (unknown)
+Faked MAC:   32:cf:cb:6c:63:cd (unknown)
+```
 
-* Enable ''eth0'' network interface and check new MAC address:
+Enable `eth0` network interface and check new MAC address:
 
-  $ sudo ifconfig eth0 up
-  $ sudo ifconfig eth0
+```
+$ sudo ifconfig eth0 up
+$ sudo ifconfig eth0
+```
 
 If a specific MAC address, like ''00:0a:95:9d:68:16'', is required:
 
-  $ sudo macchanger -m 00:0a:95:9d:68:16 eth0
+```
+$ sudo macchanger -m 00:0a:95:9d:68:16 eth0
+```
 
 ## Windows
 

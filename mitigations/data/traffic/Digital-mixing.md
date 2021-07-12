@@ -4,7 +4,7 @@ In the eighties, digital mixes (sometimes called mix networks or mixnets) to ach
 
 Note: //Mixnets are not designed to disguise the fact that you are using a mix network. If an adversary can simply lock you up for using anonymity tools, you need to disguise your use of anonymity tools.//
 
-![Channel encryption](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/channel-encryption.png)
+![Channel encryption](../../assets/images/channel-encryption.png)
 
 If Alice wants to send a message to Bob, without a third person being able to find out who the sender or recipient is, she would encrypt her message three times with the aid of public key cryptography. She would then send her message to a proxy server who would remove the first layer of encryption and send it to a second proxy server through the use of permutation. This second server would then decrypt and also permute the message and the third server would decrypt and send the message to the intended recipient.
 

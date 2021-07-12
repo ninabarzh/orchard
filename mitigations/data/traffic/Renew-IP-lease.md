@@ -8,29 +8,41 @@ There are several ways to renew the IP lease, by using command line tools such a
 
 Restarting network service (Debian-based):
 
-  $ sudo /etc/init.d/networking restart
+```
+$ sudo /etc/init.d/networking restart
+```
 
 On the command-line with `dhclient` (The `-r` flag explicitly releases the current lease, and once released, the client exits):
 
-  $ sudo dhclient -r
+```
+$ sudo dhclient -r
+```
 
 Now a fresh IP can be obtained:
 
-  $ sudo dhclient
+```
+$ sudo dhclient
+```
 
 On the command-line with `nmcli`:
 
-  $ nmcli con
+```
+$ nmcli con
+```
 
 From the list that appears, get the NAME of the connection you wish to request a new lease for, then bring down and up:
 
-  $ nmcli con down id 'NAME'
-  $ nmcli con up id 'NAME'
+```
+$ nmcli con down id 'NAME'
+$ nmcli con up id 'NAME'
+```
 
 ## Windows
 
 Using a `/renew switch` (This command won't work if the computer is configured to use a static IP address):
 
-  C:\>ipconfig /renew
+```
+C:\>ipconfig /renew
+```
 
 
