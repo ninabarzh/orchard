@@ -23,7 +23,7 @@ Add all usernames to allow access for to a `/etc/ssh/ssh.deny` file.
 
 ## SASL
 
-[SASL] can use different authentication methods. The default one is PAM (as configured in `/etc/conf.d/saslauthd`)
+[SASL](../../mailservers/SASL.md) can use different authentication methods. The default one is PAM (as configured in `/etc/conf.d/saslauthd`)
 
 Create `/etc/pam.d/smtp`
 

@@ -5,7 +5,7 @@ Public key infrastructure (PKI) is the umbrella term for everything needed in or
   * [Problems](Problems.md)
   * [Internal PKI](Internal-PKI.md)
   * [Pluggable Authentication Modules (PAM)](PAM.md)
-  * [Let's Encrypt](Let's-Encrypt.md)
+  * [Let's Encrypt](Lets-Encrypt.md)
   * [TLS/SSL](TLS-SSL.md)
 
 ## Notes

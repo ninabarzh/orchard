@@ -12,7 +12,7 @@ TightVNC is a fast and lightweight remote control package. This choice will ensu
 
 ## Installation
 
-Install the [[https://www.xfce.org/|Xfce desktop environment]] on the server:
+Install the [Xfce desktop environment](https://www.xfce.org/) on the server:
 
     # apt-get install xfce4 xfce4-goodies
 
@@ -117,6 +117,7 @@ And start it as any other systemd service.
     $ sudo systemctl start vncserver@1
 
 Verify
+
     $ sudo systemctl status vncserver@1
 
 ## Clients

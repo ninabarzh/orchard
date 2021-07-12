@@ -41,14 +41,15 @@ Tools like [IP sets](http://ipset.netfilter.org) can be used with [iptables] to 
 * https://iplists.firehol.org/files/tor_exits_30d.ipset
 * https://iplists.firehol.org/files/cybercrime.ipset
 
-    #!/bin/sh
-    saveto=/etc/nginx/deny
-    now=$(date);
+```
+#!/bin/sh
+saveto=/etc/nginx/deny
+now=$(date);
 
-    echo `date` > $saveto/tor-deny.conf
-    wget -O - https://iplists.firehol.org/files/tor_exits_30d.ipset | awk --posix '/^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/ { print "deny " $1 "; # comment=tor"}' >> $saveto/tor-deny.conf
+echo `date` > $saveto/tor-deny.conf
+wget -O - https://iplists.firehol.org/files/tor_exits_30d.ipset | awk --posix '/^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/ { print "deny " $1 "; # comment=tor"}' >> $saveto/tor-deny.conf
 
-    echo `date` > $saveto/cybercrime-deny.conf
-    wget -O - https://iplists.firehol.org/files/cybercrime.ipset | awk --posix '/^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/ { print "deny " $1 "; # comment=cybercrime"}' >> $saveto/cybercrime-deny.conf
-
+echo `date` > $saveto/cybercrime-deny.conf
+wget -O - https://iplists.firehol.org/files/cybercrime.ipset | awk --posix '/^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/ { print "deny " $1 "; # comment=cybercrime"}' >> $saveto/cybercrime-deny.conf
+```
 
