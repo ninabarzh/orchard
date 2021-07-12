@@ -53,7 +53,7 @@ By default, `rsyslog` uses the imjournal (importing structured log messages from
     $ModLoad imtcp
     $InputTCPServerRun <port>
 
-Define the `# rules for processing the remote logs`. There be [[https://www.rsyslog.com/doc/v8-stable/configuration/templates.html|templates]].
+Define the `# rules for processing the remote logs`. There be [Templates](https://www.rsyslog.com/doc/v8-stable/configuration/templates.html).
 
     $template RemoteLogs,"/var/log/remote/%HOSTNAME%/%PROGRAMNAME%.log"
     *.* ?RemoteLogs 

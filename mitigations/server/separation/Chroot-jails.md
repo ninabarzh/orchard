@@ -33,38 +33,49 @@ For a chrooted program to successfully start, the chroot directory must be popul
 
 Building a “virtual root” containing every file the commands may need.
 
-* Create a directory which will become the root of the command
+Create a directory which will become the root of the command
 
+```
     $ mkdir jail
     $ cd jail
+```
 
-* Create the necessary directories
+Create the necessary directories
 
+```
     $ mkdir -p bin lib64/x86_64-linux-gnu lib/x86_64-linux-gnu
+```
 
-* Copy location of `ls` and `bash` with `which` (unalias both first if having aliased them)
+Copy location of `ls` and `bash` with `which` (unalias both first if having aliased them)
 
+```
     $ cp $(which ls) ./bin/
     $ cp $(which bash) ./bin/
+```
  
-* Find dependencies of `bash`
+Find dependencies of `bash`
 
+```
     $ ldd $(which bash)
 	linux-vdso.so.1 (0x00007ffc1f71a000)
 	libtinfo.so.5 => /lib/x86_64-linux-gnu/libtinfo.so.5 (0x00007f46ec9a6000)
 	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007f46ec7a2000)
 	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f46ec403000)
 	/lib64/ld-linux-x86-64.so.2 (0x00007f46ecbd0000)
+```
 
-* Create directories
+Create directories
 
+```
     $ cp /lib/x86_64-linux-gnu/libtinfo.so.5 lib/x86_64-linux-gnu/
     $ cp /lib/x86_64-linux-gnu/libdl.so.2 lib/x86_64-linux-gnu/
     $ cp /lib/x86_64-linux-gnu/libc.so.6 lib/x86_64-linux-gnu/
     $ cp /lib64/ld-linux-x86-64.so.2 lib64/
+```
 
-* Find dependencies of `ls`
+Find dependencies of `ls`
 
+```
     $ ldd $(which ls)
 	linux-vdso.so.1 (0x00007ffdf15bf000)
 	libselinux.so.1 => /lib/x86_64-linux-gnu/libselinux.so.1 (0x00007fcd43e2a000)
@@ -73,31 +84,41 @@ Building a “virtual root” containing every file the commands may need.
 	libdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007fcd43614000)
 	/lib64/ld-linux-x86-64.so.2 (0x00007fcd44273000)
 	libpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007fcd433f7000)
-    
-* Create directories
+```
 
+Create directories
+
+```
     $ cp /lib/x86_64-linux-gnu/libselinux.so.1 lib/x86_64-linux-gnu/
     $ cp /lib/x86_64-linux-gnu/libc.so.6 lib/x86_64-linux-gnu/
     $ cp /lib/x86_64-linux-gnu/libpcre.so.3 lib/x86_64-linux-gnu/
     $ cp /lib/x86_64-linux-gnu/libdl.so.2 lib/x86_64-linux-gnu/
     $ cp /lib64/ld-linux-x86-64.so.2  lib64/
     $ cp /lib/x86_64-linux-gnu/libpthread.so.0 lib/x86_64-linux-gnu/ 
+```
   
-* Go up, change the root and path to the shell
+Go up, change the root and path to the shell
 
+```
     $  cd ..
     $ sudo chroot jail /bin/bash
     [sudo] password for nina: 
     bash-4.4#
- 
-* Exit the jail with
+```
+
+Exit the jail with
+
+```
     bash-4.4# exit
+```
 
 Processes in the jailed shell run as a simple child processes and are a user level process in the host OS and isolated by the namespaces provided by the kernel => isolation and minimal overhead. While the jail is running, check in another terminal with:
 
+```
     $ ps aux | grep "chroot"
     avahi      852  0.0  0.0  47012    32 ?        S    Jul31   0:00 avahi-daemon: chroot helper
     root     27884  0.0  0.0  55476  3680 pts/0    S    15:04   0:00 sudo chroot jail /bin/bash
+```
 
 ## Chrooting webservers
 
@@ -118,8 +139,10 @@ Upgrade the chrooted web server, as well as php and related extensions:
 - Start the web server
 - Check all is running as intended
 
+```
     # tail -f /var/log/message
     # netstat -tulpn
+```
 
 ### Limitations 
 

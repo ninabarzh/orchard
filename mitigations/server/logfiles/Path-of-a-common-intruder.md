@@ -10,7 +10,6 @@ Assume an intruder gains access to the system through a vulnerability.
 * A somewhat more knowledgeable intruder will try to modify certain binaries of the system to conceal the indicators of their presence (`su` to not let on to elevated privileges, `ifconfig` to hide that the network interface is in promiscuous mode, `ls` to hide where their files are,`ps` to conceal the execution of the sniffer, find, netstat, top, etc). FIA's can detect these alterations
 
 ## Important events for reconstructing an attack
-
 * Logging off and logging in (location)  
 * User and group management (changes in permissions and ability to gain access) 
 * Security policy changes  
