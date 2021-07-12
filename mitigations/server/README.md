@@ -29,7 +29,7 @@
   * [Problems](pki/PAM.md)
   * [Internal PKI](pki/Internal-PKI.md)
   * [Pluggable Authentication Modules (PAM)](pki/PAM.md)
-  * [Let's Encrypt](pki/Let's-Encrypt.md)
+  * [Let's Encrypt](pki/Lets-Encrypt.md)
   * [TLS/SSL](pki/TLS-SSL.md)
 * [Logfiles](logfiles)
   * [Commands](logfiles/Commands.md)
