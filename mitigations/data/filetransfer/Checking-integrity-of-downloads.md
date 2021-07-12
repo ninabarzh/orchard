@@ -24,21 +24,30 @@ Integrity checks are integrated in linux package managers. Never ever continue w
 
 2. Check GPG keys (apt-key)
 
-    # apt-key list  
+```
+# apt-key list 
+```
 
 3. Update the local keyring with the keyring of archive keys and remove from the keyring the archive keys which are no longer valid:
 
-    # apt-key update
-    # apt-get update
+```
+# apt-key update
+# apt-get update
+```
 
 4. If still not works, reinstall the archive-keyring.
 
-    # aptitude reinstall [distro]-archive-keyring</code>
+```
+# aptitude reinstall [distro]-archive-keyring
+```
 
 For example:
-      Kali Keyring – kali-archive-keyring
-      Debian Keyring – debian-archive-keyring
-      Ubuntu Keyring – ubuntu-archive-keyring
+
+```
+Kali Keyring – kali-archive-keyring
+Debian Keyring – debian-archive-keyring
+Ubuntu Keyring – ubuntu-archive-keyring
+```
 
 5. Still not works? Hit the forums.
 
