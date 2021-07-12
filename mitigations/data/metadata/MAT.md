@@ -5,7 +5,7 @@
 [mat2](https://0xacab.org/jvoisin/mat2) provides a command line tool, and graphical user interfaces via a service
 menu for Dolphin, the default file manager of KDE, and an extension for Nautilus, the default file manager of GNOME. It is currently in beta, please don't use it for anything critical.
 
-![MAT](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/go-clean-it.png)
+![MAT](../../assets/images/go-clean-it.png)
 
 A word of warning:
 

@@ -14,7 +14,7 @@ As root (on debian and its derivatives):
 
 Example:
 
-![Using drive](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/fdisk-l.png)
+![Using drive](../../assets/images/fdisk-l.png)
 
 It has found `/dev/sdb1`, my external drive.
 
@@ -29,8 +29,6 @@ To overwrite an entire drive, leave off the partition number of the device name 
     # dd if=/dev/zero of=/dev/sdb1
 or
     # dd if=/dev/urandom of=/dev/sdb1
-
-{{ :en:forensics:called-for:ddcommand.png |}}
 
 ## Create encrypted volume
 
@@ -76,8 +74,7 @@ Unmount drive and close the encrypted volume:
 
 ## Using drive 
 
-![Using drive](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/volume.png)
-
+![Using drive](../../assets/images/volume.png)
 
 
 

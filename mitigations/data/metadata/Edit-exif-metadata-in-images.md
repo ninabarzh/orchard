@@ -53,10 +53,10 @@ To remove, for example GPS data (not found in the above image file, but if you h
 
 The mogrify command of imagemagick can be used to strip Exif data from images. For the same file as above and then checked with exiftool again:
 
-'''
+```
 $ mogrify -strip imagename.jpg
 $ exiftool imagename.jpg
-'''
+```
 
 For removing Exif data from all jpg images in a directory and all of its sub-directories recursively:
 

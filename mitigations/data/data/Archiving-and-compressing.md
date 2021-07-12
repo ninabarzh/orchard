@@ -64,7 +64,7 @@ Uncompress:
 
 ## lzop
 
-`lzop` uses the LZO data compression library for compression services, and its main advantages over gzip are much higher compression and decompression speed (at the cost of some compression ratio). [[http://www.lzop.org/|lzop]] is copyrighted under the terms of the GNU General Public License (GPL). 
+`lzop` uses the LZO data compression library for compression services, and its main advantages over gzip are much higher compression and decompression speed (at the cost of some compression ratio). [lzop](http://www.lzop.org/) is copyrighted under the terms of the GNU General Public License (GPL). 
 
 You will probably have to install it first:
 

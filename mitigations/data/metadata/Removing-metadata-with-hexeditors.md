@@ -11,7 +11,7 @@ And that means we have editors, hex editors, that can be used to view and change
 * backup the file before using a hex editor on it.
 * switch to ASCII mode, turn off “read only” mode, and start searching through the file.
 
-![wxhexeditor](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/wxhexeditor.png)
+![wxhexeditor](../../assets/images/wxhexeditor.png)
 
 For example, when scrubbing pdf’s from creation and modification information look through the entire file for “created” (metadata appears in the PDF file more than once). If and when you find metadata, change to fake data or delete. Then repeat your search again for the terms “create”, “creation”, “modified”, and “modify”, and similarly either replace or delete the dates, once again being sure to repeat each search so that any potential multiple instances of the field can be located and modified or blanked out. 
 

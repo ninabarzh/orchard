@@ -36,10 +36,10 @@ And even when shredding partitions, most HDDs map out bad sectors invisibly to a
 
 The Secure-Delete package comes with four commands:
 
-|`srm` 	 	|Secure remove; used for deleting files or directories currently on your hard disk|
-|`smem` 	 	|Secure memory wiper; used to wipe traces of data from your computer’s memory (RAM)|
-|`sfill` 	 	|Secure free space wiper; used to wipe all traces of data from the free space on your disk|
-|`sswap` 	 	|Secure swap wiper; used to wipe all traces of data from your swap partition|
+* *`srm` - Secure remove; used for deleting files or directories currently on your hard disk
+* `smem` - Secure memory wiper; used to wipe traces of data from your computer’s memory (RAM)
+* `sfill` - Secure free space wiper; used to wipe all traces of data from the free space on your disk
+* `sswap` - Secure swap wiper; used to wipe all traces of data from your swap partition|
 
 `srm` (secure remove) is a more advanced version of the shred command. It uses a combination of random data, zeros, and special values developed by cryptographer Peter Gutmann to make files irrecoverable. The `shred` tool allows you to specify the number of passes and the secure-delete tools use a default of 38 passes. It will also assign a random value for the filename, hiding that key piece of evidence:
 
@@ -105,7 +105,7 @@ Then delete
 
 With [BleachBit](https://www.bleachbit.org/features) you can free cache, delete cookies, clear Internet history, shred temporary files, delete logs, and discard junk you didn't know was there.
 
-![Bleachbit](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/bleachbit-system.jpg)
+![Bleachbit](../../assets/images/bleachbit-system.jpg)
 
 The version of BleachBit in the repositories of many Linux distributions is often stale, so to use the best and latest version, use [download](https://www.bleachbit.org/download/linux).
 
