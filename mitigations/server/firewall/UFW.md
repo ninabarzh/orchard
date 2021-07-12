@@ -28,7 +28,7 @@ Or if you have changed port:
 
     # ufw allow <port>/tcp
 
-### Nginx HTTP =
+### Nginx HTTP
 
     # ufw allow 'Nginx HTTP'
 

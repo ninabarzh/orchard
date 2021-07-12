@@ -4,15 +4,6 @@ FirewallD uses the concepts of zones and services, instead of [IPTables](IPTable
 
 FirewallD can be configured and managed using the `firewall-cmd` command line utility. 
 
-- [FirewallD](#firewalld)
-  - [Install and enable FirewallD](#install-and-enable-firewalld)
-  - [Zones](#zones)
-  - [Ports and services](#ports-and-services)
-  - [Creating rulesets](#creating-rulesets)
-  - [Usage examples](#usage-examples)
-    - [OpenVPN](#openvpn)
-    - [SMTP](#smtp)
-
 ## Install and enable FirewallD
 
 If not installed on the system, install with

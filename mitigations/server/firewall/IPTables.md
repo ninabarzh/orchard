@@ -4,7 +4,7 @@ IPTables is a command line utility for configuring the Linux kernel firewall imp
 
 For a bare metal server running only a dedicated application, such as a Schleuder list, iptables is the simplest (and minimalistic) choice. 
 
-===== Disable FirewallD =====
+## Disable FirewallD
 
 Note: As of CentOS version 7, [FirewallD](FirewallD.md) replaces IPTables as the default firewall management tool.
 
