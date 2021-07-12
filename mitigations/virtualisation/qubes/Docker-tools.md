@@ -26,13 +26,17 @@ Guides
 - [ ] Go to settings of the cloned templateVM (in the Qubes manager). Under firewall rules, check on allow full access for 5 min.
 - [ ] Install the docker repository in the cloned templateVM
 
-     $ sudo yum-config-manager \
-    --add-repo \
-    https://download.docker.com/linux/centos/docker-ce.repo
+```
+    $ sudo yum-config-manager \
+--add-repo \
+https://download.docker.com/linux/centos/docker-ce.repo
+```
 
 - [ ] Install the latest version of Docker Engine and containerd
 
+```
      $ sudo yum install docker-ce docker-ce-cli containerd.io
+```
 
 If prompted to accept the GPG key, verify that the fingerprint matches 060A 61C5 1B55 8A7F 742B 77AA C52F EB6B 621E 9F35, and if so, accept it.
 
@@ -40,21 +44,26 @@ The docker group is created, but no users are added to the group. See [Docker da
 
 - [ ] To [Run the Docker daemon as a non-root user (Rootless mode)](https://docs.docker.com/engine/security/rootless/) add a user:
 
-    $ sudo usermod -aG docker $USER
-
-    $ newgrp docker
+```
+$ sudo usermod -aG docker $USER
+$ newgrp docker
+```
     
 - [ ] Enable docker
 
-    $ sudo systemctl enable docker
+```
+$ sudo systemctl enable docker
+```
 
 - [ ] Bindings (appvms get to keep customisations)
 
-    sudo mkdir -p /rw/config/qubes-bind-dirs.d
-    sudo cat << EOF > /rw/config/qubes-bind-dirs.d/50_user.conf
-    binds+=( '/var/lib/docker' )
-    binds+=( '/etc/docker' )
-    EOF
+```
+sudo mkdir -p /rw/config/qubes-bind-dirs.d
+sudo cat << EOF > /rw/config/qubes-bind-dirs.d/50_user.conf
+binds+=( '/var/lib/docker' )
+binds+=( '/etc/docker' )
+EOF
+```
     
 Maybe more needs to be added to bind-dirs. If not works, make a stand alone AppVM, based on the template. 
 
@@ -66,7 +75,9 @@ Maybe more needs to be added to bind-dirs. If not works, make a stand alone AppV
 
 - [ ] In the AppVM, run
 
+```
     $ docker run hello-world
+```
 
 This command downloads a test image and runs it in a container. When the container runs, it prints an informational message and exits.
 
