@@ -1,4 +1,4 @@
-# Using cryptsetup (Linux)
+# Using cryptsetup
 
 [Cryptsetup](https://gitlab.com/cryptsetup/cryptsetup) is a utility used to setup disk encryption based the on `dm-crypt` kernel module. LUKS (Linux Unified Key Setup) is the standard for Linux hard disk encryption, facilitating compatibility among distributions, and providing secure management of multiple user passwords.
 
