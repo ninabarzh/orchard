@@ -69,8 +69,10 @@ Where `[user]` is your user name.
 
 Unmount drive and close the encrypted volume:
 
-    # umount /mnt
+```
+# umount /mnt
 # cryptsetup luksClose <name>
+```
 
 ## Using drive 
 
