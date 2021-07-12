@@ -1,11 +1,5 @@
 # Installing SSH
 
-- [Installing SSH](#installing-ssh)
-  - [openSSH server](#openssh-server)
-    - [Control](#control)
-  - [Filtering](#filtering)
-  - [openSSH client](#openssh-client)
-
 ## openSSH server 
 
     # apt-get install openssh-server

@@ -1,15 +1,5 @@
 # OpenVPN
 
-- [OpenVPN](#openvpn)
-  - [Installation](#installation)
-  - [Server configuration](#server-configuration)
-    - [Assign static IP addresses](#assign-static-ip-addresses)
-    - [Firewall server](#firewall-server)
-    - [Start the OpenVPN server](#start-the-openvpn-server)
-  - [Client configurations](#client-configurations)
-    - [Firewall client](#firewall-client)
-    - [Fire it up!](#fire-it-up)
-
 ## Installation
 
     # apt-get install openvpn

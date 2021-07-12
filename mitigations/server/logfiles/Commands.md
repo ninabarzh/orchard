@@ -2,13 +2,6 @@
 
 These commands can be used to access the information in Linux logs:
 
-- [Commands](#commands)
-  - [Less, more and zmore](#less-more-and-zmore)
-  - [Grep and zgrep](#grep-and-zgrep)
-  - [Tail and multitail](#tail-and-multitail)
-  - [Last](#last)
-  - [dmesg](#dmesg)
-
 ## Less, more and zmore
 
     $ sudo less /var/log/syslog

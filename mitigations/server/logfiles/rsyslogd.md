@@ -10,14 +10,6 @@ The rsyslogd service is a system utility providing support for message logging. 
 * Log replication can copy the audit data to multiple remote-logging hosts
 * It is recommended to also setup logrotate and compression.
 
-- [Syslog](#syslog)
-  - [Setting it up](#setting-it-up)
-  - [Server](#server)
-    - [Installation](#installation)
-    - [Configuration](#configuration)
-  - [Clients](#clients)
-  - [Configuration resources](#configuration-resources)
-
 ## Setting it up
 
 * Set up a separate server for only logging purposes.

@@ -2,14 +2,6 @@
 
 TightVNC is a fast and lightweight remote control package. This choice will ensure that our VNC connection will be smooth and stable even on slower internet connections. It encrypts VNC passwords sent over the net (DES-encrypted challenge-response scheme and the password is limited by 8 characters), but the rest of the traffic is sent in the clear and are a security risk. Recommended is using TightVNC ***with ssh*** (and that defeats our purpose of only using it when ssh fails)
 
-- [TightVNC](#tightvnc)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Firewall](#firewall)
-  - [Control](#control)
-  - [Clients](#clients)
-  - [Configuration resources](#configuration-resources)
-
 ## Installation
 
 Install the [Xfce desktop environment](https://www.xfce.org/) on the server:

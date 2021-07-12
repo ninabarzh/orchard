@@ -1,11 +1,5 @@
 # Key management
 
-- [Key management](#key-management)
-  - [Generate a key](#generate-a-key)
-  - [Copy key to server](#copy-key-to-server)
-  - [Connect](#connect)
-  - [Changing passphrase](#changing-passphrase)
-
 ## Generate a key
 
     $ ssh-keygen -t

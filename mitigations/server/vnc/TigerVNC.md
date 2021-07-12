@@ -2,14 +2,6 @@
 
 TigerVNC is not as lightweight as [TightVPN](TightVPN.md), but it provides extensions for advanced authentication methods and [TLS encryption](Securing-sessions.md), hence a proper candidate for a fallback when ssh fails. 
 
-- [TigerVNC](#tigervnc)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Firewall](#firewall)
-  - [Control](#control)
-  - [Clients](#clients)
-  - [Configuration resources](#configuration-resources)
-
 ## Installation
 
 Install the [Xfce desktop environment](https://www.xfce.org) on the server:

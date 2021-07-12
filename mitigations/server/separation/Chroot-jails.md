@@ -6,18 +6,6 @@ A `chroot` is an operation that changes the apparent root directory for the curr
 
 Changing root is done for performing system maintenance on systems where booting and/or logging in is no longer possible, such as reinstalling a bootloader, rebuilding an initramfs image, upgrading or downgrading packages, resetting a forgotten password, building packages in a clean chroot, etc. 
 
-- [Chroot jails](#chroot-jails)
-  - [Create jail](#create-jail)
-  - [Simple jail with bash and ls](#simple-jail-with-bash-and-ls)
-  - [Chrooting webservers](#chrooting-webservers)
-    - [Upgrading](#upgrading)
-    - [Limitations](#limitations)
-  - [Security?](#security)
-  - [Without root](#without-root)
-    - [fakeroot](#fakeroot)
-    - [schroot](#schroot)
-    - [proot](#proot)
-
 ## Create jail
     
 To create a chroot jail:

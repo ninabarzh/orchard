@@ -8,3 +8,5 @@ Things change fast. The below serve as examples to reveal some of the patterns o
 * Use an application firewall.
 * Remove default accounts in MySQL.
 
+Also see [application development](../../application/README.md)
+
