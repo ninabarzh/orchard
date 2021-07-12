@@ -1,17 +1,5 @@
 # Installation KVM
 
-- [Installation KVM](#installation-kvm)
-  - [Preparation](#preparation)
-  - [Installation](#installation)
-  - [Tests](#tests)
-  - [Creating VM's](#creating-vms)
-    - [GUI](#gui)
-    - [CLI](#cli)
-  - [Importing OVA's](#importing-ovas)
-  - [Cloning VM's](#cloning-vms)
-  - [Autostart](#autostart)
-  - [Sharing files](#sharing-files)
-
 ## Preparation
 
 Check if the CPU supports hardware virtualization:

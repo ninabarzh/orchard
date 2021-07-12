@@ -1,14 +1,5 @@
 # Development VM
 
-- [Development VM](#development-vm)
-  - [Git](#git)
-  - [Github SSH](#github-ssh)
-  - [First connect](#first-connect)
-  - [Install IDE's](#install-ides)
-    - [VSCode](#vscode)
-    - [PyCharm Community](#pycharm-community)
-  - [Clone repositories](#clone-repositories)
-
 ## Git
 
 Download and install git (easy from repository):
