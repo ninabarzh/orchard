@@ -2,13 +2,6 @@
 
 The simplest workflow for a python application in docker on [Docker tools VM](../kvm/Docker-tools.md), based on the docker tutorials, adapted to my environment and expanded.
 
-- [Hello world Python](#hello-world-python)
-  - [Installing Python](#installing-python)
-  - [Make containers](#make-containers)
-  - [Using Compose](#using-compose)
-  - [Debugging](#debugging)
-  - [Testing](#testing)
-
 ## Installing Python
 
 Unlike other Linux distributions, Python is not installed by default on CentOS 8.

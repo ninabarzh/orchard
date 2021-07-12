@@ -2,13 +2,6 @@
 
 There are two ways to login onto a remote system over SSH – using password authentication or public key authentication (passwordless SSH login). To enable passwordless access, create a SSH key pair and upload a copy of the public key to the remote server.
 
-- [SSH](#ssh)
-  - [Choosing algorithm and key size](#choosing-algorithm-and-key-size)
-  - [Preparations](#preparations)
-  - [Generating key pairs](#generating-key-pairs)
-  - [Generating multiple key pairs](#generating-multiple-key-pairs)
-  - [Verification](#verification)
-
 ## Choosing algorithm and key size
 
 When generating keys the algorithm is chosen using the `-t` option and key size using the `-b` option. 
