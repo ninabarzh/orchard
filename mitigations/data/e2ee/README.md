@@ -1,3 +1,5 @@
+# E2EE messaging
+
 * End-to-end encryption (E2EE) is a defence against MitM attacks.
 * Most E2EE systems are secure against only the weakest passive adversaries, breakable not by cryptanalysis of underlying cryptographic algorithms but by [flawed system designs and security assumptions](../../../threat-modelling/E2EE-threat-model). Unencrypted metadata and access patterns make these systems susceptible to inference attacks. And recently made laws seem to have been made to prepare the way for agencies to legitimately gather encrypted data via [backdoors](../../../threat-modelling/E2EE-threat-model/attack-vectors/Backdoor.md) and [ghost protocols](../../../threat-modelling/E2EE-threat-model/attack-vectors/Ghost-protocols.md).
 * The [Infosec goals](../Infosec-goals.md) of E2EE are:
