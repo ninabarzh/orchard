@@ -1,4 +1,4 @@
-# Linux server
+# Linux server administration
 
 * [Separation and isolation](separation)
   * [Chroot jails](separation/Chroot-jails.md)

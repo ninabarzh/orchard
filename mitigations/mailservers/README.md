@@ -1,4 +1,4 @@
-# Mail servers
+# Mail server administration
 
 * [Postfix](Postfix.md)
 * [Dovecot](Dovecot.md)

@@ -5,11 +5,6 @@ DNS-based Authentication of Named Entities (DANE) is an Internet security protoc
 * [Postfix](Postfix.md) supports DANE
 * In Postfix, certificate usage 0 is unsupported, 1 is mapped to 3, and 2 is optional, thus it is recommended to publish a "3" record. 
 
-- [DANE](#dane)
-  - [Configuration](#configuration)
-    - [Multiple domains](#multiple-domains)
-  - [Configuration resources](#configuration-resources)
-
 ## Configuration
 
 In `/etc/postfix/main.cf`

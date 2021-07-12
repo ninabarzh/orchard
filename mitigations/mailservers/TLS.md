@@ -5,19 +5,6 @@
 * Public Internet MX hosts without certificates signed by a well-known public CA must still generate, and be prepared to present to most clients, a self-signed or private-CA signed certificate. 
 * For non-public Internet MX hosts, Postfix supports configurations with no certificates. This entails the use of anonymous TLS ciphers, which are not supported by typical SMTP clients.
 
-- [TLS](#tls)
-  - [Creating keys and certificates](#creating-keys-and-certificates)
-  - [Configuration](#configuration)
-    - [SMTP (sending)](#smtp-sending)
-    - [SMTP (receiving)](#smtp-receiving)
-    - [Logging](#logging)
-    - [Cipher controls](#cipher-controls)
-    - [Entropy](#entropy)
-    - [Session cache](#session-cache)
-    - [Obsolete TLS parameters](#obsolete-tls-parameters)
-  - [Firewall](#firewall)
-  - [Configuration resources](#configuration-resources)
-
 ## Creating keys and certificates
 By default, Postfix will not accept secure mail. To set Postfix up to accept secure mail, obtain a certificate. A certificate can be obtained either from a certificate authority with a Certificate Signing Request (CSR) or Let's Encrypt certbot, or self-signed. Self-signed certificates can be generated easily, but clients will reject them by default, unless each and every client is configured to trust the self-signed certificate. 
 
@@ -111,6 +98,7 @@ The `smtpd_tls_ciphers` parameter controls the minimum cipher grade used with op
     smtpd_tls_ciphers = medium
 
 By default anonymous ciphers are enabled. They are automatically disabled when remote SMTP client certificates are requested. For excluding cipher types from the SMTP server cipher list at all TLS security levels:
+
     smtpd_tls_exclude_ciphers = aNULL, MD5, DES, 3DES, DES-CBC3-SHA, RC4-SHA, AES256-SHA, AES128-SHA, eNULL, EXPORT, RC4, PSK, aECDH, EDH-DSS-DES-CBC3-SHA, EDH-RSA-DES-CDC3-SHA, KRB5-DE5, CBC3-SHA
 
 The Postfix SMTP server security grade for ephemeral elliptic-curve Diffie-Hellman (EECDH) key exchange: 

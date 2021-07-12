@@ -9,18 +9,6 @@ The Sender Policy Framework is an open standard specifying a technical method to
 * Breaks when a message is forwarded.
 * Does not protect against spoofing of the visible "From" address in messages.
 
-- [SPF](#spf)
-  - [Add SPF records to DNS](#add-spf-records-to-dns)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-    - [policyd-spf.conf](#policyd-spfconf)
-  - [Postfix integration](#postfix-integration)
-    - [master.cf](#mastercf)
-    - [main.cf](#maincf)
-    - [Restart postfix](#restart-postfix)
-  - [Testing](#testing)
-  - [Configuration resources](#configuration-resources)
-
 ## Add SPF records to DNS
 
 In order that receiving servers can check your SPF record it must be publicly visible. This means publishing it to the DNS server for the chosen domain(s). Go to their domain zone pages and add a new TXT record. For example, to allow mail from all hosts listed in the MX records for the domain:

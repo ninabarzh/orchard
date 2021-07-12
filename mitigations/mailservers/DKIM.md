@@ -12,18 +12,6 @@ DKIM (DomainKeys Identified Mail) is a system that lets official mail servers ad
 * DKIM does not prevent spoofing of the visible header "From:" domain.
 * This is for debian 9 (will probably also work on buster)
 
-- [DKIM](#dkim)
-  - [Installation](#installation)
-  - [Unix socket](#unix-socket)
-  - [Generate keys](#generate-keys)
-  - [Configuration](#configuration)
-    - [Multiple domains](#multiple-domains)
-  - [Postfix integration](#postfix-integration)
-    - [Restart postfix](#restart-postfix)
-  - [DNS Configuration](#dns-configuration)
-  - [Testing](#testing)
-  - [Configuration resources](#configuration-resources)
-
 ## Installation
 
     # apt-get install opendkim opendkim-tools

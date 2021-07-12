@@ -2,15 +2,6 @@
 
 Dovecot is an open source IMAP and POP3 server for Linux/UNIX-like systems, written primarily with security in mind. Dovecot primarily aims to be a lightweight, fast and easy to set up open source mailserver. The below is for debian 9 (probably also works on buster)
 
-- [Dovecot](#dovecot)
-  - [Installation](#installation)
-  - [Get SSL certificate](#get-ssl-certificate)
-  - [Configuration](#configuration)
-    - [SASL](#sasl)
-  - [Integration with postfix](#integration-with-postfix)
-  - [Firewall](#firewall)
-  - [Configuration resources](#configuration-resources)
-
 ## Installation 
 
     apt-get install dovecot-common dovecot-imapd dovecot-pop3d

@@ -2,13 +2,6 @@
 
 Once Postfix is up and running, add SASL authentication to avoid open relaying. In order to prevent anonymous users from spamming, only authenticated and trusted users will be able to send emails. Postfix supports two SASL implementations: Cyrus SASL (SMTP client and server) and Dovecot SASL (SMTP server only). Both implementations can be built into Postfix simultaneously.
 
-- [SASL](#sasl)
-  - [Cyrus](#cyrus)
-    - [SMTP](#smtp)
-  - [Dovecot](#dovecot)
-    - [SMTP](#smtp-1)
-  - [Configuration resources](#configuration-resources)
-
 ## Cyrus
 
 Install:

@@ -19,24 +19,6 @@ Postfix is a mail transfer agent (MTA). The below was for debian 9 (will most li
 * Other efficient protocol level solutions in Postfix can be used to make sure the mail server is RFC compliant and prevent email looping (a very simple method would be setting a maximum numbers of "Received" headers per email).
 * With policy services Postfix' behaviour of mail delivery can be fine-tuned. Making changes to configurations of such services require a restart of Postfix.
 
-- [Postfix](#postfix)
-  - [Installation](#installation)
-  - [Basic configuration](#basic-configuration)
-    - [Multiple local domains](#multiple-local-domains)
-    - [Remote access](#remote-access)
-  - [Managing mailboxes](#managing-mailboxes)
-  - [Abuse and spam](#abuse-and-spam)
-    - [SMTP restrictions](#smtp-restrictions)
-    - [Blacklisting](#blacklisting)
-    - [Greylisting](#greylisting)
-    - [Header filtering](#header-filtering)
-    - [Relaying](#relaying)
-  - [Rule-based mail processing](#rule-based-mail-processing)
-  - [Notifications](#notifications)
-  - [Email loops](#email-loops)
-  - [Reload](#reload)
-  - [Restart](#restart)
-
 ## Installation 
 
     # apt-get install postfix
