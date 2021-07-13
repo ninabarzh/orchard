@@ -1,4 +1,4 @@
-# PKI
+# Public key infrastructure (PKI)
 
 Public key infrastructure (PKI) is the umbrella term for everything needed in order to issue, distribute, store, use, verify, revoke, and otherwise manage and interact with certificates and keys. It’s an intentionally vague term, like “database infrastructure”. Certificates are the building blocks of most PKIs, and certificate authorities are the foundation. 
 
