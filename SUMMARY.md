@@ -406,7 +406,7 @@
       * [Browser plugins](mitigations/data/browsing/Browser-plugins.md)
       * [User agent switchers](mitigations/data/browsing/User-agent-switchers.md)
       * [Cookies](mitigations/data/browsing/Cookies.md)
-      * [Federated Learning of Cohorts (mitigations/data/FLoC)](mitigations/data/browsing/FLoC.md)
+      * [Federated Learning of Cohorts (FLoC)](mitigations/data/browsing/FLoC.md)
     * [Anonymising traffic](mitigations/data/traffic)
       * [Change MAC address](mitigations/data/traffic/Change-MAC-address.md)
       * [Change nickname](mitigations/data/traffic/Change-nickname.md)
