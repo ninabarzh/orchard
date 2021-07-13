@@ -1,4 +1,4 @@
-# Vulnerabilities
+# Milliways menu of vulnerabilities
 
 Flaws that make software act in ways that designers and developers did not intend it to, or even expect. Most listed here are known vulnerabilities, ongoing with long standing histories, and useful for pentesting purposes.
 
