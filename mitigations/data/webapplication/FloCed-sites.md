@@ -1,6 +1,6 @@
 # FloCed sites
 
-[FLoC](FLoC.md) requires that a website provide an explicit HTTP response header if it wants to opt out of the program. Google is counting on webmasters to not be bothered with this task.
+[FLoC](../browsing/FLoC.md) requires that a website provide an explicit HTTP response header if it wants to opt out of the program. Google is counting on webmasters to not be bothered with this task.
 
 In order to opt-out a website out of the FLoC network, add a custom HTTP response header to all websites to be served with each request. This comes in the form of a Permissions-Policy header, with the following syntax:
 
