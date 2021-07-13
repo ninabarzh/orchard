@@ -65,19 +65,19 @@ For `<your hostname>`:
 
 Enable and start postfix:
 
-    [nina@localhost ~]$ sudo systemctl enable postfix.service
-    [sudo] password for nina: 
+    $ sudo systemctl enable postfix.service
+    [sudo] password for [user]]: 
     Created symlink /etc/systemd/system/multi-user.target.wants/postfix.service → /usr/lib/systemd/system/postfix.service.
-    [nina@localhost ~]$ sudo systemctl start postfix.service
+    $ sudo systemctl start postfix.service
 
 Verify that it is up and listening
 
-    [nina@localhost ~]$ netstat -lt | grep smtp
+    $ netstat -lt | grep smtp
     tcp        0      0 localhost:smtp          0.0.0.0:*               LISTEN
 
 Now you can send/receive local emails with mailx, mutter, evolution, and claws:
 
-    Email Addresses: <user>@localhost
+    Email Addresses: [user]@localhost
     Receiving Email Server Type: mbox spool file
     Spool File: /var/spool/mail/<user> 
     Sending Email Server Type: Sendmail

@@ -6,17 +6,6 @@ The tools can be both run altogether once to generate an audit report of the sys
 
 Debian's `tiger` incorporates new checks primarily oriented towards Debian distribution. The package provides all the security scripts and data files.
 
-- [Tiger](#tiger)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Examples](#examples)
-    - [Checking passwd files](#checking-passwd-files)
-    - [Checking user accounts](#checking-user-accounts)
-    - [Checking cron entries](#checking-cron-entries)
-    - [Checking system file permissions](#checking-system-file-permissions)
-    - [Checking network configuration](#checking-network-configuration)
-  
-
 ## Installation 
 
     $ sudo apt-get install tiger
@@ -27,7 +16,7 @@ Tiger first run:
 
     $ sudo tiger
 
-![Tiger](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/sudo-tiger.png)
+![Tiger](../../assets/images/sudo-tiger.png)
 
 * Mess with the tiger variables in the `/etc/tiger/tigerrc` configuration file. For each available module there is a corresponding variable in the file that determines whether the module is run. A variable can be set equal to Y to run, or N to skip. Other configuration variables will modify the behaviour of some modules, and can be adjusted based on the operating system.
 * The `/etc/tiger/tiger.ignore` configuration file defines the set of messages that will not be presented in the report even if any of the modules generate them. All entries (per line) are used as extended regular expressions that are compared against each message (mind the overhead which grows with the size of the file).

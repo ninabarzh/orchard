@@ -10,14 +10,6 @@ Tripwire was originally a free, open source product and is now a commercial prod
 * Omits checksum if file size is zero, which is incorrect for Linux `/proc` files.
 * Setting it up is hilariously hellish, hence I am spelling it out here.
 
-- [Tripwire](#tripwire)
-  - [Problems](#problems)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Initialisation](#initialisation)
-  - [Cleaning up](#cleaning-up)
-  - [Usage](#usage)
-
 ## Installation
 
 To install tripwire on a debian-based system:
@@ -44,29 +36,29 @@ To install tripwire on a debian-based system:
 
 https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/chrootkit.png
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire1.png)
+![Tripwire](../../assets/images/tripwire1.png)
 
 Use the arrow keys to navigate: 
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire2.png)
+![Tripwire](../../assets/images/tripwire2.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire3.png)
+![Tripwire](../../assets/images/tripwire3.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire4.png)
+![Tripwire](../../assets/images/tripwire4.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire5.png)
+![Tripwire](../../assets/images/tripwire5.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire6.png)
+![Tripwire](../../assets/images/tripwire6.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire7.png)
+![Tripwire](../../assets/images/tripwire7.png)
 
 "Remember that passphrase", for example in keepassx (I also had keepassx generate the passphrase):
 
-![KeepassX](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire-site-key-kpassx.png) 
+![KeepassX](../../assets/images/tripwire-site-key-kpassx.png) 
 
 Repeat: 
 
-![Repeat](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire8.png) 
+![Repeat](../../assets/images/tripwire8.png) 
 
     Generating site key (this may take several minutes)...
 
@@ -134,9 +126,9 @@ Waaaait for it! When this listing has been generated, edit `/etc/tripwire/twpol.
 
     # geany /etc/tripwire/twpol.txt
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire11.png)
+![Tripwire](../../assets/images/tripwire11.png)
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire12.png)
+![Tripwire](../../assets/images/tripwire12.png)
 
 And there are other files in the default policy that may not make sense to monitor on your local system. These include lock files (which identify that some process is in use) and //pid// files (which identify the //process ID// of some //daemons//). Such files are likely to change often, if not at every system boot, and they can cause tripwire to generate false positives. You can comment out all of the `/var/lock/subsys` entries as well as the entry for `/var/run`.
 
@@ -172,7 +164,7 @@ Any `/dev` entries spell that the /dev file system also has other file systems m
 
 `binfmt_misc` is a capability of the Linux kernel which allows arbitrary executable file formats to be recognised and passed to certain user space applications, such as emulators and virtual machines. The executable formats are registered through a special purpose file system interface (similar to `/proc`). Debian-based distributions provide the functionality through an extra //binfmt-support// package. Needs monitoring. So, added those two as well. 
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/tripwire14.png)
+![Tripwire](../../assets/images/tripwire14.png)
 
 After that you need to re-install default policy and generate the database again.
 
@@ -190,7 +182,7 @@ If they need to be restored, cleartext versions of these files can be created fr
 
     $ sudo /usr/sbin/tripwire -m c
 
-![Tripwire](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/800px-tripwire15.png)
+![Tripwire](../../assets/images/800px-tripwire15.png)
 
 The management at a directory level also means that addition of packages to a system will almost certainly require the updating or regeneration of the tripwire database. 
 
