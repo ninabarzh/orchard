@@ -15,4 +15,4 @@ We are not arguing that one is more important or practical than the other (it al
 
 As metaphors we use "spontaneous choreography" for the exploitation process and "puzzles" for targets to stimulate the right brain and be guide for some of the best puzzling (threat modelling and hacking). Attack trees then represent movements and puzzle pieces that may or may not be needed in a particular context for a particular purpose. Oh, and in all  cases we have humour. Lots of it.
 
-![Roadrunner](../trees/assets/images/coyote_and_road_runner.png) 
+![Coyote](../trees/assets/images/coyote_and_road_runner.png) 
