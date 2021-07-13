@@ -18,5 +18,5 @@ Save and close. Compile server.
 
 For turning off Nginx version number displayed on all auto generated error pages add the following line to `/usr/local/nginx/conf/nginx.conf`:
 
-server_tokens off
+    server_tokens off
 

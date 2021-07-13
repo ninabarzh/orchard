@@ -54,4 +54,4 @@ To turn it off for a particular directory:
 
 Restart Nginx. 
 
-Have a look at the [[https://www.owasp.org/index.php/Category:OWASP_ModSecurity_Core_Rule_Set_Project|OWASP ModSecurity Core Rule Set Project]] (CRS) for making more secure changes. The CRS aims to protect web applications from a wide range of attacks, with a minimum of false alerts.
+Have a look at the [OWASP ModSecurity Core Rule Set Project](https://www.owasp.org/index.php/Category:OWASP_ModSecurity_Core_Rule_Set_Project) (CRS) for making more secure changes. The CRS aims to protect web applications from a wide range of attacks, with a minimum of false alerts.
