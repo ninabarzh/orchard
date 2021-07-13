@@ -2,33 +2,33 @@
 
 A variety thereof, not organised because in reality the choreography is not linear or easily organised.
 
-* Cipher-suite-cheatsheet.md
-* Darkweb-links.md          
-* Darkweb-scraping.md       
-* Dig-cheatsheet.md         
-* DNS-information.md        
-* Docker-cheatsheet.md      
-* Gathering-public-information.md  
-* Github-mining.md
-* Hashcat-cheatsheet.md     
-* IKE-scan-cheatsheet.md    
-* iproute2.md               
-* Linux-log-commands.md     
-* lsof.md                   
-* Metasploit-cheatsheet.pdf 
-* Nessus-cheatsheet.md      
-* Nikto-cheatsheet.md
-* Nmap-cheatsheet.md
-* Ports-cheatsheet.md
-* Server-services-audit.md
-* Shodan-cheatsheet.md
-* Shodan-CLI-cheatsheet.md
-* sockstat.md
-* SQLmap-cheatsheet-1.0-sdb.pdf
-* tcpdump.md
-* the-Harvester-cheatsheet.md
-* Threat-maps.md
-* Traceroute-cheatsheet.md
-* Unicornscan-cheatsheet.md
-* Wardriving-links.md
-* Wireshark.md
+* [Cipher suite](Cipher-suite-cheatsheet.md)
+* [Darkweb links](Darkweb-links.md)
+* [Darkweb scraping](Darkweb-scraping.md)
+* [Dig](Dig-cheatsheet.md)
+* [DNS](DNS-information.md)
+* [Docker](Docker-cheatsheet.md)
+* [Gathering public info](Gathering-public-information.md)
+* [Github mining](Github-mining.md)
+* [Hashcat](Hashcat-cheatsheet.md)
+* [IKE scan](IKE-scan-cheatsheet.md)
+* [iproute](iproute2.md)
+* [Linux log commands](Linux-log-commands.md)
+* [lsof](lsof.md)
+* [Metasploit](Metasploit-cheatsheet.pdf)
+* [Nessus](Nessus-cheatsheet.md)
+* [Nikto](Nikto-cheatsheet.md)
+* [Nmap](Nmap-cheatsheet.md)
+* [Ports](Ports-cheatsheet.md)
+* [Server services](Server-services-audit.md)
+* [Shodan](Shodan-cheatsheet.md)
+* [Shodan cli](Shodan-CLI-cheatsheet.md)
+* [sockstat](sockstat.md)
+* ![SQLmap](SQLmap-cheatsheet-1.0-sdb.pdf)
+* [tcpdump](tcpdump.md)
+* [the Harvester](the-Harvester-cheatsheet.md)
+* [Threat maps](Threat-maps.md)
+* [traceroute](Traceroute-cheatsheet.md)
+* [Unicorn scan](Unicornscan-cheatsheet.md)
+* [Wardriving](Wardriving-links.md)
+* [Wireshark](Wireshark.md)
