@@ -9,9 +9,11 @@ Administrators have two options:
 
 Disallowing can be done by defining a `Directory` tag in the configuration file:
 
-    <Directory "/directory">
-       Options -Includes -ExecCGI
-    </Directory>
+```
+<Directory "/directory">
+    Options -Includes -ExecCGI
+</Directory>
+```
 
 The most secure way to operate a server is to disallow all SSI processing. This is the default unless All or Includes is specified by an `Options` directive. A compromise setting is to allow SSI, but to disallow the #include and #exec commands, which are the greatest security threat. Use IncludesNOEXEC on the `Options` directive for this setting.
 
