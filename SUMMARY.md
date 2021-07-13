@@ -509,5 +509,5 @@
     * [Unicorn scan](resources/cheatsheets/Unicornscan-cheatsheet.md)
     * [Wardriving](resources/cheatsheets/Wardriving-links.md)
     * [Wireshark](resources/cheatsheets/Wireshark.md)
-  * [Guides](resources/guides)
+  * [Guides](resources/guides/README.md)
   * [Common vulnerabilities](resources/vulnerabilities)
