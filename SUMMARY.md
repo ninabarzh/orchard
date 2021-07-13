@@ -480,3 +480,6 @@
       * [TLS/SSL PKI](mitigations/application/protocols/TLS-SSL-PKI.md)
     * [Databases](mitigations/application/databases)
 * [Creating shelf space](resources)
+  * [Cheatsheets](resources/cheatsheets)
+  * [Guides](resources/guides)
+  * [Common vulnerabilities](resources/vulnerabilities)
