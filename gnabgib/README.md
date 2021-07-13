@@ -1,4 +1,4 @@
-# Gnabgib
+# Gnabgib specialties
 
 * [Phases of penetration testing](Phases-of-penetration-testing.md)
 * [Purpose of pentesting](Purpose-of-pentesting.md)

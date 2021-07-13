@@ -507,7 +507,7 @@
     * [Protocols](mitigations/application/protocols)
       * [TLS/SSL PKI](mitigations/application/protocols/TLS-SSL-PKI.md)
     * [Databases](mitigations/application/databases)
-* [Gnabgib specialty](gnabgib)
+* [Gnabgib specialties](gnabgib)
   * [Phases of penetration testing](gnabgib/Phases-of-penetration-testing.md)
   * [Purpose of pentesting](gnabgib/Purpose-of-pentesting.md)
   * [Coyote and Roadrunner](gnabgib/Coyote-and-Roadrunner.md)
