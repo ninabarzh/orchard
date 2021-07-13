@@ -6,7 +6,7 @@ We are not big fans of checklist approaches (though such can be handy when purpo
 
 The resources also contain (links to) other resources for understanding how technologies work, aiding actual reasoning about security.
 
-* [Cheatsheets](cheatsheets)
+* [Cheatsheets](cheatsheets/README)
 * [Guides](guides)
 * [Common vulnerabilities](vulnerabilities)
 

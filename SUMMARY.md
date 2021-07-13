@@ -481,5 +481,6 @@
     * [Databases](mitigations/application/databases)
 * [Creating shelf space](resources)
   * [Cheatsheets](resources/cheatsheets)
-  * [Guides](resources/guides)
+    * [Cheatsheet index](resources/cheatsheets/README.md)
+  * [Guides](resources/guides/README.md)
   * [Common vulnerabilities](resources/vulnerabilities)
