@@ -2,7 +2,9 @@
 
 Create an application overview. This step supports understanding the main functionalities and subjects of the application to be developed/under development. To understand the application more fully, describe the main components, usage scenarios, the roles of subjects and their interactions. For example:
 
-![](../assets/images/overview2.png?raw=true)
+![Overview](../assets/images/overview2.png?raw=true)
+
+![Overview](../assets/images/overview2.png)
 
 * A user logs in
     * A user logs in through the web application with a username and password
