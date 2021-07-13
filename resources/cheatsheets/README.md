@@ -2,7 +2,7 @@
 
 A variety thereof, not organised because in reality the choreography is not linear or easily organised.
 
-* [Cipher suite](Cipher-suite-cheatsheet.md)
+* [Cipher suite](resources/cheatsheets/Cipher-suite-cheatsheet.md)
 * [Darkweb links](Darkweb-links.md)
 * [Darkweb scraping](Darkweb-scraping.md)
 * [Dig](Dig-cheatsheet.md)
