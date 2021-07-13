@@ -11,7 +11,7 @@ Unauthorised access to our data can occur due to a web application not properly 
 Privacy seems to have become a data management problem with a business process wrapped around it, culminating data governance strategies for organisations and governments, legalised by new laws such as the GDPR. The information gathered can be used for [deanonymisation](../../../threat-modelling/DA-threat-model).
 
 * [Auxiliary information](../../../threat-modelling/DA-threat-model/assets/Auxiliary-information.md)
-* [Data releases](../../../threat-modelling/DA-threat-model/assets/Data-releases)
+* [Data releases](../../../threat-modelling/DA-threat-model/assets/Data-releases.md)
 * [Target datasets](../../../threat-modelling/DA-threat-model/assets/Target-dataset.md)
 
 ## Resources

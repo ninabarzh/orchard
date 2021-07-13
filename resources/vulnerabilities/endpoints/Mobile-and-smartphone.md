@@ -1,6 +1,6 @@
 # Mobile and smartphone
 
-The time of a call, who is called, how long the call lasted and which cell tower the phone contacted are all logged traditionally, for billing purposes. That information is metadata, and it can be used to track individuals, and when associated with publicly available content like twitter posts and images taken and uploaded to Flickr for example, can also be used to build a [behavioural profile](../../DA-threat-model/assistive-technologies/Behavioural-analysis.md).
+The time of a call, who is called, how long the call lasted and which cell tower the phone contacted are all logged traditionally, for billing purposes. That information is metadata, and it can be used to track individuals, and when associated with publicly available content like twitter posts and images taken and uploaded to Flickr for example, can also be used to build a [behavioural profile](../../../DA-threat-model/assistive-technologies/Behavioural-analysis.md).
 
 With mobile applications, companies don’t have access to traditional browser cookies to track you over time. Instead, third party advertising and analytics companies use device identifiers — such as Apple iOS’s Identifiers for Advertisers (IDFA) and Google Android’s Advertising ID — to monitor the different applications used on a specific device.
  

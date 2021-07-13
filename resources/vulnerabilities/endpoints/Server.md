@@ -12,7 +12,7 @@ Some server-side HTTP client libraries accept untrusted TLS communication by def
     * For a basic TLS certificate, the Certificate Authority (CA) asks that applicants prove that they own the associated domain. While many approaches can be used to provide this proof, one of the most common is having the applicants post specific content at a URL on that domain. When a domain has been temporarily hijacked, the adversary can post the content and then be issued a domain-validated (DV) certificate within minutes.
     * Let’s Encrypt makes the creation of SSL certificates free and easy.
 
-The MitM server-to-server HTTPS communication vulnerabilitiy isn't about a vulnerability in a software, it is about a flawed concept. The abstraction of trusted Internet routing is wrong. The [listed mitigations](../../../mitigations/server/MitM-server-to-server-HTTPS-communication.md) can help some, but are like mopping up the leaked water with the tap open, and only a few information security specialists and network engineers use them.
+The MitM server-to-server HTTPS communication vulnerabilitiy isn't about a vulnerability in a software, it is about a flawed concept. The abstraction of trusted Internet routing is wrong. The [listed mitigations](../../../mitigations/server/README.md) can help some, but are like mopping up the leaked water with the tap open, and only a few information security specialists and network engineers use them.
 
 
 
