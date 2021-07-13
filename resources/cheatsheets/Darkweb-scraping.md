@@ -86,4 +86,4 @@ Scraping the dark web can be dangerous. Use [applicable infosec](https://github.
 
 ## Examples
 
-* [Snowballing darkweb](https://github.com/tymyrddin/qyrvunth/tree/main//scraping/snowballing-darkweb.py).
+* [Snowballing darkweb](https://github.com/tymyrddin/qyrvunth/tree/main//scraping/snowballing-darkweb.py)
