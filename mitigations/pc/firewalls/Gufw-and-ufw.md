@@ -1,20 +1,12 @@
 # Gufw and ufw
 
-- [Gufw and ufw](#gufw-and-ufw)
-  - [Installation](#installation)
-  - [Enabling](#enabling)
-  - [Checking status](#checking-status)
-  - [Usage examples](#usage-examples)
-    - [ICMP](#icmp)
-    - [SSH](#ssh)
-
 ## Installation
 
 Linux distributions come with a firewall installed (IPtables are built into the Linux kernel), but it is disabled because it would block some basic functionality for users on the local network. Specifically, it would block Samba and Avahi (zeroconf); limiting interoperability with other computers (like file and printer sharing) and disabling automatic discovery of network services. . It is better to turn it on. Especially on mobile devices like laptops, which sometimes connect to other networks than your own. it'll be in your menu items (the icon in mint is a brick wall).
 
 You can install `ufw` (command-line) or `gufw`, a GUI frontend to `ufw`, and that will also install `ufw`:
 
-![UFW and GUFW install](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/install-ufw-gufw.png)
+![UFW and GUFW install](../../assets/images/install-ufw-gufw.png)
 
 ## Enabling
 
@@ -24,7 +16,7 @@ The firewall is called `ufw` (**u**ncomplicated **f**ire**w**all), and can be op
 
 Type your password when prompted for it; this will remain entirely invisible, not even asterisks will be shown.
 
-![UFW and GUFW enable](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/ufw-enable.png)
+![UFW and GUFW enable](../../assets/images/ufw-enable.png)
 
 Ufw has a sensible set of default settings (profile), which are fine for the vast majority of home users. So unless you have special wishes: you're done!
 

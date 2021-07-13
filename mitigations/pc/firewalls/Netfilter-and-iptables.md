@@ -1,18 +1,5 @@
 # Netfilter and iptables
 
-- [Netfilter and iptables](#netfilter-and-iptables)
-  - [Installing persistence](#installing-persistence)
-  - [Rules](#rules)
-    - [Status command](#status-command)
-    - [Deleting a rule](#deleting-a-rule)
-    - [Inserting a rule](#inserting-a-rule)
-    - [Saving the rules](#saving-the-rules)
-    - [Stop/Restart](#stoprestart)
-  - [Configuring iptables](#configuring-iptables)
-  - [Configuring ip6tables](#configuring-ip6tables)
-  - [Usage examples](#usage-examples)
-    - [ICMP](#icmp)
-
 ## Installing persistence 
 
 `iptables` is installed by default. For rules to be persistent (automatically loaded) so they work after reboot, install `iptables-persistent`:
