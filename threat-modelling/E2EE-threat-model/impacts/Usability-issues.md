@@ -1,4 +1,4 @@
-# Usability issues
+# ↑ Usability issues
 
 Svenja Schroeder, Markus Huber, David Wind, and Christoph Rottermanner, did a user study with 28 participants on the usability of Signal's security features, the state-of-the-art application for secure mobile messaging [When SIGNAL hits the Fan: On the Usability and Security of State-of-the-Art Secure Mobile Messaging, Svenja Schröder, Markus Huber, David Wind, Christoph Rottermanner, 2016](https://web.archive.org/web/20160828135326/https://www.internetsociety.org/sites/default/files/09%20when-signal-hits-the-fan-on-the-usability-and-security-of-state-of-the-art-secure-mobile-messaging.pdf). Their study consisted of two parts: a usability study of the app with focus on it’s instant messaging and security features, and the execution of an actual MITM attack with a subsequent assessment of the users’ reactions. Their results showed that 21 of 28 participants failed to compare encryption keys to verify the identity of other users. The majority of these users however believed they succeeded while in reality they failed.
 

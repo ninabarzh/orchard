@@ -1,10 +1,6 @@
-# Backdoors
+# ↑ Backdoors
 
-Backdoors do not come only as applications that allow for remote access to computers, hardware components including authentication tokens, network appliances, surveillance systems and certain communication infrastructure devices can also have backdoors.
-
-Adversaries typically install backdoors to access the system again at some later date and are often used in targeted attacks for breaking into the infrastructure without being discovered (port binding, connect-back, connect availability use and legitimate platform abuse). Used in the second (point of entry) or third (command-and-control [C&C]) stage of a targeted attack process, backdoors are often designed to bypass intrusion detection systems (IDS) and enable adversaries to gain command and control of a network.
-
-## Mitigations
+With the advance of E2EE, secret services will still want access to our data and the amount of [Ghost protocols](../attack-vectors/Ghost-protocols.md) and [backdoors](../attack-vectors/Backdoor.md) is likely to increase.
 
 Protecting against backdoors can be difficult, but there are some things that can help reduce the risk of a breach of this kind.
 
