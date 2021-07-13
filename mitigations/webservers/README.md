@@ -1,4 +1,4 @@
-# Web servers
+# Web server administration
 
 * [Apache](apache)
   * [Chroot Apache](apache/Chroot-Apache.md)

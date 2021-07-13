@@ -108,13 +108,12 @@ The presence of the hidden `/etc/.java` directory also gives me a warning. So of
 
 ![hidden dirs](../../assets/images/java-hidden-dir.png)
 
-
 ALL GREEN. Purrrrfect baseline. For now. :) In the near future more applications may try to use deleted files, and after installation of applications more warnings may appear that I'll have to deal with to keep it green! 
 
 ### Unhide
 ACTUALLY, nearly all green and two purple: 
 
-![skipped](../../assets/images/hidden-processes-skipped.png)
+![Skipped](../../assets/images/hidden-processes-skipped.png)
 
 * `unhide` (ps) is for detecting hidden processes and implements six techniques:
   * Compare `/proc` vs `/bin/ps` output
@@ -125,11 +124,13 @@ ACTUALLY, nearly all green and two purple:
   * Quick compare `/proc`, `procfs` walking and `syscall` vs `/bin/ps` output.
 * `unhide-tcp` is a forensic tool that identifies TCP/UDP ports that are listening but are not listed in /bin/netstat through brute forcing of all TCP/UDP ports available. It comes with unhide.
 
-    $ sudo apt-get install unhide
+```
+$ sudo apt-get install unhide
 
-    $ sudo rkhunter --propupd
+$ sudo rkhunter --propupd
 
-    $ sudo rkhunter -c --enable all --disable none
+$ sudo rkhunter -c --enable all --disable none
+```
 
 Now it's all green. :) 
 
