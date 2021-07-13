@@ -2,7 +2,7 @@
 
 A variety thereof, not organised because in reality the choreography is not linear or easily organised.
 
-* [Cipher suite](resources/cheatsheets/Cipher-suite-cheatsheet.md)
+* [Cipher suite](Cipher-suite-cheatsheet.md)
 * [Darkweb links](Darkweb-links.md)
 * [Darkweb scraping](Darkweb-scraping.md)
 * [Dig](Dig-cheatsheet.md)
@@ -15,7 +15,6 @@ A variety thereof, not organised because in reality the choreography is not line
 * [iproute](iproute2.md)
 * [Linux log commands](Linux-log-commands.md)
 * [lsof](lsof.md)
-* [Metasploit](Metasploit-cheatsheet.pdf)
 * [Nessus](Nessus-cheatsheet.md)
 * [Nikto](Nikto-cheatsheet.md)
 * [Nmap](Nmap-cheatsheet.md)
@@ -24,7 +23,6 @@ A variety thereof, not organised because in reality the choreography is not line
 * [Shodan](Shodan-cheatsheet.md)
 * [Shodan cli](Shodan-CLI-cheatsheet.md)
 * [sockstat](sockstat.md)
-* ![SQLmap](SQLmap-cheatsheet-1.0-sdb.pdf)
 * [tcpdump](tcpdump.md)
 * [the Harvester](the-Harvester-cheatsheet.md)
 * [Threat maps](Threat-maps.md)
