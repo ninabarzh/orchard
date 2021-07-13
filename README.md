@@ -8,7 +8,6 @@ Another Work Forever In Progress because of aiming at moving targets, a reposito
 * Munching galaxies: Just a few notes on possible mitigations.
 * Gnab Gib specialty: Notes on pentesting/red teaming/colourful teaming
 * Creating shelf space: Reuseful scripts and cheatsheets.
-* The wiki contains [some generalised background/contextual notes](https://github.com/tymyrddin/orchard/wiki/).
 
 
 ## Problems or Suggestions
