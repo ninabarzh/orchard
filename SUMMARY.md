@@ -181,7 +181,7 @@
     * [Distributed Denial of Service (DDoS)](trees/network-attacks/DDoS.md)
     * [Distributed Deflection Denial of Service (DrDoS)](trees/network-attacks/DrDoS.md)
   * [Application hacking](trees/application-hacking)
-    * [Hijack session (trees/application)](trees/application-hacking/Hijack-application-session.md)
+    * [Hijack session (application)](trees/application-hacking/Hijack-application-session.md)
     * [SSL stripping](trees/application-hacking/SSL-stripping.md)
     * [SSL hijacking](trees/application-hacking/SSL-hijacking.md)
     * [SSL BEAST](trees/application-hacking/SSL-BEAST.md)
