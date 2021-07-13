@@ -4,7 +4,7 @@ Authentication provides a way to collect credentials and determine the identity 
 
 Carefully implement an authentication mechanism to control which users are allowed to access which data. The keyword here is the "carefully", so as to introduce as little new holes in the Emmental cheese as possible.
 
-* Use [SSL](protocols/TLS-SSL-PKI).md)
+* Use [SSL](protocols/TLS-SSL-PKI.md)
 * Always do the authentication process in a https session. 
 * Encrypt credentials in rest (when stored on the server) using hashing, MD5, etc.
 * When the server sets a cookie on a browser, the `Http-Only` attribute can inform the browser not to allow access to the cookie from the DOM. This prevents client-side script-based attacks from accessing the sensitive data stored in the cookies.

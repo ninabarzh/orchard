@@ -56,7 +56,7 @@ The below are the result of my notes made during a literature study of and some 
     * [Network monitoring](uses/Network-monitoring.md)
     * [Research & development](uses/Research-&-development.md)
     * [Advertising eco-systems](uses/Advertising-eco-systems.md)
-    * [Click-fraud (wars)](uses/Click-fraud-(wars).md)
+    * [Click-fraud (wars)](uses/Click-fraud.md)
 * [Impacts](impacts)
     * [↑ Data](impacts/↑-Data.md)
     * [↑ Bias and discrimination](impacts/↑-Bias-and-discrimination.md)
