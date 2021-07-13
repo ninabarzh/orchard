@@ -4,8 +4,9 @@ Another Work Forever In Progress because of aiming at moving targets, a reposito
 
 * Terraforming threat modelling: bottom-up and top-down trailblazing with intent to create human-readable threat modelling examples.
 * Snapping us some dark matter: Puzzle pieces (attack trees) to jump start exploitation. The pieces may not belong in a specific context or for a particular puzzle. If so, we make new pieces and add those.
-* Creating shelf space: Reuseful scripts and cheatsheets. 
+* Milliways menu of vulnerabilities: To be read before dessert.
 * Munching galaxies: Just a few notes on possible mitigations.
+* Creating shelf space: Reuseful scripts and cheatsheets.
 * The wiki contains [some generalised background/contextual notes](https://github.com/tymyrddin/orchard/wiki/).
 
 

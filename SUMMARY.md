@@ -210,7 +210,7 @@
     * [Credential stuffing](trees/social-engineering/Credential-stuffing.md)
     * [Pharming](trees/social-engineering/Pharming.md)
     * [Phishing](trees/social-engineering/Phishing.md)
-* [Vulnerabilities](vulnerabilities)
+* [Milliways menu of vulnerabilities](vulnerabilities)
   * [Development](vulnerabilities/development)
     * [Hosted repositories](vulnerabilities/development/Hosted-repositories.md)
     * [TLS/SSL PKI](vulnerabilities/development/TLS-SSL-PKI.md)
