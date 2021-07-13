@@ -509,7 +509,7 @@
     * [Unicorn scan](resources/cheatsheets/Unicornscan-cheatsheet.md)
     * [Wardriving](resources/cheatsheets/Wardriving-links.md)
     * [Wireshark](resources/cheatsheets/Wireshark.md)
-  * [Guides](resources/guides)
+  * [Guides](resources/guides/README.md)
     * [OTG version 4](resources/guides/OTGv4.pdf)  
     * [OWASP version 4 Checklist](resources/guides/OWASPv4_Checklist.xlsx)  
     * [SE interactive guide book](resources/guides/se-guide-book-interactive.pdf)
