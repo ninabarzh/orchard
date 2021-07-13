@@ -41,5 +41,5 @@ Yet most E2EE systems are secure against only the weakest passive adversaries, b
   * [Automated verification](threats/Automated-verification.md)
   * [TLS/SSL PKI vulnerabilities](threats/TLSSSL-PKI-vulnerabilities.md)
 * [Impacts](impacts)
-  * [Backdoors](impacts/Backdoors.md)
-  * [Usability issues](impacts/Usability-issues.md)
+  * [↑ Backdoors](impacts/Backdoors.md)
+  * [↑ Usability issues](impacts/Usability-issues.md)
