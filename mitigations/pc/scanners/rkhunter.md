@@ -24,7 +24,7 @@ Run the install script:
 
     $ sudo ./installer.sh --layout /usr --install
 
-![Install script](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/rkhunter-running-install-script.png)
+![Install script](../../assets/images/rkhunter-running-install-script.png)
 
 ## Configuration
 
@@ -38,7 +38,7 @@ Is temporarily not possible with versions older than 1.4.4, see [CVE-2017-7480](
 
 Once resolved, this command has to be run on a regular basis to keep the database of known rootkits current. You can use cron to schedule running of this command at regular intervals. 
 
-![Update db and baseline](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/update-rkhunter-db-and-baseline.png)
+![Update db and baseline](../../assets/images/update-rkhunter-db-and-baseline.png)
 
 ### Baseline
 
@@ -52,7 +52,7 @@ Set baseline file properties by checking the current values and storing them as 
 
 You'll get groups of results, warnings, and at the end a summary of the results. 
 
-![First run](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/rkhunter-first-run.png)
+![First run](../../assets/images/rkhunter-first-run.png)
 
 You can have a look at more details of the warnings in `/var/log/rkhunter.log`.
 
@@ -60,7 +60,7 @@ You can have a look at more details of the warnings in `/var/log/rkhunter.log`.
 
 And immediately encounter these noticeable two (on lines 17 and 44): 
 
-![RKhunter log](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/rkhunter-log.png)
+![RKhunter log](../../assets/images/rkhunter-log.png)
 
 
 Open up rkhunter's configuration file and while going through the warnings in the log, make the necessary changes:
@@ -69,15 +69,15 @@ Open up rkhunter's configuration file and while going through the warnings in th
 
 Remove the `#` in front of MAIL-ON-WARNING and replace the fake email adresses with your local mail account (see above): 
 
-![Mail on warning](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/mail-on-warning.png)
+![Mail on warning](../../assets/images/mail-on-warning.png)
 
 Likewise set the package manager: 
 
-![Package manager](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/package-manager-set.png)
+![Package manager](../../assets/images/package-manager-set.png)
 
 I am also getting warnings from the `deleted_files` test: 
 
-![Deleted files](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/deleted-files-test.png)
+![Deleted files](../../assets/images/deleted-files-test.png)
 
 No problem. Caja and pulseaudio need to be able to use `tmp` files. You can make the strings to allow processes using deleted files for in `/etc/rkhunter.conf` (debian-based):
 
@@ -90,7 +90,7 @@ Select and copy/paste the strings to the `/etc/rkhunter.conf` file (right-click 
 
 And a warning from the `packet_cap_apps` test: 
 
-![packet_cap_apps test](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/packet-cap-apps-test.png)
+![packet_cap_apps test](../../assets/images/packet-cap-apps-test.png)
 
 
 Get the strings for allowing (current) packet capturing applications:
@@ -102,11 +102,11 @@ Get the strings for allowing (current) packet capturing applications:
 
 and add as well: 
 
-![allow processes](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/allow-processes.png)
+![allow processes](../../assets/images/allow-processes.png)
 
 The presence of the hidden `/etc/.java` directory also gives me a warning. So often do `/dev/.udev`, `/dev/.static` and `/dev/.initramfs`. These are known hidden (sofar) non-malignent hidden directories and can simply be whitelisted (only need commenting out):
 
-![hidden dirs](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/java-hidden-dir.png)
+![hidden dirs](../../assets/images/java-hidden-dir.png)
 
 
 ALL GREEN. Purrrrfect baseline. For now. :) In the near future more applications may try to use deleted files, and after installation of applications more warnings may appear that I'll have to deal with to keep it green! 
@@ -114,7 +114,7 @@ ALL GREEN. Purrrrfect baseline. For now. :) In the near future more applications
 ### Unhide
 ACTUALLY, nearly all green and two purple: 
 
-![skipped](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/hidden-processes-skipped.png)
+![skipped](../../assets/images/hidden-processes-skipped.png)
 
 * `unhide` (ps) is for detecting hidden processes and implements six techniques:
   * Compare `/proc` vs `/bin/ps` output

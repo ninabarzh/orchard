@@ -14,7 +14,7 @@ If you want an automatic daily run of `chkrootkit`, open `/etc/chkrootkit.conf` 
 
     $ sudo geany /etc/chkrootkit.conf
 
-![chrootkit](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/chrootkit.png)
+![chrootkit](../../assets/images/chrootkit.png)
 
 ## Usage
 
@@ -24,7 +24,7 @@ Using chkrootkit (perform all tests):
 
 And you may get something like: 
 
-![chrootkit run](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/chrootkit-run.png)
+![chrootkit run](../../assets/images/chrootkit-run.png)
 
 The man utmp reads: 
 
