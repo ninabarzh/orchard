@@ -6,7 +6,7 @@ This is a known LAN-side vulnerability and why many viruses and worms attempt to
 
 A second NAT router can be used on the internal LAN to create a second, more secure LAN.
 
-![Add NAT](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/addnat.png)
+![Add NAT](../../assets/images/addnat.png)
 
 * Machines on the //More or less secure internal LAN// can access the internet, but they are protected by the //External NAT// from most malwares.
 * Machines on the //More secure internal LAN// can also access the internet, first by going out through the //Internal NAT// and then the //External NAT//. 

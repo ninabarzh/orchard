@@ -1,6 +1,6 @@
 # Disable directory listing
 
-As with the [hiding of version and OS identity], this is not a direct security threat as it only allows the attacker to gain information. 
+As with the [hiding of version and OS identity](Hide-version-and-OS-identity.md), this is not a direct security threat as it only allows the attacker to gain information. 
 
 Add the following configuration in `/etc/apache2/apache2.conf` to disable directory listing globally (server wide):
 

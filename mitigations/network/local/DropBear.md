@@ -1,38 +1,38 @@
 # DropBear SSH public key authentication (OpenWRT)
 
-* If you do not have a public key yet, create one.
+If you do not have a public key yet, create one.
     
     $ ssh-keygen -t dsa    
 
-![Create key](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/create-key.png)
+![Create key](../../assets/images/create-key.png)
 
 Followed by a fingerprint and random art image of the key.
 
-* Copy the public key with `scp` to OpenWrt: 
+Copy the public key with `scp` to OpenWrt: 
 
     $ scp ~/.ssh/id_dsa.pub root@192.168.1.1:/tmp    
 
-![SCP](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/scp.png)
+![SCP](../../assets/images/scp.png)
 
-* ssh to the router (requires a password, as the key has not been added to authorized_keys yet).
+`ssh` to the router (requires a password, as the key has not been added to authorized_keys yet).
 
     $ ssh root@192.168.1.1    
 
-![Password](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/ssh-still-password-asked.png) 
+![Password](../../assets/images//ssh-still-password-asked.png) 
 
-* Add the key to `authorized_keys`. If not exists, it will be created. Adjust its permissions. 
+Add the key to `authorized_keys`. If not exists, it will be created. Adjust its permissions. 
 
     # cd /etc/dropbear
     # cat /tmp/id_*.pub >> authorized_keys
     # chmod 0600 authorized_keys    
 
-![Add to authorised keys](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/add-to-authorized-keys.png) 
+![Add to authorised keys](../../assets/images/add-to-authorized-keys.png) 
 
 Now ssh works from a local machine to the router, and no password is sent in the clear or encrypted, instead you'll be asked for the passphrase you entered when you created the key in the first step. You can repeat this from each machine that you wish to be able to access the router, and add the keys as above. 
 
 ## Running SSH on another port
 
-![SSH access](https://github.com/tymyrddin/orchard/blob/main/mitigations/assets/images/ssh-access.png)
+![SSH access](../../assets/images/ssh-access.png)
 
 That of course changes how you `ssh` to the router:
 
