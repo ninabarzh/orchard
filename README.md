@@ -1,6 +1,6 @@
 # Orchard
 
-[Another Work Forever In Progress because of aiming at moving targets]
+Another Work Forever In Progress because of aiming at moving targets, deployed on [gitbook](https://tymyrddin.gitbook.io/orchard/) (so search is available)
 
 A repository for getting started with pentesting/red teaming/colourful teaming:
 
