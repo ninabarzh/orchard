@@ -1,18 +1,6 @@
 # NMap CheatSheet
 
-* [Basic scanning techniques](#Basic-scanning-techniques)
-* [Discovery options](#Discovery-options)
-* [Advanced scanning functions](#Advanced-scanning-functions)
-* [Port scanning options](#Port-scanning-options)
-* [Version detection](#Version-detection)
-* [Timing options](#Timing-options)
-* [Firewall evasion techniques](#Firewall-evasion-techniques)
-* [Output options](#Output-options)
-* [Troubleshooting and debugging](#Troubleshooting-and-debugging)
-* [Nmap scripting engine](#Nmap-scripting-engine)
-* [Ndiff](#Ndiff)
-
-### Basic scanning techniques
+## Basic scanning techniques
 Scan a Single Target
 
     # nmap [target]
@@ -55,7 +43,7 @@ Scan an IPv6 Target
 
 ...
 
-### Discovery options
+## Discovery options
 
 Perform a Ping Only Scan
 
@@ -124,7 +112,7 @@ Create a Host List
 
     # nmap -sL [targets]
 
-# Advanced scanning functions
+## Advanced scanning functions
 
 TCP SYN Scan
 

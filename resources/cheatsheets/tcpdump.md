@@ -6,7 +6,7 @@ Tcpdump works on most Unix-like operating systems: Linux, Solaris, BSD, macOS, H
 
 ## Syntax
 
-![tcpdump](https://github.com/tymyrddin/orchard/blob/main/resources/assets/images/tcpdump.png)
+![tcpdump](../assets/images/tcpdump.png)
 
 Protocol: Values: `ether`, `fddi`, `ip`, `arp`, `rarp`, `decnet`, `lat`, `sca`, `moprc`, `mopdl`, `tcp` and `udp`. If no protocol is specified, all the protocols are used.
 
