@@ -222,7 +222,7 @@
       * [Postfix](mitigations/pc/mail/Postfix.md)
       * [Sendmail](mitigations/pc/mail/Sendmail.md)
       * [Configuration of local mail in Thunderbird](mitigations/pc/mail/Configuration-of-local-mail-in-Thunderbird.md)
-    * [Intrusion Detection System (mitigations/pc/IDS)](mitigations/pc/ids)
+    * [Intrusion Detection System (IDS)](mitigations/pc/ids)
       * [Choosing an IDS](mitigations/pc/ids/Choosing-an-IDS.md)
       * [Tripwire](mitigations/pc/ids/Tripwire.md)
       * [Aide](mitigations/pc/ids/Aide.md)
